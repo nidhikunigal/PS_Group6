@@ -52,7 +52,7 @@
     }
   }
 
-    .logo{
+    logo{
         top: 0;
         left: 0; 
     }
@@ -63,8 +63,98 @@
         color: black;
     }
 
-    .search{
+    search{
         top: 0; 
         left: 500; 
+        width: 100;
+        margin-right: 10px;
+    }
+
+    form{
+      background-image: url(car.jpg);
+      background-size: cover;
+      color: black;
+      height: 300px;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
+
+    }
+    topLinks{
+      text-align: justify;
+      color: black;
+
+    }
+
+    deals{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 150%;
+      color: black;
+      background-image: url(line.png);
+      top: 50%;
+      height: 100px;
+      width: 100%;
+      margin-top: 10px;
+
+    }
+    featDeals{
+      display:flex;
+      flex: 1 1 1px;
+      flex-flow: row;
+      justify-content: center;
+      align-items: center;
+    }
+    deal1, deal2, deal3{
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: 10px;
+    }
+
+    #deal1img, #deal2img, #deal3img{
+      height: 100px;
+      width: auto;
+      object-fit: contain;
+    }
+    formOptions{
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1{
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      
+    }
+
+    h2{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 36;
+      color: #FFFFFF;
+      text-shadow: -1px 2px black;
+    }
+
+    select{
+      margin-left: 10px;
+
+    }
+
+    #submitButton{
+      background-color: #FFFFFF;
+    }
+
+    option{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 24;
     }
 
