@@ -31,23 +31,55 @@ def objFormat(input):
 
     returnVal = []
     for i in input:
+        temp = []
         for j in i:
             value = j.split(" ")
-            yearVal = value[0]
-            makeVal = value[1]
-            modelVal = value[2]
-            trimVal = value[3]
-            returnVal.append(
-                "{Year:"
-                + yearVal
-                + ", Make:"
-                + makeVal
-                + ", Model:"
-                + modelVal
-                + ", Trim:"
-                + trimVal
-                + "}"
-            )
+            if len(value) == 4:
+                yearVal = value[0]
+                makeVal = value[1]
+                modelVal = value[2]
+                trimVal = value[3]
+                temp.append(
+                    '{"year": "'
+                    + yearVal
+                    + '", "make": "'
+                    + makeVal
+                    + '", "model": "'
+                    + modelVal
+                    + '", "trim": "'
+                    + trimVal
+                    + '"}'
+                )
+            else:
+                val = "Universal"
+                temp.append(
+                    '{"year": "'
+                    + val
+                    + '", "make": "'
+                    + val
+                    + '", "model": "'
+                    + val
+                    + '", "trim": "'
+                    + val
+                    + '"}'
+                )
+            # else:
+            #     yearVal = value[0]
+            #     makeVal = value[1]
+            #     modelVal = "All"
+            #     trimVal = "All"
+            #     temp.append(
+            #         '{"year": "'
+            #         + yearVal
+            #         + '", "make": "'
+            #         + makeVal
+            #         + '", "model": "'
+            #         + modelVal
+            #         + '", "trim": "'
+            #         + trimVal
+            #         + '"}'
+            #     )
+        returnVal.append(temp)
 
     return returnVal
 
@@ -55,10 +87,10 @@ def objFormat(input):
 def main():
     file = "allDataCSV.json"
     # input vehicle brand
-    vehicle = "Ram"
+    vehicle = ""
     refined_data = fileHandle(file, vehicle)
     res = objFormat(refined_data)
-    print(res)
+    print(res[48])
 
 
 if __name__ == "__main__":
