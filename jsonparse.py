@@ -1,6 +1,7 @@
 import json
 from weakref import ref
 
+
 def fileHandle(file, vehicle):
     with open("allDataCSV.json", "r") as data_file:
         data = json.load(data_file)
@@ -25,7 +26,8 @@ def fileHandle(file, vehicle):
         specific_vehicle.append(temp)
     return specific_vehicle
 
-def fordfilter(input):
+
+def objFormat(input):
 
     returnVal = []
     for i in input:
@@ -35,30 +37,29 @@ def fordfilter(input):
             makeVal = value[1]
             modelVal = value[2]
             trimVal = value[3]
-            returnVal.append("{Year:" + yearVal + ", Make:" + makeVal + ", Model:" + modelVal + ", Trim:" + trimVal + "}")
-    
-    return(returnVal)
+            returnVal.append(
+                "{Year:"
+                + yearVal
+                + ", Make:"
+                + makeVal
+                + ", Model:"
+                + modelVal
+                + ", Trim:"
+                + trimVal
+                + "}"
+            )
 
-def parseSilverado(input):
-    #combine maybe????????
-    arr = []
-    year = input[1]
-    make = input[2]
-    model = input[3] + " " + input[4]
-    trim = input[5]
+    return returnVal
 
-    newVal = '{"year": "' + year + '", "make": "' + make + \
-        '", "model": "' + model + '", "trim": "' + trim + '"}'
-    arr.append(newVal)
-    return arr
 
 def main():
     file = "allDataCSV.json"
-    vehicle = "Ford"
+    # input vehicle brand
+    vehicle = "Ram"
     refined_data = fileHandle(file, vehicle)
-    res = fordfilter(refined_data)
-    #print(res)
-    print(refined_data)
+    res = objFormat(refined_data)
+    print(res)
+
 
 if __name__ == "__main__":
-  main()
+    main()
