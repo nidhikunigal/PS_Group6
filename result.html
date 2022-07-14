@@ -1,7 +1,106 @@
 <!DOCTYPE html>
 <head>
-
+    <link rel="stylesheet" href="PS_Home.css">
+    <title>Group6 Project</title>
 </head>
 <body>
-    resulty
+    <h1>
+        <logo>
+           <img src = "4-wheel-parts-logo.png" width="300"><img>
+        </logo>
+        <search>
+           <input type="text" placeholder="Search...">
+        </search>
+        <topLinks>
+           <support>
+              <a class="active" href="#Support" onclick="supportPage()"> <font size="3" color="black">Support</font></a>
+           </support>
+           <myAcc>
+              <a class="active" href="#myAcc" onclick="accountPage()"><font size="3" color="black">My Account</font></a>
+           </myAcc>
+           <findStore>
+              <a class="active" href="#findStore" onclick="mapPage()"><font size="3" color ="black">Find Store Near Me</font></a>
+           </findStore>
+           <cart>
+              <a class="active" href="#cart" onclick="cartPage()"><font size="3" color="black">Cart</font></a>
+           </cart>
+           <script>
+              //use these functions to send user to respective page
+              function supportPage(){
+
+              }
+              function accountPage(){
+
+              }
+              function mapPage(){
+
+              }
+              function cartPage(){
+
+              }
+           </script>
+        </topLinks>
+     </h1>
+
+     <result-page>
+        <column1>
+            <silly> 
+                <img src="currveh.jfif"  height="60px">
+                Current Vehicle: 
+                <script> 
+                    document.write(localStorage["year"] + " " + localStorage["make"] + " " + localStorage["model"]);
+                </script>
+            </silly>
+            
+            <changeVeh>
+                <button id="changeVehicle" type="button" onclick="BackToMain()">Change Vehicle</button>
+                <script>
+                    function BackToMain(){
+                        location.href="website.html";
+                    }
+                </script>
+            </changeVeh>
+
+
+            <refineHead> Refine By:</refineHead>
+            <form id="refineResults">
+                <select id="Brand">
+                    <option value="brand ex">Put brand examples here</option>
+                </select>
+                <select id="Fitment">
+                    <option value="cars">List all cars</option>
+                </select>
+                <select id="ProductCategory">
+                    <option value="bumper">Bumper</option>
+                    <option value="none">List rest of products</option>
+                </select>
+                <button id="refine" onclick="refine()">Refine</button>
+                <script>
+                    function refine(){
+                        //this should update the results page with the new 
+                        alert("this should be reloading the result page hehe");
+                    }
+                </script>
+            </form>
+             
+
+        </column1>
+        <column2>
+            <p id="result-header">
+                <script>
+                    document.write("Showing " + localStorage["part"] + "s for " + localStorage["year"] + " " + localStorage["make"] + " " + localStorage["model"]);
+                </script>
+        
+            </p>
+            <div class="grid-container">
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+            </div>
+        </column2>
+     </result-page>
+     
 </body>
