@@ -92,13 +92,28 @@
                 </script>
         
             </p>
-            <div class="grid-container">
-                <div class="grid-item">1</div>
-                <div class="grid-item">2</div>
-                <div class="grid-item">3</div>
-                <div class="grid-item">4</div>
-                <div class="grid-item">5</div>
-                <div class="grid-item">6</div>
+            <div id="grid-container" class="grid">
+                <script type="text/javascript">
+                    //document.getElementsByClassName("grid-container").innerHTML="<div class=\"grid-item\"></div>";
+                    for(let i =0; i < localStorage["results"]; i++){
+                        document.getElementById("grid-container").innerHTML+='<div class="grid-item">' + productDet() + '</div>';
+                    }
+
+                    function productDet(){
+                        if(localStorage["part"] == "Tire"){
+                            return '<img src="tire.jpg" height="250px" ></img>'
+                        }
+                        if(localStorage["part"] == "Bumper"){
+                            return '<img src="tempBumper.jpg" height="250px"  ></img>'
+                        }
+                        if(localStorage["part"] == "Turning Kit"){
+                            return '<img src="levelingKit.jpg" height="250px" ></img>'
+                        }
+                        //do this for the rest 
+
+                        
+                    }
+                </script>
             </div>
         </column2>
      </result-page>

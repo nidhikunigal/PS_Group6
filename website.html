@@ -87,7 +87,7 @@
             <select id="part">
                <option value="All Part">part</option>
                <option value="Bumper">Bumper</option>
-               <option value="Wheel">Wheel</option>
+               <option value="Tire">Tire</option>
                <option value="Turning Kit">Turning Kit</option>
                <option value="All Part">All Parts</option>
             </select>
@@ -116,6 +116,7 @@
                localStorage["year"] = selYear;
                localStorage["make"]=selMake;
                localStorage["model"] = selModel;
+               localStorage["results"] = 8;
                location.href="result.html";
                //use these results to send a query & then send user to result.html page
                
