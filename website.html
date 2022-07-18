@@ -19,7 +19,150 @@
          </search>
       </h1>
 
+<<<<<<< Updated upstream
       <p>Eep eep eep eeeeeep eeeeeep</p>
+=======
+      <form id="form1">
+         <h2>Find Parts For Your Vehicle</h2>
+         <formOptions>
+            <style>
+               select:disabled {
+                  background: #b8b5b8; 
+                  opacity: 1;
+               }
+            </style>
+
+            <select id="year" onChange="getOption(this)">
+               <option value="0">year</option>
+               <option value="2022">2022</option>
+               <option value="2021">2021</option>
+               <option value="2020">2020</option>
+               <option value="2019">2019</option>
+               <option value="2018">2018</option>
+               <option value="2017">2017</option>
+               <option value="2016">2016</option>
+               <option value="2015">2015</option>
+            </select>
+            
+            <select name="make" id="make" disabled onChange="getOption2(this)">
+               <option value="0">make</option>
+               <option value="Ford">Ford</option>
+               <option value="Jeep">Jeep</option>
+               <option value="Toyota">Toyota</option>
+               <option value="Lexus">Lexus</option>
+               <option value="Chevrolet">Chevrolet</option>
+               <option value="GMC">GMC</option>
+               <option value="Ram">Ram</option>
+            </select>
+
+            <select name="model" id="model" disabled onChange="getOption3(this)">
+               <option value="0">model</option>
+               <option value="F-150">F-150</option>
+               <option value="Gladiator">Gladiator</option>
+               <option value="Wrangler">Wrangler</option>
+               <option value="Tacoma">Tacoma</option>
+               <option value="Bronco">Bronco</option>
+               <option value="Suburban">Suburban</option>
+               <option value="1500">1500</option>
+               <option value="4Runner">4Runner</option>
+               <option value="GX460">GX460</option>
+               <option value="Silverado">Silverado</option>
+               <option value="Sierra">Sierra</option>
+            </select>
+
+             <select name="part" id="part" disabled>
+               <option value="All Part">part</option>
+               <option value="Bumper">Bumper</option>
+               <option value="Wheel">Wheel</option>
+               <option value="Turning Kit">Turning Kit</option>
+               <option value="All Part">All Parts</option>
+            </select>
+         </formOptions>
+
+         <script>
+            cursor1 = document.getElementById("make").style.cursor = "not-allowed";
+            cursor2 = document.getElementById("model").style.cursor = "not-allowed"; 
+            cursor3 = document.getElementById("part").style.cursor = "not-allowed"; 
+         </script>
+
+         <script>
+            function getOption(el){
+               cursor_1 = document.getElementById("make").style.cursor = "auto";
+               hello = document.getElementById("make").disabled = false; 
+            }
+
+            function getOption2(el){
+               cursor_2 = document.getElementById("model").style.cursor = "auto";
+               hello2 = document.getElementById("model").disabled = false;
+            }
+
+            function getOption3(el){
+               cursor_3 = document.getElementById("part").style.cursor = "auto";
+               hello4 = document.getElementById("part").disabled = false; 
+            }
+         </script>
+
+         <p><button id ="submitButton" type="button" value="Submit" onclick="quizResult()">see results</button></p>
+         <script type="text/javascript">
+            function quizResult(){
+               var year = document.getElementById("year");
+               var idxY = year.selectedIndex;
+               var selYear = year.options[idxY].value;
+
+               var make = document.getElementById("make");
+               var idxMake = make.selectedIndex;
+               var selMake = make.options[idxMake].value;
+
+               var model = document.getElementById("model");
+               var idxModel = model.selectedIndex;
+               var selModel = model.options[idxModel].value;
+   
+               var part = document.getElementById("part");
+               var idxP = part.selectedIndex;
+               var selP = part.options[idxP].value;
+
+
+               if(selYear == "0" || selMake == "0" || selModel == "0"){
+                  alert("Please complete the year, make, and model fields before submitting.");
+                  return;
+               }
+
+               localStorage["part"] = selP;
+               localStorage["year"] = selYear;
+               localStorage["make"]=selMake;
+               localStorage["model"] = selModel;
+               location.href="result.html";
+               //use these results to send a query & then send user to result.html page
+            
+               //make_get = document.getElementById("make");
+            
+               
+            }
+
+         </script>
+
+      </form>
+      <deals>
+         <a onclick="">Shop Deals For Your Vehicle</a>
+      </deals>
+      <featDeals>
+         <deal1>
+            <img id="deal1img"src="tire.jpg" ><img>
+            Mickey Thompson Baja Legend EXP Tires 
+         </deal1>
+         <deal2>
+            <img id="deal2img" src="tempBumper.jpg" ><img>
+            Fab Fours Matrix Series Front Bumper with Pre-Runner Guard (Black) 
+         </deal2>
+         <deal3>
+            <img id="deal3img" src="levelingKit.jpg"><img>
+            Pro Comp 2.5 Inch Leveling Lift Kit
+         </deal3>
+      </featDeals>
+      <deals>
+         <a onclick="">Shop New Products</a>
+      </deals>
+>>>>>>> Stashed changes
    </body>
 	
 </html>
