@@ -182,3 +182,45 @@
     align-items: center;
    }
 
+
+   #details{
+    display: flex;
+    flex-direction: row;
+   }
+   #specs{
+    display: flex;
+    flex-direction: row;
+   }
+   #productName{
+    display: flex;
+    flex-direction: column;
+    font-size: 35pt;
+    align-items: center;
+   }
+
+   #prodSpec{
+    display: flex;
+    flex-direction: column;
+    font-size: 10pt;
+   }
+
+   #imgspec{
+    display: flex;
+    flex-direction: row; 
+   }
+
+   #rating{
+    font-size: 15pt;
+    list-style: none;
+   }
+
+   #greenCheck{
+    color: green;
+   }
+
+   *{
+    font-family: barlow condensed,Helvetica,sans-serif!important;
+    font-weight: 600!important;
+    letter-spacing: .006em!important;
+   }
+
