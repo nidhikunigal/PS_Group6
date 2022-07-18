@@ -1,4 +1,4 @@
-const { gql } = require("apollo-server"); //graph ql working on apollo server
+const { ApolloServer, gql } = require("apollo-server"); //graph ql working on apollo server
 
 const typeDefs = gql`
 
@@ -15,16 +15,19 @@ type Part { #type def for the parts as a whole
     }
 
 type CompatibleVehicle { #type def for the compatible vehicles
-Product_Name: String!
+    Product_Name: String
     Year: String!
     Make: String!
     Model: String!
     Trim: String!
+    VehicleParts:[Part!]!
 }
 
 
 type Query { #queries we want implimented
 parts: [Part]! #lists all the parts
+vehicles:[CompatibleVehicle]!
+partByName(Product_Name:String!): [Part!]
 partByType(Type:String!): [Part!] #lists parts based on their type, maybe make type an enum ?
 partByCompany(Company:String!):[Part!] #lists parts based on the company
 partByGeneralVehicle(General_Vehicle:String!):[Part!] #lists parts based off the general car
