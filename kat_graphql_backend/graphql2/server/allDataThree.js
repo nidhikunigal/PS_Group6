@@ -5066,4 +5066,4 @@ const Compatible_Vehicles = [
     },
 ];
 
-module.exports = { PartList };
+module.exports = { PartList, Compatible_Vehicles };
