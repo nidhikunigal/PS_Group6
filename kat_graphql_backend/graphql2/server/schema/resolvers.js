@@ -8,6 +8,7 @@ const resolvers = {
     Query: { //resolvers for our queries
         //parts function, returns a list of all the parts
         parts() {
+
             return PartList;
         },
         //get a part by its type, ex leveling suspension
@@ -23,14 +24,12 @@ const resolvers = {
             const { General_Vehicle } = args;
             return PartList.filter((a) => a.General_Vehicle == General_Vehicle);
         },
-
         partByYear(parent, args) {
-            const { year } = args;
-            return PartList.Compatible_Vehicles.find((a) => a.PartList.Compatible_Vehicles.year == parent.Compatible_Vehicles.year);
-
+            const { Year } = args;
+            return PartList.Compatible_Vehicles;
 
         },
-    },
+    }
 
 
 
