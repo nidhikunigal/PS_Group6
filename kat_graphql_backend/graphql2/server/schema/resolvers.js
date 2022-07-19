@@ -45,31 +45,12 @@ const resolvers = {
 
 
         },
-
-
-        parts() {
-
-            return PartList;
-        },
         vehicles() {
             return Compatible_Vehicles;
         },
         partByName(parent, args) {
             const { Product_Name } = args;
             return PartList.filter((a) => a.Product_Name == Product_Name);
-        },
-        //get a part by its type, ex leveling suspension
-        partByType(parent, args) {
-            const { Type } = args;
-            return PartList.filter((a) => a.Type == Type);
-        },
-        partByCompany(parent, args) {
-            const { Company } = args;
-            return PartList.filter((a) => a.Company == Company);
-        },
-        partByGeneralVehicle(parent, args) {
-            const { General_Vehicle } = args;
-            return PartList.filter((a) => a.General_Vehicle == General_Vehicle);
         },
         partByYear(parent, args) {
             const { Year } = args;
