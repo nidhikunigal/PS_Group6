@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
-import DisplayData from "./DisplayData";
+// import DisplayData from "./DisplayData";
 
 function App() {
   const client = new ApolloClient({
@@ -9,13 +9,13 @@ function App() {
     uri: "http://localhost:4000/graphql",
   });
 
-  return (
-    <ApolloProvider client={client}>
-      <div className="App">
-        <DisplayData />
-      </div>
-    </ApolloProvider>
-  );
-}
+//   return (
+//     <ApolloProvider client={client}>
+//       <div className="App">
+//         <DisplayData />
+//       </div>
+//     </ApolloProvider>
+//   );
+// }
 
 export default App;
