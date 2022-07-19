@@ -12,7 +12,7 @@ type Part { #type def for the parts as a whole
     Technical_Details: String
     General_Vehicle: String
     Compatible_Vehicles: [CompatibleVehicle!]!
-    }
+}
 
 type CompatibleVehicle { #type def for the compatible vehicles
     Product_Name: String
