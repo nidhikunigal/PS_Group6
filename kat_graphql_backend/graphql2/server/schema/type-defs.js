@@ -25,6 +25,7 @@ type CompatibleVehicle { #type def for the compatible vehicles
 
 
 type Query { #queries we want implimented
+getParts(Type: String, Company: String ,General_Vehicle: String) : [Part]
 parts: [Part]! #lists all the parts
 vehicles:[CompatibleVehicle]!
 partByName(Product_Name:String!): [Part!]

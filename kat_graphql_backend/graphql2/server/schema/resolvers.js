@@ -7,6 +7,46 @@ const resolvers = {
 
     Query: { //resolvers for our queries
         //parts function, returns a list of all the parts
+
+        getParts(Parent, args) {
+            const { Type, Company, General_Vehicle } = args;
+            if (Type == null && Company == null && General_Vehicle == null) {
+                return PartList;
+            }
+            else if (Type != null && Company == null && General_Vehicle == null) {
+                //only type is not null
+                return PartList.filter((a) => a.Type == Type);
+            }
+            else if (Type == null && Company != null && General_Vehicle == null) {
+                //only company is given
+                return PartList.filter((a) => a.Company == Company);
+            }
+            else if (Type == null && Company == null && General_Vehicle != null) {
+                //only general vehicle is null
+                return PartList.filter((a) => a.General_Vehicle == General_Vehicle);
+            }
+            else if (Type != null && Company != null && General_Vehicle == null) {
+                //type and company are given
+                return PartList.filter((a) => a.Company == Company && a.Type == Type);
+            }
+            else if (Type != null && Company == null && General_Vehicle != null) {
+                //Type and General Vehicle are given
+                return PartList.filter((a) => a.Type == Type && a.General_Vehicle == General_Vehicle);
+            }
+            else if (Type == null && Company != null && General_Vehicle != null) {
+                //Company and general vehicle are given
+                return PartList.filter((a) => a.Company == Company && a.General_Vehicle == General_Vehicle);
+            }
+            else {
+                //all params are given
+                return PartList.filter((a) => a.Type == Type && a.Company == Company && a.General_Vehicle == General_Vehicle);
+
+            }
+
+
+        },
+
+
         parts() {
 
             return PartList;

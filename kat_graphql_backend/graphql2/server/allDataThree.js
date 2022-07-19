@@ -1,3 +1,16 @@
+
+// const Reviews = [
+//     {
+//         Product_Name: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T",
+//         ReviewOne: "onefhffnjad",
+//         ReviewTwo: "hfjaifbfnkDF",
+//         NumberOfStars: 0,
+
+//     },
+
+
+// ]
+
 const PartList = [
     {
         Type: "Suspension",
