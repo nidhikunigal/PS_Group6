@@ -40,10 +40,7 @@ const resolvers = {
             else {
                 //all params are given
                 return PartList.filter((a) => a.Type == Type && a.Company == Company && a.General_Vehicle == General_Vehicle);
-
             }
-
-
         },
         vehicles() {
             return Compatible_Vehicles;
@@ -54,10 +51,16 @@ const resolvers = {
         },
         partByYear(parent, args) {
             const { Year } = args;
-            console.log(Compatible_Vehicles.Product_Name);
             return Compatible_Vehicles.filter((a) => a.Year == Year);
-
         },
+        partByMake(parent, args){
+            const { Make } = args;
+            return Compatible_Vehicles.filter((a) => a.Make == Make);
+        },
+        partByModel(parent, args){
+            const { Model } = args;
+            return Compatible_Vehicles.filter((a) => a.Model == Model);
+        }
     },
     Part: {
         //gets the proper compatible vehicles
@@ -73,9 +76,6 @@ const resolvers = {
             return PartList.filter(Part => Part.Product_Name === parent.Product_Name);
         }
     }
-
-
-
 };
 
 module.exports = { resolvers };

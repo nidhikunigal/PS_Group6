@@ -29,7 +29,8 @@ getParts(Type: String, Company: String ,General_Vehicle: String) : [Part]
 vehicles:[CompatibleVehicle]!
 partByName(Product_Name:String!): [Part!]
 partByYear(Year:String!):[CompatibleVehicle!]
-
+partByMake(Make:String!):[CompatibleVehicle!]
+partByModel(Model:String!):[CompatibleVehicle!]
 }
 
 

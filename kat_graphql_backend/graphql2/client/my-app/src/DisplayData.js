@@ -136,11 +136,9 @@ const QUERY_ALL_PARTS = gql`
 //   }
 // `;
 
-function DisplayData(){
-  const {data, loading, error} = useQuery(QUERY_ALL_PARTS);
-
-
-  // {a && 
+function DisplayData() {
+  const { data, loading, error } = useQuery(QUERY_ALL_PARTS);
+  // {a &&
   // a.allParts.parse((x) => {
   //   console.log(a);
   //   return <h1>hello{x.Cost}</h1>
@@ -148,16 +146,14 @@ function DisplayData(){
   if (loading) {
     return <h1>LOADING</h1>
   }
-  if (data) {
-    console.log("helloooo");
-    console.log(data);
-    return <h1>hello</h1>
-  }
-  if (error) {
-    console.log(error);
-    return <h1> </h1>;
-  }
-  return <h1></h1>;
+  return (
+    <div>
+      {data &&
+        data.getParts.map((x) => {
+          return (<div><p>{x.Cost} , {x.Type}</p></div>);
+        })}
+    </div>
+  );
 }
 
 export default DisplayData;

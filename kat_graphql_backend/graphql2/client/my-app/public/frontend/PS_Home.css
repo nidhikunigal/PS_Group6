@@ -1,0 +1,226 @@
+/* Add a black background color to the top navigation bar */
+    logo{
+        top: 0;
+        left: 0; 
+    }
+
+    .home{
+        top: 0; 
+        left: 300; 
+        color: black;
+    }
+
+    search{
+        top: 0; 
+        left: 500; 
+        width: 100;
+        margin-right: 10px;
+        box-sizing: border-box;
+    }
+
+    #form1{
+      background-image: url(car.jpg);
+      background-size: cover;
+      color: black;
+      height: 300px;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
+
+    }
+    topLinks{
+      text-align: justify;
+      color: black;
+
+    }
+
+    deals{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 150%;
+      color: black;
+      background-image: url(line.png);
+      top: 50%;
+      height: 100px;
+      width: 100%;
+      margin-top: 10px;
+
+    }
+    featDeals{
+      display:flex;
+      flex: 1 1 1px;
+      flex-flow: row;
+      justify-content: center;
+      align-items: center;
+      background-color: #ccc;
+    }
+    deal1, deal2, deal3{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: center;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: 10px;
+    }
+
+    #deal1img, #deal2img, #deal3img{
+      margin-top: 10px;
+      height: 150px;
+      width: auto;
+      object-fit: contain;
+    }
+    formOptions{
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    h1{
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      
+    }
+
+    h2{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 36;
+      color: #FFFFFF;
+      text-shadow: -1px 2px black;
+    }
+
+    select{
+      margin-left: 10px;
+
+    }
+
+    #submitButton{
+      background-color: #FFFFFF;
+      margin-top: 10px;
+    }
+
+    option{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 24;
+    }
+
+    topLinks{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #grid-container{
+      display: grid;
+      grid-gap: 2px;
+      box-sizing: border-box;
+      grid-template-columns: [col1-start] auto  [col2-start] auto  [col3-start] auto;
+      grid-template-rows: auto;
+
+    }
+    .grid-item{
+      background-color: #ccc;
+      height: 300px;
+      
+    }
+
+    #result-header{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: large;
+    }
+
+    result-page{
+      display: flex;
+      flex-direction: row;
+      flex: 1 1 auto;
+
+    }
+
+    column2{
+      width: 80%; 
+    }
+
+    column1{
+      width: 20%; 
+      padding: 2px;
+      align-items: stretch;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+    }
+
+    refineHead{
+      background-color: black;
+      color: white; 
+      font-size: small;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+   #refineResults{
+      align-content: stretch;
+      background-color: #ccc;
+      color:white;
+   }
+
+   #changeVehicle{
+      border: none;
+      color: black;
+      text-decoration: underline;
+      align-self: right;
+   }
+
+   silly{
+    display: flex;
+    flex-direction: row;
+    font-size: small;
+    align-items: center;
+   }
+
+
+   #details{
+    display: flex;
+    flex-direction: row;
+   }
+   #specs{
+    display: flex;
+    flex-direction: row;
+   }
+   #productName{
+    display: flex;
+    flex-direction: column;
+    font-size: 35pt;
+    align-items: center;
+   }
+
+   #prodSpec{
+    display: flex;
+    flex-direction: column;
+    font-size: 10pt;
+   }
+
+   #imgspec{
+    display: flex;
+    flex-direction: row; 
+   }
+
+   #rating{
+    font-size: 15pt;
+    list-style: none;
+   }
+
+   #greenCheck{
+    color: green;
+   }
+
+   *{
+    font-family: barlow condensed,Helvetica,sans-serif!important;
+    font-weight: 600!important;
+    letter-spacing: .006em!important;
+   }
+
