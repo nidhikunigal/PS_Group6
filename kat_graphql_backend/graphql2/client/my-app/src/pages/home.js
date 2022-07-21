@@ -1,7 +1,41 @@
-import React from 'react';
+import React, { useState } from "react";
+import { useQuery, useLazyQuery, gql } from "@apollo/client";
+import { getOperationAST } from "graphql";
+
+const QUERY_ALL_PARTS = gql` 
+  query allParts {
+    getParts {
+      Type
+      Product_Name
+      Company
+      Cost
+      Specifications
+      Technical_Details
+      General_Vehicle
+    }
+  }
+`;
+
+const QUERY_YEAR_MAKE_MODEL = gql`
+query GET_MAKES_MODELS($year: String, $make: String, $model: String) {
+
+   partByYear(Year: $year, Make: $make, Model: $model) {
+     Year
+     Make
+     Model
+     VehicleParts {
+     Product_Name
+     }
+   }
+ 
+ }
+ `;
 
 class Home extends React.Component{
     render(){
+      const [yearSearched, setYearSearched] = useState(" ");
+
+      const {data, loading} = useQuery(QUERY_YEAR_MAKE_MODEL);
         return(
             <div>
                 <h1>
@@ -46,17 +80,31 @@ class Home extends React.Component{
       <form id="form1">
          <h2>Find Parts For Your Vehicle</h2>
          <formOptions>
-            <select id="year">
-               <option value="0">year</option>
-               <option value="2022">2022</option>
-               <option value="2021">2021</option>
-               <option value="2020">2020</option>
-               <option value="2019">2019</option>
-               <option value="2018">2018</option>
-               <option value="2017">2017</option>
-               <option value="2016">2016</option>
-               <option value="2015">2015</option>
-            </select>
+               <div>
+                  <select id="year" onChange={(event)=> setYearSearched(event.target.value)} >
+                  
+                  <option value="0">year</option>
+                  <option value="2022">2022</option>
+                  <option value="2021">2021</option>
+                  <option value="2020">2020</option>
+                  <option value="2019">2019</option>
+                  <option value="2018">2018</option>
+                  <option value="2017">2017</option>
+                  <option value="2016">2016</option>
+                  <option value="2015">2015</option>
+                  </select>
+                  <button
+                     onClick={() => {
+                      getParts(
+                         {
+                           variables: {
+                              year: yearSearched,
+                           },
+                        });
+                     }}>
+                     {" "}fetch data </button> 
+
+                  </div>
             
             <select id="make">
                <option value="0">make</option>
