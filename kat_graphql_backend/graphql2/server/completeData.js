@@ -470,6 +470,9 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Limited",
+        Num_Reviews: 528,
+        Fitment_Percent: 11,
+
     },
     {
         Product_Name: "Bushwacker Pocket Style Fender Flares - 30048-02",
@@ -477,6 +480,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR",
+        Num_Reviews: 95,
+        Fitment_Percent: 2034,
     },
     {
         Product_Name: "Bushwacker Pocket Style Fender Flares - 30048-02",
@@ -484,6 +489,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR5",
+        Num_Reviews: 2465,
+        Fitment_Percent: 63,
     },
     {
         Product_Name: "Bushwacker Pocket Style Fender Flares - 30048-02",
@@ -491,6 +498,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR5",
+        Num_Reviews: 3112,
+        Fitment_Percent: 72,
     },
     {
         Product_Name: "Bushwacker Pocket Style Fender Flares - 30048-02",
@@ -498,6 +507,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR",
+        Num_Reviews: 1235,
+        Fitment_Percent: 46,
     },
     {
         Product_Name: "Bushwacker Pocket Style Fender Flares - 30048-02",
@@ -505,6 +516,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Limited",
+        Num_Reviews: 56,
+        Fitment_Percent: 43,
     },
     {
         Product_Name: "Bushwacker Pocket Style Fender Flares - 30048-02",
@@ -512,6 +525,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Trail",
+        Num_Reviews: 2597,
+        Fitment_Percent: 55,
     },
     {
         Product_Name: "Bushwacker Pocket Style Fender Flares - 30048-02",
@@ -519,6 +534,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR",
+        Num_Reviews: 2597,
+        Fitment_Percent: 55,
     },
     {
         Product_Name: "Bushwacker Pocket Style Fender Flares - 30048-02",
@@ -526,6 +543,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Limited",
+        Num_Reviews: 2780,
+        Fitment_Percent: 87,
     },
     {
         Product_Name: "Bushwacker Pocket Style Fender Flares - 30048-02",
@@ -533,6 +552,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR5",
+        Num_Reviews: 1272,
+        Fitment_Percent: 41,
     },
     {
         Product_Name: "Bushwacker Pocket Style Fender Flares - 30048-02",
@@ -540,6 +561,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR5",
+        Num_Reviews: 2614,
+        Fitment_Percent: 56,
     },
     {
         Product_Name: "Bushwacker Pocket Style Fender Flares - 30048-02",
@@ -547,6 +570,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR",
+        Num_Reviews: 704,
+        Fitment_Percent: 23,
     },
     {
         Product_Name: "Bushwacker Pocket Style Fender Flares - 30048-02",
@@ -554,6 +579,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Limited",
+        Num_Reviews: 1686,
+        Fitment_Percent: 6,
     },
     {
         Product_Name: "Bushwacker Pocket Style Fender Flares - 30048-02",
@@ -561,6 +588,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR",
+        Num_Reviews: 2600,
+        Fitment_Percent: 97,
     },
     {
         Product_Name: "Bushwacker Pocket Style Fender Flares - 30048-02",
@@ -568,6 +597,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR5",
+        Num_Reviews: 1670,
+        Fitment_Percent: 92,
     },
     {
         Product_Name: "Bushwacker Pocket Style Fender Flares - 30048-02",
@@ -575,6 +606,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Limited",
+        Num_Reviews: 3369,
+        Fitment_Percent: 3,
     },
     {
         Product_Name: "Bushwacker Pocket Style Fender Flares - 30048-02",
@@ -582,6 +615,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Limited",
+        Num_Reviews: 985,
+        Fitment_Percent: 42,
     },
     {
         Product_Name: "Bushwacker Pocket Style Fender Flares - 30048-02",
@@ -589,6 +624,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR",
+        Num_Reviews: 2778,
+        Fitment_Percent: 24,
     },
     {
         Product_Name: "Bushwacker Pocket Style Fender Flares - 30048-02",
@@ -596,6 +633,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR5",
+        Num_Reviews: 1219,
+        Fitment_Percent: 5,
     },
     {
         Product_Name: "Bushwacker Pocket Style Fender Flares - 30048-02",
@@ -603,6 +642,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR",
+        Num_Reviews: 3606,
+        Fitment_Percent: 29,
     },
     {
         Product_Name: "Bushwacker Pocket Style Fender Flares - 30048-02",
@@ -610,6 +651,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR5",
+        Num_Reviews: 3628,
+        Fitment_Percent: 76,
     },
     {
         Product_Name: "Bushwacker Pocket Style Fender Flares - 30048-02",
@@ -617,6 +660,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Limited",
+        Num_Reviews: 2783,
+        Fitment_Percent: 81,
     },
     {
         Product_Name: "T-Rex Upper Class Series Mesh Main Grille (Black) - 51951",
@@ -624,6 +669,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Limited",
+        Num_Reviews: 3989,
+        Fitment_Percent: 37,
     },
     {
         Product_Name: "T-Rex Upper Class Series Mesh Main Grille (Black) - 51951",
@@ -631,6 +678,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR",
+        Num_Reviews: 393,
+        Fitment_Percent: 37,
     },
     {
         Product_Name: "T-Rex Upper Class Series Mesh Main Grille (Black) - 51951",
@@ -638,6 +687,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR5",
+        Num_Reviews: 1637,
+        Fitment_Percent: 61,
     },
     {
         Product_Name: "T-Rex Upper Class Series Mesh Main Grille (Black) - 51951",
@@ -645,6 +696,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR5",
+        Num_Reviews: 2482,
+        Fitment_Percent: 63,
     },
     {
         Product_Name: "T-Rex Upper Class Series Mesh Main Grille (Black) - 51951",
@@ -652,6 +705,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR",
+        Num_Reviews: 1483,
+        Fitment_Percent: 35,
     },
     {
         Product_Name: "T-Rex Upper Class Series Mesh Main Grille (Black) - 51951",
@@ -659,6 +714,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Limited",
+        Num_Reviews: 3552,
+        Fitment_Percent: 68,
     },
     {
         Product_Name: "T-Rex Upper Class Series Mesh Main Grille (Black) - 51951",
@@ -666,6 +723,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Trail",
+        Num_Reviews: 3193,
+        Fitment_Percent: 45,
     },
     {
         Product_Name: "T-Rex Upper Class Series Mesh Main Grille (Black) - 51951",
@@ -673,6 +732,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR",
+        Num_Reviews: 594,
+        Fitment_Percent: 80,
     },
     {
         Product_Name: "T-Rex Upper Class Series Mesh Main Grille (Black) - 51951",
@@ -680,6 +741,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Limited",
+        Num_Reviews: 1213,
+        Fitment_Percent: 61,
     },
     {
         Product_Name: "T-Rex Upper Class Series Mesh Main Grille (Black) - 51951",
@@ -687,6 +750,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR5",
+        Num_Reviews: 851,
+        Fitment_Percent: 70,
     },
     {
         Product_Name: "T-Rex Upper Class Series Mesh Main Grille (Black) - 51951",
@@ -694,6 +759,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR5",
+        Num_Reviews: 338,
+        Fitment_Percent: 74,
     },
     {
         Product_Name: "T-Rex Upper Class Series Mesh Main Grille (Black) - 51951",
@@ -701,6 +768,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR",
+        Num_Reviews: 39,
+        Fitment_Percent: 92,
     },
     {
         Product_Name: "T-Rex Upper Class Series Mesh Main Grille (Black) - 51951",
@@ -708,6 +777,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Limited",
+        Num_Reviews: 3479,
+        Fitment_Percent: 92,
     },
     {
         Product_Name: "T-Rex Upper Class Series Mesh Main Grille (Black) - 51951",
@@ -715,6 +786,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR",
+        Num_Reviews: 2075,
+        Fitment_Percent: 99,
     },
     {
         Product_Name: "T-Rex Upper Class Series Mesh Main Grille (Black) - 51951",
@@ -722,6 +795,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR5",
+        Num_Reviews: 2838,
+        Fitment_Percent: 63,
     },
     {
         Product_Name: "T-Rex Upper Class Series Mesh Main Grille (Black) - 51951",
@@ -729,6 +804,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Limited",
+        Num_Reviews: 811,
+        Fitment_Percent: 65,
     },
     {
         Product_Name: "T-Rex Grilles Side Vent - 54001",
@@ -736,6 +813,8 @@ const Compatible_Vehicles = [
         Make: "Universal",
         Model: "Universal",
         Trim: "Universal",
+        Num_Reviews: 3338,
+        Fitment_Percent: 74,
     },
     {
         Product_Name: "Bronco Front Bumper",
@@ -743,6 +822,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Badlands",
+        Num_Reviews: 1927,
+        Fitment_Percent: 99,
     },
     {
         Product_Name: "Bronco Front Bumper",
@@ -750,6 +831,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Base",
+        Num_Reviews: 2787,
+        Fitment_Percent: 99,
     },
     {
         Product_Name: "Bronco Front Bumper",
@@ -757,6 +840,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Wildtrak",
+        Num_Reviews: 1212,
+        Fitment_Percent: 68,
     },
     {
         Product_Name: "Bronco Front Bumper",
@@ -764,6 +849,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Base",
+        Num_Reviews: 1367,
+        Fitment_Percent: 30,
     },
     {
         Product_Name: "Bronco Front Bumper",
@@ -771,6 +858,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Badlands",
+        Num_Reviews: 895,
+        Fitment_Percent: 41,
     },
     {
         Product_Name: "Bronco Front Bumper",
@@ -778,6 +867,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Wildtrak",
+        Num_Reviews: 3377,
+        Fitment_Percent: 98,
     },
     {
         Product_Name: "Bronco Winch Platform",
@@ -785,6 +876,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Badlands",
+        Num_Reviews: 1,
+        Fitment_Percent: 0,
     },
     {
         Product_Name: "Bronco Winch Platform",
@@ -792,6 +885,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Base",
+        Num_Reviews: 1557,
+        Fitment_Percent: 68,
     },
     {
         Product_Name: "Bronco Winch Platform",
@@ -799,6 +894,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Wildtrak",
+        Num_Reviews: 1906,
+        Fitment_Percent: 72,
     },
     {
         Product_Name: "Bronco Winch Platform",
@@ -806,6 +903,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Base",
+        Num_Reviews: 3872,
+        Fitment_Percent: 64,
     },
     {
         Product_Name: "Bronco Winch Platform",
@@ -813,6 +912,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Badlands",
+        Num_Reviews: 3459,
+        Fitment_Percent: 46,
     },
     {
         Product_Name: "Bronco Winch Platform",
@@ -820,6 +921,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Wildtrak",
+        Num_Reviews: 3749,
+        Fitment_Percent: 70,
     },
     {
         Product_Name: "Bronco Front Bumper Skid Plate",
@@ -827,6 +930,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Badlands",
+        Num_Reviews: 1055,
+        Fitment_Percent: 100,
     },
     {
         Product_Name: "Bronco Front Bumper Skid Plate",
@@ -834,6 +939,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Base",
+        Num_Reviews: 720,
+        Fitment_Percent: 89,
     },
     {
         Product_Name: "Bronco Front Bumper Skid Plate",
@@ -841,6 +948,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Wildtrak",
+        Num_Reviews: 408,
+        Fitment_Percent: 55,
     },
     {
         Product_Name: "Bronco Front Bumper Skid Plate",
@@ -848,6 +957,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Base",
+        Num_Reviews: 1552,
+        Fitment_Percent: 29,
     },
     {
         Product_Name: "Bronco Front Bumper Skid Plate",
@@ -855,6 +966,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Badlands",
+        Num_Reviews: 3799,
+        Fitment_Percent: 49,
     },
     {
         Product_Name: "Bronco Front Bumper Skid Plate",
@@ -862,6 +975,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Wildtrak",
+        Num_Reviews: 464,
+        Fitment_Percent: 52,
     },
     {
         Product_Name: "Bronco Rear Bumper",
@@ -869,6 +984,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Badlands",
+        Num_Reviews: 2284,
+        Fitment_Percent: 56,
     },
     {
         Product_Name: "Bronco Rear Bumper",
@@ -876,6 +993,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Base",
+        Num_Reviews: 1118,
+        Fitment_Percent: 78,
     },
     {
         Product_Name: "Bronco Rear Bumper",
@@ -883,6 +1002,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Wildtrak",
+        Num_Reviews: 2615,
+        Fitment_Percent: 30,
     },
     {
         Product_Name: "Bronco Rear Bumper",
@@ -890,6 +1011,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Base",
+        Num_Reviews: 3659,
+        Fitment_Percent: 59,
     },
     {
         Product_Name: "Bronco Rear Bumper",
@@ -897,6 +1020,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Badlands",
+        Num_Reviews: 1911,
+        Fitment_Percent: 58,
     },
     {
         Product_Name: "Bronco Rear Bumper",
@@ -904,6 +1029,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Wildtrak",
+        Num_Reviews: 1520,
+        Fitment_Percent: 72,
     },
     {
         Product_Name: "Tacoma Front Bumper",
@@ -911,6 +1038,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Limited",
+        Num_Reviews: 581,
+        Fitment_Percent: 60,
     },
     {
         Product_Name: "Tacoma Front Bumper",
@@ -918,6 +1047,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR",
+        Num_Reviews: 200,
+        Fitment_Percent: 88,
     },
     {
         Product_Name: "Tacoma Front Bumper",
@@ -925,6 +1056,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR5",
+        Num_Reviews: 2490,
+        Fitment_Percent: 84,
     },
     {
         Product_Name: "Tacoma Front Bumper",
@@ -932,6 +1065,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR5",
+        Num_Reviews: 1402,
+        Fitment_Percent: 89,
     },
     {
         Product_Name: "Tacoma Front Bumper",
@@ -939,6 +1074,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR",
+        Num_Reviews: 3686,
+        Fitment_Percent: 91,
     },
     {
         Product_Name: "Tacoma Front Bumper",
@@ -946,6 +1083,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Limited",
+        Num_Reviews: 2211,
+        Fitment_Percent: 68,
     },
     {
         Product_Name: "Tacoma Front Bumper",
@@ -953,6 +1092,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Trail",
+        Num_Reviews: 2213,
+        Fitment_Percent: 74,
     },
     {
         Product_Name: "Tacoma Front Bumper",
@@ -960,6 +1101,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR",
+        Num_Reviews: 2960,
+        Fitment_Percent: 70,
     },
     {
         Product_Name: "Tacoma Front Bumper",
@@ -967,6 +1110,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Limited",
+        Num_Reviews: 1216,
+        Fitment_Percent: 45,
     },
     {
         Product_Name: "Tacoma Front Bumper",
@@ -974,6 +1119,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR5",
+        Num_Reviews: 302,
+        Fitment_Percent: 90,
     },
     {
         Product_Name: "Tacoma Front Bumper",
@@ -981,6 +1128,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR5",
+        Num_Reviews: 3925,
+        Fitment_Percent: 99,
     },
     {
         Product_Name: "Tacoma Front Bumper",
@@ -988,6 +1137,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR",
+        Num_Reviews: 2034,
+        Fitment_Percent: 90,
     },
     {
         Product_Name: "Tacoma Front Bumper",
@@ -995,6 +1146,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Limited",
+        Num_Reviews: 2223,
+        Fitment_Percent: 63,
     },
     {
         Product_Name: "Tacoma Front Bumper",
@@ -1002,6 +1155,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR",
+        Num_Reviews: 2817,
+        Fitment_Percent: 80,
     },
     {
         Product_Name: "Tacoma Front Bumper",
@@ -1009,6 +1164,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR5",
+        Num_Reviews: 3524,
+        Fitment_Percent: 55,
     },
     {
         Product_Name: "Tacoma Front Bumper",
@@ -1016,6 +1173,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Limited",
+        Num_Reviews: 52,
+        Fitment_Percent: 70,
     },
     {
         Product_Name: "Tacoma Front Bumper",
@@ -1023,6 +1182,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Limited",
+        Num_Reviews: 926,
+        Fitment_Percent: 59,
     },
     {
         Product_Name: "Tacoma Front Bumper",
@@ -1030,6 +1191,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR",
+        Num_Reviews: 1578,
+        Fitment_Percent: 85,
     },
     {
         Product_Name: "Tacoma Front Bumper",
@@ -1037,6 +1200,9 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR5",
+        Num_Reviews: 585,
+        Fitment_Percent: 30,
+
     },
     {
         Product_Name: "Tacoma Front Bumper",
@@ -1044,6 +1210,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR",
+        Num_Reviews: 3043,
+        Fitment_Percent: 78,
     },
     {
         Product_Name: "Tacoma Front Bumper",
@@ -1051,6 +1219,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR5",
+        Num_Reviews: 3852,
+        Fitment_Percent: 18,
     },
     {
         Product_Name: "Tacoma Front Bumper",
@@ -1058,6 +1228,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Limited",
+        Num_Reviews: 314,
+        Fitment_Percent: 30,
     },
     {
         Product_Name: "Tacoma High Clearance Wings",
@@ -1065,6 +1237,8 @@ const Compatible_Vehicles = [
         Make: "Universal",
         Model: "Universal",
         Trim: "Universal",
+        Num_Reviews: 2696,
+        Fitment_Percent: 87,
     },
     {
         Product_Name: "Tacoma High Clearance Wings",
@@ -1072,6 +1246,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR5",
+        Num_Reviews: 3125,
+        Fitment_Percent: 64,
     },
     {
         Product_Name: "Tacoma High Clearance Wings",
@@ -1079,6 +1255,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR",
+        Num_Reviews: 3673,
+        Fitment_Percent: 68,
     },
     {
         Product_Name: "Tacoma High Clearance Wings",
@@ -1086,6 +1264,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Limited",
+        Num_Reviews: 247,
+        Fitment_Percent: 92
     },
     {
         Product_Name: "Tacoma High Clearance Wings",
@@ -1093,6 +1273,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Trail",
+        Num_Reviews: 10,
+        Fitment_Percent: 90,
     },
     {
         Product_Name: "Tacoma High Clearance Wings",
@@ -1100,6 +1282,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR",
+        Num_Reviews: 1109,
+        Fitment_Percent: 65,
     },
     {
         Product_Name: "Tacoma High Clearance Wings",
@@ -1107,6 +1291,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Limited",
+        Num_Reviews: 1428,
+        Fitment_Percent: 25,
     },
     {
         Product_Name: "Tacoma High Clearance Wings",
@@ -1114,6 +1300,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR5",
+        Num_Reviews: 25,
+        Fitment_Percent: 80,
     },
     {
         Product_Name: "Tacoma High Clearance Wings",
@@ -1121,6 +1309,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR5",
+        Num_Reviews: 947,
+        Fitment_Percent: 24,
     },
     {
         Product_Name: "Tacoma High Clearance Wings",
@@ -1128,6 +1318,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR",
+        Num_Reviews: 1515,
+        Fitment_Percent: 94,
     },
     {
         Product_Name: "Tacoma High Clearance Wings",
@@ -1135,6 +1327,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Limited",
+        Num_Reviews: 485,
+        Fitment_Percent: 87,
     },
     {
         Product_Name: "Tacoma High Clearance Wings",
@@ -1142,6 +1336,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR",
+        Num_Reviews: 3499,
+        Fitment_Percent: 91,
     },
     {
         Product_Name: "Tacoma High Clearance Wings",
@@ -1149,6 +1345,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR5",
+        Num_Reviews: 3181,
+        Fitment_Percent: 25,
     },
     {
         Product_Name: "Tacoma High Clearance Wings",
@@ -1156,6 +1354,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Limited",
+        Num_Reviews: 2592,
+        Fitment_Percent: 51,
     },
     {
         Product_Name: "Tacoma High Clearance Wings",
@@ -1163,6 +1363,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Limited",
+        Num_Reviews: 3843,
+        Fitment_Percent: 59,
     },
     {
         Product_Name: "Tacoma High Clearance Wings",
@@ -1170,6 +1372,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR",
+        Num_Reviews: 1601,
+        Fitment_Percent: 62,
     },
     {
         Product_Name: "Tacoma High Clearance Wings",
@@ -1177,6 +1381,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR5",
+        Num_Reviews: 278,
+        Fitment_Percent: 69,
     },
     {
         Product_Name: "Tacoma High Clearance Wings",
@@ -1184,6 +1390,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR",
+        Num_Reviews: 2824,
+        Fitment_Percent: 42,
     },
     {
         Product_Name: "Tacoma High Clearance Wings",
@@ -1191,6 +1399,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR5",
+        Num_Reviews: 3624,
+        Fitment_Percent: 78,
     },
     {
         Product_Name: "Tacoma High Clearance Wings",
@@ -1198,6 +1408,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Limited",
+        Num_Reviews: 3681,
+        Fitment_Percent: 41,
     },
     {
         Product_Name: "Pro Bolt-On V1 Front Bumper (Black)",
@@ -1205,6 +1417,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 3623,
+        Fitment_Percent: 87,
     },
     {
         Product_Name: "Pro Bolt-On V1 Front Bumper (Black)",
@@ -1212,6 +1426,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 357,
+        Fitment_Percent: 29,
     },
     {
         Product_Name: "Pro Bolt-On V1 Front Bumper (Black)",
@@ -1219,6 +1435,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "SSV",
+        Num_Reviews: 2868,
+        Fitment_Percent: 85,
     },
     {
         Product_Name: "Pro Bolt-On V1 Front Bumper (Black)",
@@ -1226,6 +1444,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 990,
+        Fitment_Percent: 60,
     },
     {
         Product_Name: "Pro Bolt-On V1 Front Bumper (Black)",
@@ -1233,6 +1453,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
+        Num_Reviews: 2579,
+        Fitment_Percent: 36,
     },
     {
         Product_Name: "Pro Bolt-On V1 Front Bumper (Black)",
@@ -1240,6 +1462,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 680,
+        Fitment_Percent: 69,
     },
     {
         Product_Name: "Pro Bolt-On V1 Front Bumper (Black)",
@@ -1247,6 +1471,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 3464,
+        Fitment_Percent: 92,
     },
     {
         Product_Name: "Pro Bolt-On V1 Front Bumper (Black)",
@@ -1254,6 +1480,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
+        Num_Reviews: 3863,
+        Fitment_Percent: 79,
     },
     {
         Product_Name: "Pro Bolt-On V1 Front Bumper (Black)",
@@ -1261,6 +1489,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 2803,
+        Fitment_Percent: 82,
     },
     {
         Product_Name: "Pro Bolt-On V1 Front Bumper (Black)",
@@ -1268,6 +1498,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "SSV",
+        Num_Reviews: 672,
+        Fitment_Percent: 88,
     },
     {
         Product_Name: "Pro Bolt-On V1 Front Bumper (Black)",
@@ -1275,6 +1507,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 1164,
+        Fitment_Percent: 90,
     },
     {
         Product_Name: "Pro Bolt-On V1 Front Bumper (Black)",
@@ -1282,6 +1516,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 2326,
+        Fitment_Percent: 95,
     },
     {
         Product_Name: "Pro Bolt-On V1 Front Bumper (Black)",
@@ -1289,6 +1525,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 1739,
+        Fitment_Percent: 45,
     },
     {
         Product_Name: "Pro Bolt-On V1 Front Bumper (Black)",
@@ -1296,6 +1534,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
+        Num_Reviews: 1276,
+        Fitment_Percent: 54,
     },
     {
         Product_Name: "Pro Bolt-On V1 Front Bumper (Black)",
@@ -1303,6 +1543,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 3615,
+        Fitment_Percent: 80,
     },
     {
         Product_Name: "Pro Bolt-On V1 Front Bumper (Black)",
@@ -1310,6 +1552,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 2617,
+        Fitment_Percent: 94,
     },
     {
         Product_Name: "Pro Bolt-On V1 Front Bumper (Black)",
@@ -1317,6 +1561,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 3549,
+        Fitment_Percent: 94,
     },
     {
         Product_Name: "Pro Bolt-On V1 Front Bumper (Black)",
@@ -1324,6 +1570,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "SSV",
+        Num_Reviews: 2966,
+        Fitment_Percent: 93,
     },
     {
         Product_Name: "Pro Bolt-On V1 Front Bumper (Black)",
@@ -1331,6 +1579,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 3225,
+        Fitment_Percent: 56,
     },
     {
         Product_Name: "Pro Bolt-On V1 Front Bumper (Black)",
@@ -1338,6 +1588,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 684,
+        Fitment_Percent: 88,
     },
     {
         Product_Name: "Pro Bolt-On V1 Front Bumper (Black)",
@@ -1345,6 +1597,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "SSV",
+        Num_Reviews: 3680,
+        Fitment_Percent: 62,
     },
     {
         Product_Name: "Pro Bolt-On V1 Front Bumper (Black)",
@@ -1352,6 +1606,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 831,
+        Fitment_Percent: 99,
     },
     {
         Product_Name: "Pro Bolt-On V1 Front Bumper (Black)",
@@ -1359,6 +1615,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
+        Num_Reviews: 2648,
+        Fitment_Percent: 77,
     },
     {
         Product_Name: "Pro Bolt-On V1 Front Bumper (Black)",
@@ -1366,6 +1624,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 536,
+        Fitment_Percent: 82, 
     },
     {
         Product_Name: "Premium Rear Bumper (Black)",
@@ -1373,6 +1633,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 756,
+        Fitment_Percent: 20,
     },
     {
         Product_Name: "Premium Rear Bumper (Black)",
@@ -1380,6 +1642,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 3652,
+        Fitment_Percent: 90,
     },
     {
         Product_Name: "Premium Rear Bumper (Black)",
@@ -1387,6 +1651,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "SSV",
+        Num_Reviews: 1029,
+        Fitment_Percent: 62,
     },
     {
         Product_Name: "Premium Rear Bumper (Black)",
@@ -1394,6 +1660,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Raptor",
+        Num_Reviews: 2907,
+        Fitment_Percent: 55,
     },
     {
         Product_Name: "Premium Rear Bumper (Black)",
@@ -1401,6 +1669,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 299,
+        Fitment_Percent: 59,
     },
     {
         Product_Name: "Premium Rear Bumper (Black)",
@@ -1408,6 +1678,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
+        Num_Reviews: 701,
+        Fitment_Percent: 96,
     },
     {
         Product_Name: "Premium Rear Bumper (Black)",
@@ -1415,6 +1687,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 512,
+        Fitment_Percent: 86,
     },
     {
         Product_Name: "Premium Rear Bumper (Black)",
@@ -1422,6 +1696,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Tremor",
+        Num_Reviews: 3038,
+        Fitment_Percent: 78,
     },
     {
         Product_Name: "Premium Rear Bumper (Black)",
@@ -1429,6 +1705,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 1754,
+        Fitment_Percent: 26,
     },
     {
         Product_Name: "Premium Rear Bumper (Black)",
@@ -1436,6 +1714,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 1649,
+        Fitment_Percent: 28,
     },
     {
         Product_Name: "Premium Rear Bumper (Black)",
@@ -1443,6 +1723,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "SSV",
+        Num_Reviews: 1605,
+        Fitment_Percent: 70,
     },
     {
         Product_Name: "Premium Rear Bumper (Black)",
@@ -1450,6 +1732,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Raptor",
+        Num_Reviews: 672,
+        Fitment_Percent: 86,
     },
     {
         Product_Name: "Premium Rear Bumper (Black)",
@@ -1457,6 +1741,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 1105,
+        Fitment_Percent: 86,
     },
     {
         Product_Name: "Premium Rear Bumper (Black)",
@@ -1464,6 +1750,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
+        Num_Reviews: 1114,
+        Fitment_Percent: 35,
     },
     {
         Product_Name: "Premium Rear Bumper (Black)",
@@ -1471,6 +1759,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 3190,
+        Fitment_Percent: 85,
     },
     {
         Product_Name: "Premium Rear Bumper (Black)",
@@ -1478,6 +1768,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Tremor",
+        Num_Reviews: 639,
+        Fitment_Percent: 76,
     },
     {
         Product_Name: "GEN2 XRC Front Bumper",
@@ -1485,6 +1777,8 @@ const Compatible_Vehicles = [
         Make: "Jeep",
         Model: "Rubicon",
         Trim: "Universal",
+        Num_Reviews: 3626,
+        Fitment_Percent: 80,
     },
     {
         Product_Name: "Offroad Rear Bumper with Drawer",
@@ -1492,6 +1786,8 @@ const Compatible_Vehicles = [
         Make: "Jeep",
         Model: "Gladiator",
         Trim: "Sport",
+        Num_Reviews: 3887,
+        Fitment_Percent: 90,
     },
     {
         Product_Name: "Offroad Rear Bumper with Drawer",
@@ -1499,6 +1795,8 @@ const Compatible_Vehicles = [
         Make: "Jeep",
         Model: "Gladiator",
         Trim: "Willys",
+        Num_Reviews: 2897,
+        Fitment_Percent: 23,
     },
     {
         Product_Name: "Offroad Rear Bumper with Drawer",
@@ -1506,6 +1804,8 @@ const Compatible_Vehicles = [
         Make: "Jeep",
         Model: "Gladiator",
         Trim: "Mojave",
+        Num_Reviews: 3860,
+        Fitment_Percent: 11,
     },
     {
         Product_Name: "Offroad Rear Bumper with Drawer",
@@ -1513,6 +1813,8 @@ const Compatible_Vehicles = [
         Make: "Jeep",
         Model: "Gladiator",
         Trim: "Overland",
+        Num_Reviews: 3954,
+        Fitment_Percent: 90,
     },
     {
         Product_Name: "Offroad Rear Bumper with Drawer",
@@ -1520,6 +1822,8 @@ const Compatible_Vehicles = [
         Make: "Jeep",
         Model: "Gladiator",
         Trim: "Rubicon",
+        Num_Reviews: 2192,
+        Fitment_Percent: 88,
     },
     {
         Product_Name: "Offroad Rear Bumper with Drawer",
@@ -1527,6 +1831,8 @@ const Compatible_Vehicles = [
         Make: "Jeep",
         Model: "Gladiator",
         Trim: "Sport",
+        Num_Reviews: 2134,
+        Fitment_Percent: 87,
     },
     {
         Product_Name: "Offroad Rear Bumper with Drawer",
@@ -1534,6 +1840,8 @@ const Compatible_Vehicles = [
         Make: "Jeep",
         Model: "Gladiator",
         Trim: "Rubicon",
+        Num_Reviews: 1150,
+        Fitment_Percent: 75,
     },
     {
         Product_Name: "Offroad Rear Bumper with Drawer",
@@ -1541,6 +1849,8 @@ const Compatible_Vehicles = [
         Make: "Jeep",
         Model: "Gladiator",
         Trim: "Overland",
+        Num_Reviews: 1249,
+        Fitment_Percent: 89,
     },
     {
         Product_Name: "Offroad Rear Bumper with Drawer",
@@ -1548,6 +1858,8 @@ const Compatible_Vehicles = [
         Make: "Jeep",
         Model: "Gladiator",
         Trim: "Willys",
+        Num_Reviews: 1463,
+        Fitment_Percent: 64,
     },
     {
         Product_Name: "Offroad Rear Bumper with Drawer",
@@ -1555,6 +1867,8 @@ const Compatible_Vehicles = [
         Make: "Jeep",
         Model: "Gladiator",
         Trim: "Mojave",
+        Num_Reviews: 2362,
+        Fitment_Percent: 67,
     },
     {
         Product_Name: "Offroad Rear Bumper with Drawer",
@@ -1562,6 +1876,8 @@ const Compatible_Vehicles = [
         Make: "Jeep",
         Model: "Gladiator",
         Trim: "Overland",
+        Num_Reviews: 3437,
+        Fitment_Percent: 81,
     },
     {
         Product_Name: "Offroad Rear Bumper with Drawer",
@@ -1569,6 +1885,8 @@ const Compatible_Vehicles = [
         Make: "Jeep",
         Model: "Gladiator",
         Trim: "Rubicon",
+        Num_Reviews: 1738,
+        Fitment_Percent: 52,
     },
     {
         Product_Name: "Offroad Rear Bumper with Drawer",
@@ -1576,6 +1894,8 @@ const Compatible_Vehicles = [
         Make: "Jeep",
         Model: "Gladiator",
         Trim: "Sport",
+        Num_Reviews: 2458,
+        Fitment_Percent: 92,
     },
     {
         Product_Name: "Offroad Rear Bumper with Drawer",
@@ -1583,6 +1903,8 @@ const Compatible_Vehicles = [
         Make: "Jeep",
         Model: "Gladiator",
         Trim: "Mojave",
+        Num_Reviews: 633,
+        Fitment_Percent: 80,
     },
     {
         Product_Name: "Offroad Rear Bumper with Drawer",
@@ -1590,6 +1912,8 @@ const Compatible_Vehicles = [
         Make: "Jeep",
         Model: "Gladiator",
         Trim: "Altitude",
+        Num_Reviews: 2223,
+        Fitment_Percent: 99,
     },
     {
         Product_Name: "Rubicon Rear Bumper",
@@ -1597,6 +1921,8 @@ const Compatible_Vehicles = [
         Make: "Jeep",
         Model: "Rubicon",
         Trim: "Universal",
+        Num_Reviews: 3656,
+        Fitment_Percent: 78,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T",
@@ -1604,6 +1930,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 1817,
+        Fitment_Percent: 52, 
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T",
@@ -1611,6 +1939,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
+        Num_Reviews: 3546,
+        Fitment_Percent: 88,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T",
@@ -1618,6 +1948,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 226,
+        Fitment_Percent: 23,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T",
@@ -1625,6 +1957,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "SSV",
+        Num_Reviews: 3604,
+        Fitment_Percent: 47, 
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T",
@@ -1632,6 +1966,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 518,
+        Fitment_Percent: 99,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T",
@@ -1639,6 +1975,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 3378,
+        Fitment_Percent: 54,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T",
@@ -1646,6 +1984,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 2606,
+        Fitment_Percent: 81,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T",
@@ -1653,6 +1993,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
+        Num_Reviews: 3871,
+        Fitment_Percent: 80,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T",
@@ -1660,6 +2002,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 730,
+        Fitment_Percent: 81,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T",
@@ -1667,6 +2011,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 572,
+        Fitment_Percent: 90,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T",
@@ -1674,6 +2020,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 783,
+        Fitment_Percent: 60,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T",
@@ -1681,6 +2029,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "SSV",
+        Num_Reviews: 3778,
+        Fitment_Percent: 41,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T",
@@ -1688,6 +2038,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 482,
+        Fitment_Percent: 61, 
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T",
@@ -1695,6 +2047,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 3865,
+        Fitment_Percent: 98,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T",
@@ -1702,6 +2056,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
+        Num_Reviews: 1858,
+        Fitment_Percent: 37,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T",
@@ -1709,6 +2065,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 3993,
+        Fitment_Percent: 44,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T",
@@ -1716,6 +2074,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 2000,
+        Fitment_Percent: 89,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T",
@@ -1723,6 +2083,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 113,
+        Fitment_Percent: 99,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T",
@@ -1730,6 +2092,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 3,
+        Fitment_Percent: 68,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T",
@@ -1737,6 +2101,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
+        Num_Reviews: 902,
+        Fitment_Percent: 72,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T",
@@ -1744,6 +2110,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 3323,
+        Fitment_Percent: 89,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T",
@@ -1751,6 +2119,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "SSV",
+        Num_Reviews: 1961,
+        Fitment_Percent: 81,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T",
@@ -1758,6 +2128,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 892,
+        Fitment_Percent: 62,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T",
@@ -1765,6 +2137,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 345,
+        Fitment_Percent: 75,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T",
@@ -1772,6 +2146,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 764,
+        Fitment_Percent: 90,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T",
@@ -1779,6 +2155,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 1562,
+        Fitment_Percent: 41,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T",
@@ -1786,6 +2164,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
+        Num_Reviews: 100,
+        Fitment_Percent: 98,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T",
@@ -1793,6 +2173,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "SSV",
+        Num_Reviews: 445,
+        Fitment_Percent: 85,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T",
@@ -1800,6 +2182,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 1769,
+        Fitment_Percent: 44,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T",
@@ -1807,6 +2191,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 125,
+        Fitment_Percent: 85,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T",
@@ -1814,6 +2200,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 3525,
+        Fitment_Percent: 63,
     },
     {
         Product_Name: "Pro Comp 5.5' Stage I Lift Kit with PRO-M Shocks - K1097M",
@@ -1821,6 +2209,8 @@ const Compatible_Vehicles = [
         Make: "Universal",
         Model: "Universal",
         Trim: "Universal",
+        Num_Reviews: 3847,
+        Fitment_Percent: 70,
     },
 
     {
@@ -1829,6 +2219,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Laramie",
+        Num_Reviews: 3347,
+        Fitment_Percent: 68,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 Lift Kit with PRO-X Shocks - K2103T",
@@ -1836,6 +2228,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Tradesman",
+        Num_Reviews: 1892,
+        Fitment_Percent: 14,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 Lift Kit with PRO-X Shocks - K2103T",
@@ -1843,6 +2237,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "HFE",
+        Num_Reviews: 2317,
+        Fitment_Percent: 88,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 Lift Kit with PRO-X Shocks - K2103T",
@@ -1850,6 +2246,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Rebel",
+        Num_Reviews: 1734,
+        Fitment_Percent: 44,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 Lift Kit with PRO-X Shocks - K2103T",
@@ -1857,6 +2255,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Limited",
+        Num_Reviews: 1234,
+        Fitment_Percent: 34,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 Lift Kit with PRO-X Shocks - K2103T",
@@ -1864,6 +2264,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "TRX",
+        Num_Reviews: 34,
+        Fitment_Percent: 97,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 Lift Kit with PRO-X Shocks - K2103T",
@@ -1871,6 +2273,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Longhorn",
+        Num_Reviews: 76,
+        Fitment_Percent: 2,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 Lift Kit with PRO-X Shocks - K2103T",
@@ -1878,6 +2282,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Rebel",
+        Num_Reviews: 1010,
+        Fitment_Percent: 80,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 Lift Kit with PRO-X Shocks - K2103T",
@@ -1885,6 +2291,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Limited",
+        Num_Reviews: 83,
+        Fitment_Percent: 52,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 Lift Kit with PRO-X Shocks - K2103T",
@@ -1892,6 +2300,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Laramie",
+        Num_Reviews: 702,
+        Fitment_Percent: 67,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 Lift Kit with PRO-X Shocks - K2103T",
@@ -1899,6 +2309,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Tradesman",
+        Num_Reviews: 872,
+        Fitment_Percent: 90,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 Lift Kit with PRO-X Shocks - K2103T",
@@ -1906,6 +2318,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "HFE",
+        Num_Reviews: 2611,
+        Fitment_Percent: 70,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 Lift Kit with PRO-X Shocks - K2103T",
@@ -1913,6 +2327,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Limited",
+        Num_Reviews: 65,
+        Fitment_Percent: 45,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 Lift Kit with PRO-X Shocks - K2103T",
@@ -1920,6 +2336,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Rebel",
+        Num_Reviews: 871,
+        Fitment_Percent: 50,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 Lift Kit with PRO-X Shocks - K2103T",
@@ -1927,6 +2345,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Tradesman",
+        Num_Reviews: 3333,
+        Fitment_Percent: 23,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 Lift Kit with PRO-X Shocks - K2103T",
@@ -1934,6 +2354,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Laramie",
+        Num_Reviews: 4365,
+        Fitment_Percent: 45,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 Lift Kit with PRO-X Shocks - K2103T",
@@ -1941,6 +2363,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "HFE",
+        Num_Reviews: 2456,
+        Fitment_Percent: 54,
     },
     {
         Product_Name: "Rubicon Express 2.5 Standard Coil Lift Kit with FOX Performance Shocks - RE7141FP",
@@ -1948,6 +2372,8 @@ const Compatible_Vehicles = [
         Make: "Jeep",
         Model: "Rubicon",
         Trim: "Universal",
+        Num_Reviews: 121,
+        Fitment_Percent: 38,
     },
     {
         Product_Name: "Rubicon Express 2.5 Suspension Lift Kit with Monotube Shocks - RE7141M",
@@ -1955,6 +2381,8 @@ const Compatible_Vehicles = [
         Make: "Jeep",
         Model: "Wrangler",
         Trim: "Universal",
+        Num_Reviews: 903,
+        Fitment_Percent: 79,
     },
 
     {
@@ -1963,6 +2391,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 1008,
+        Fitment_Percent: 34,
     },
     {
         Product_Name: "Rough Country 6 Ford Suspension Lift Kit - 58730",
@@ -1970,6 +2400,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 569,
+        Fitment_Percent: 23,
     },
     {
         Product_Name: "Rough Country 6 Ford Suspension Lift Kit - 58730",
@@ -1977,6 +2409,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "SSV",
+        Num_Reviews: 1273,
+        Fitment_Percent: 87,
     },
     {
         Product_Name: "Rough Country 6 Ford Suspension Lift Kit - 58730",
@@ -1984,6 +2418,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Raptor",
+        Num_Reviews: 1937,
+        Fitment_Percent: 71,
     },
     {
         Product_Name: "Rough Country 6 Ford Suspension Lift Kit - 58730",
@@ -1991,6 +2427,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 92,
+        Fitment_Percent: 67,
     },
     {
         Product_Name: "Rough Country 6 Ford Suspension Lift Kit - 58730",
@@ -1998,6 +2436,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
+        Num_Reviews: 4352,
+        Fitment_Percent: 90,
     },
     {
         Product_Name: "Rough Country 6 Ford Suspension Lift Kit - 58730",
@@ -2005,6 +2445,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 816,
+        Fitment_Percent: 45,
     },
     {
         Product_Name: "Rough Country 6 Ford Suspension Lift Kit - 58730",
@@ -2012,6 +2454,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Tremor",
+        Num_Reviews: 776,
+        Fitment_Percent: 89,
     },
     {
         Product_Name: "Rough Country 6 Ford Suspension Lift Kit - 58730",
@@ -2019,6 +2463,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 3004,
+        Fitment_Percent: 79,
     },
     {
         Product_Name: "Rough Country 6 Ford Suspension Lift Kit - 58730",
@@ -2026,6 +2472,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 287,
+        Fitment_Percent: 81,
     },
     {
         Product_Name: "Rough Country 6 Ford Suspension Lift Kit - 58730",
@@ -2033,6 +2481,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "SSV",
+        Num_Reviews: 2435,
+        Fitment_Percent: 74,
     },
     {
         Product_Name: "Rough Country 6 Ford Suspension Lift Kit - 58730",
@@ -2040,6 +2490,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 1112,
+        Fitment_Percent: 7,
     },
     {
         Product_Name: "Rough Country 6 Ford Suspension Lift Kit - 58730",
@@ -2047,6 +2499,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
+        Num_Reviews: 1527,
+        Fitment_Percent: 17,
     },
     {
         Product_Name: "Rough Country 6 Ford Suspension Lift Kit - 58730",
@@ -2054,6 +2508,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 3970,
+        Fitment_Percent: 83,
     },
     {
         Product_Name: "Rough Country 6 Ford Suspension Lift Kit - 58730",
@@ -2061,6 +2517,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Tremor",
+        Num_Reviews: 1606,
+        Fitment_Percent: 72,
     },
     {
         Product_Name: "Rough Country 3.5 GM Suspension with Vertex Shocks - 19450",
@@ -2068,6 +2526,8 @@ const Compatible_Vehicles = [
         Make: "Chevrolet",
         Model: "Silverado",
         Trim: "Universal",
+        Num_Reviews: 3431,
+        Fitment_Percent: 71,
     },
 
     {
@@ -2076,6 +2536,8 @@ const Compatible_Vehicles = [
         Make: "Lexus",
         Model: "GX460",
         Trim: "Premium",
+        Num_Reviews: 3314,
+        Fitment_Percent: 36,
     },
     {
         Product_Name: "ICON Vehicle Dynamics Lexus GX460 0-3.5 Inch Stage 2 Suspension System with Tubular UCAs - K53182T",
@@ -2083,6 +2545,8 @@ const Compatible_Vehicles = [
         Make: "Lexus",
         Model: "GX460",
         Trim: "Luxury",
+        Num_Reviews: 3646,
+        Fitment_Percent: 76,
     },
     {
         Product_Name: "ICON Vehicle Dynamics Lexus GX460 0-3.5 Inch Stage 2 Suspension System with Tubular UCAs - K53182T",
@@ -2090,6 +2554,8 @@ const Compatible_Vehicles = [
         Make: "Lexus",
         Model: "GX460",
         Trim: "Base",
+        Num_Reviews: 3532,
+        Fitment_Percent: 28,
     },
     {
         Product_Name: "ICON Vehicle Dynamics Lexus GX460 0-3.5 Inch Stage 2 Suspension System with Tubular UCAs - K53182T",
@@ -2097,6 +2563,8 @@ const Compatible_Vehicles = [
         Make: "Lexus",
         Model: "GX460",
         Trim: "Base",
+        Num_Reviews: 1073,
+        Fitment_Percent: 25,
     },
     {
         Product_Name: "ICON Vehicle Dynamics Lexus GX460 0-3.5 Inch Stage 2 Suspension System with Tubular UCAs - K53182T",
@@ -2104,6 +2572,8 @@ const Compatible_Vehicles = [
         Make: "Lexus",
         Model: "GX460",
         Trim: "Luxury",
+        Num_Reviews: 1626,
+        Fitment_Percent: 15,
     },
     {
         Product_Name: "ICON Vehicle Dynamics Lexus GX460 0-3.5 Inch Stage 2 Suspension System with Tubular UCAs - K53182T",
@@ -2111,6 +2581,8 @@ const Compatible_Vehicles = [
         Make: "Lexus",
         Model: "GX460",
         Trim: "Premium",
+        Num_Reviews: 1390,
+        Fitment_Percent: 68,
     },
     {
         Product_Name: "ICON Vehicle Dynamics Lexus GX460 0-3.5 Inch Stage 2 Suspension System with Tubular UCAs - K53182T",
@@ -2118,6 +2590,8 @@ const Compatible_Vehicles = [
         Make: "Lexus",
         Model: "GX460",
         Trim: "Base",
+        Num_Reviews: 2200,
+        Fitment_Percent: 72,
     },
     {
         Product_Name: "ICON Vehicle Dynamics Lexus GX460 0-3.5 Inch Stage 2 Suspension System with Tubular UCAs - K53182T",
@@ -2125,6 +2599,8 @@ const Compatible_Vehicles = [
         Make: "Lexus",
         Model: "GX460",
         Trim: "Luxury",
+        Num_Reviews: 3237,
+        Fitment_Percent: 34,
     },
     {
         Product_Name: "ICON Vehicle Dynamics Lexus GX460 0-3.5 Inch Stage 2 Suspension System with Tubular UCAs - K53182T",
@@ -2132,6 +2608,8 @@ const Compatible_Vehicles = [
         Make: "Lexus",
         Model: "GX460",
         Trim: "Premium",
+        Num_Reviews: 2916,
+        Fitment_Percent: 38,
     },
     {
         Product_Name: "ICON Vehicle Dynamics Lexus GX460 0-3.5 Inch Stage 2 Suspension System with Tubular UCAs - K53182T",
@@ -2139,6 +2617,8 @@ const Compatible_Vehicles = [
         Make: "Lexus",
         Model: "GX460",
         Trim: "Premium",
+        Num_Reviews: 3191,
+        Fitment_Percent: 12,
     },
     {
         Product_Name: "ICON Vehicle Dynamics Lexus GX460 0-3.5 Inch Stage 2 Suspension System with Tubular UCAs - K53182T",
@@ -2146,6 +2626,8 @@ const Compatible_Vehicles = [
         Make: "Lexus",
         Model: "GX460",
         Trim: "Luxury",
+        Num_Reviews: 430,
+        Fitment_Percent: 3,
     },
     {
         Product_Name: "ICON Vehicle Dynamics Lexus GX460 0-3.5 Inch Stage 2 Suspension System with Tubular UCAs - K53182T",
@@ -2153,6 +2635,8 @@ const Compatible_Vehicles = [
         Make: "Lexus",
         Model: "GX460",
         Trim: "Base",
+        Num_Reviews: 93,
+        Fitment_Percent: 2760,
     },
     {
         Product_Name: "ICON Vehicle Dynamics Lexus GX460 0-3.5 Inch Stage 2 Suspension System with Tubular UCAs - K53182T",
@@ -2160,6 +2644,8 @@ const Compatible_Vehicles = [
         Make: "Lexus",
         Model: "GX460",
         Trim: "Base",
+        Num_Reviews: 1739,
+        Fitment_Percent: 8,
     },
     {
         Product_Name: "ICON Vehicle Dynamics Lexus GX460 0-3.5 Inch Stage 2 Suspension System with Tubular UCAs - K53182T",
@@ -2167,6 +2653,8 @@ const Compatible_Vehicles = [
         Make: "Lexus",
         Model: "GX460",
         Trim: "Luxury",
+        Num_Reviews: 1739,
+        Fitment_Percent: 68,
     },
     {
         Product_Name: "ICON Vehicle Dynamics Lexus GX460 0-3.5 Inch Stage 2 Suspension System with Tubular UCAs - K53182T",
@@ -2174,6 +2662,8 @@ const Compatible_Vehicles = [
         Make: "Lexus",
         Model: "GX460",
         Trim: "Premium",
+        Num_Reviews: 2724,
+        Fitment_Percent: 86,
     },
     {
         Product_Name: "ICON Vehicle Dynamics Lexus GX460 0-3.5 Inch Stage 2 Suspension System with Tubular UCAs - K53182T",
@@ -2181,6 +2671,8 @@ const Compatible_Vehicles = [
         Make: "Lexus",
         Model: "GX460",
         Trim: "Base",
+        Num_Reviews: 836,
+        Fitment_Percent: 3,
     },
     {
         Product_Name: "ICON Vehicle Dynamics Lexus GX460 0-3.5 Inch Stage 2 Suspension System with Tubular UCAs - K53182T",
@@ -2188,6 +2680,8 @@ const Compatible_Vehicles = [
         Make: "Lexus",
         Model: "GX460",
         Trim: "Luxury",
+        Num_Reviews: 3,
+        Fitment_Percent: 46,
     },
     {
         Product_Name: "ICON Vehicle Dynamics Lexus GX460 0-3.5 Inch Stage 2 Suspension System with Tubular UCAs - K53182T",
@@ -2195,6 +2689,8 @@ const Compatible_Vehicles = [
         Make: "Lexus",
         Model: "GX460",
         Trim: "Premium",
+        Num_Reviews: 499,
+        Fitment_Percent: 93,
     },
     {
         Product_Name: "ICON Vehicle Dynamics Lexus GX460 0-3.5 Inch Stage 2 Suspension System with Tubular UCAs - K53182T",
@@ -2202,6 +2698,8 @@ const Compatible_Vehicles = [
         Make: "Lexus",
         Model: "GX460",
         Trim: "Base",
+        Num_Reviews: 3310,
+        Fitment_Percent: 95,
     },
     {
         Product_Name: "ICON Vehicle Dynamics Lexus GX460 0-3.5 Inch Stage 2 Suspension System with Tubular UCAs - K53182T",
@@ -2209,6 +2707,8 @@ const Compatible_Vehicles = [
         Make: "Lexus",
         Model: "GX460",
         Trim: "Luxury",
+        Num_Reviews: 1578,
+        Fitment_Percent: 89,
     },
     {
         Product_Name: "ICON Vehicle Dynamics Lexus GX460 0-3.5 Inch Stage 2 Suspension System with Tubular UCAs - K53182T",
@@ -2216,6 +2716,8 @@ const Compatible_Vehicles = [
         Make: "Lexus",
         Model: "GX460",
         Trim: "Premium",
+        Num_Reviews: 2906,
+        Fitment_Percent: 22,
     },
     {
         Product_Name: "ICON Vehicle Dynamics Lexus GX460 0-3.5 Inch Stage 2 Suspension System with Tubular UCAs - K53182T",
@@ -2223,6 +2725,8 @@ const Compatible_Vehicles = [
         Make: "Lexus",
         Model: "GX460",
         Trim: "Base",
+        Num_Reviews: 32,
+        Fitment_Percent: 30,
     },
     {
         Product_Name: "ICON Vehicle Dynamics Lexus GX460 0-3.5 Inch Stage 2 Suspension System with Tubular UCAs - K53182T",
@@ -2230,6 +2734,8 @@ const Compatible_Vehicles = [
         Make: "Lexus",
         Model: "GX460",
         Trim: "Luxury",
+        Num_Reviews: 1741,
+        Fitment_Percent: 61,
     },
     {
         Product_Name: "ICON Vehicle Dynamics Lexus GX460 0-3.5 Inch Stage 2 Suspension System with Tubular UCAs - K53182T",
@@ -2237,6 +2743,8 @@ const Compatible_Vehicles = [
         Make: "Lexus",
         Model: "GX460",
         Trim: "Premium",
+        Num_Reviews: 133,
+        Fitment_Percent: 41,
     },
     {
         Product_Name: "ICON Vehicle Dynamics Lexus GX460 0-3.5 Inch Stage 2 Suspension System with Tubular UCAs - K53182T",
@@ -2244,6 +2752,8 @@ const Compatible_Vehicles = [
         Make: "Lexus",
         Model: "GX460",
         Trim: "Base",
+        Num_Reviews: 3712,
+        Fitment_Percent: 24,
     },
     {
         Product_Name: "ICON Vehicle Dynamics Lexus GX460 0-3.5 Inch Stage 2 Suspension System with Tubular UCAs - K53182T",
@@ -2251,6 +2761,8 @@ const Compatible_Vehicles = [
         Make: "Lexus",
         Model: "GX460",
         Trim: "Premium",
+        Num_Reviews: 2633,
+        Fitment_Percent: 29,
     },
     {
         Product_Name: "ICON Vehicle Dynamics Lexus GX460 0-3.5 Inch Stage 2 Suspension System with Tubular UCAs - K53182T",
@@ -2258,6 +2770,8 @@ const Compatible_Vehicles = [
         Make: "Lexus",
         Model: "GX460",
         Trim: "Luxury",
+        Num_Reviews: 2780,
+        Fitment_Percent: 9,
     },
     {
         Product_Name: "ICON Vehicle Dynamics Lexus GX460 0-3.5 Inch Stage 2 Suspension System with Tubular UCAs - K53182T",
@@ -2265,6 +2779,8 @@ const Compatible_Vehicles = [
         Make: "Lexus",
         Model: "GX460",
         Trim: "Base",
+        Num_Reviews: 919,
+        Fitment_Percent: 84,
     },
     {
         Product_Name: "ICON Vehicle Dynamics Lexus GX460 0-3.5 Inch Stage 2 Suspension System with Tubular UCAs - K53182T",
@@ -2272,6 +2788,8 @@ const Compatible_Vehicles = [
         Make: "Lexus",
         Model: "GX460",
         Trim: "Premium",
+        Num_Reviews: 3912,
+        Fitment_Percent: 42,
     },
     {
         Product_Name: "ICON Vehicle Dynamics Lexus GX460 0-3.5 Inch Stage 2 Suspension System with Tubular UCAs - K53182T",
@@ -2279,6 +2797,8 @@ const Compatible_Vehicles = [
         Make: "Lexus",
         Model: "GX460",
         Trim: "Base",
+        Num_Reviews: 2702,
+        Fitment_Percent: 80,
     },
     {
         Product_Name: "ICON Vehicle Dynamics Lexus GX460 0-3.5 Inch Stage 2 Suspension System with Tubular UCAs - K53182T",
@@ -2286,6 +2806,8 @@ const Compatible_Vehicles = [
         Make: "Lexus",
         Model: "GX460",
         Trim: "Premium",
+        Num_Reviews: 2744,
+        Fitment_Percent: 65,
     },
     {
         Product_Name: "ICON Vehicle Dynamics Lexus GX460 0-3.5 Inch Stage 2 Suspension System with Tubular UCAs - K53182T",
@@ -2293,6 +2815,8 @@ const Compatible_Vehicles = [
         Make: "Lexus",
         Model: "GX460",
         Trim: "Base",
+        Num_Reviews: 1187,
+        Fitment_Percent: 35,
     },
     {
         Product_Name: "ICON Vehicle Dynamics Lexus GX460 0-3.5 Inch Stage 2 Suspension System with Tubular UCAs - K53182T",
@@ -2300,6 +2824,8 @@ const Compatible_Vehicles = [
         Make: "Lexus",
         Model: "GX460",
         Trim: "Premium",
+        Num_Reviews: 2929,
+        Fitment_Percent: 80,
     },
     {
         Product_Name: "ICON Vehicle Dynamics Lexus GX460 0-3.5 Inch Stage 2 Suspension System with Tubular UCAs - K53182T",
@@ -2307,6 +2833,8 @@ const Compatible_Vehicles = [
         Make: "Lexus",
         Model: "GX460",
         Trim: "Base",
+        Num_Reviews: 1294,
+        Fitment_Percent: 14,
     },
     {
         Product_Name: "ICON Vehicle Dynamics Lexus GX460 0-3.5 Inch Stage 2 Suspension System with Tubular UCAs - K53182T",
@@ -2314,6 +2842,8 @@ const Compatible_Vehicles = [
         Make: "Lexus",
         Model: "GX460",
         Trim: "Premium",
+        Num_Reviews: 1192,
+        Fitment_Percent: 93,
     },
 
     {
@@ -2322,6 +2852,8 @@ const Compatible_Vehicles = [
         Make: "Universal",
         Model: "Universal",
         Trim: "Universal",
+        Num_Reviews: 1525,
+        Fitment_Percent: 65,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2329,6 +2861,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Trail",
+        Num_Reviews: 761,
+        Fitment_Percent: 94,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2336,6 +2870,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "SR5",
+        Num_Reviews: 618,
+        Fitment_Percent: 47,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2343,6 +2879,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Nightshade",
+        Num_Reviews: 1110,
+        Fitment_Percent: 30,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2350,13 +2888,17 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Limited",
+        Num_Reviews: 1020,
+        Fitment_Percent: 63,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
         Year: "2022",
         Make: "Toyota",
         Model: "4Runner",
-        Trim: "Venture",
+        Trim: "Venture", 
+        Num_Reviews: 1230,
+        Fitment_Percent: 86,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2364,6 +2906,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Venture",
+        Num_Reviews: 2376,
+        Fitment_Percent: 31,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2371,6 +2915,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "SR5",
+        Num_Reviews: 1507,
+        Fitment_Percent: 95,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2378,6 +2924,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Nightshade",
+        Num_Reviews: 866,
+        Fitment_Percent: 31,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2385,6 +2933,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Limited",
+        Num_Reviews: 2364,
+        Fitment_Percent: 77,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2392,6 +2942,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Trail",
+        Num_Reviews: 746,
+        Fitment_Percent: 47,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2399,6 +2951,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "SR5",
+        Num_Reviews: 1766,
+        Fitment_Percent: 64,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2406,6 +2960,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Limited",
+        Num_Reviews: 2552,
+        Fitment_Percent: 83,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2413,6 +2969,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Nightshade",
+        Num_Reviews: 2909,
+        Fitment_Percent: 37,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2420,6 +2978,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Venture",
+        Num_Reviews: 72,
+        Fitment_Percent: 7,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2427,6 +2987,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Limited",
+        Num_Reviews: 922,
+        Fitment_Percent: 10,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2434,6 +2996,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "SR5",
+        Num_Reviews: 113,
+        Fitment_Percent: 78,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2441,6 +3005,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "SR5",
+        Num_Reviews: 3587,
+        Fitment_Percent: 55,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2448,6 +3014,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Limited",
+        Num_Reviews: 604,
+        Fitment_Percent: 15,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2455,6 +3023,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Limited",
+        Num_Reviews: 3968,
+        Fitment_Percent: 24,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2462,6 +3032,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "SR5",
+        Num_Reviews: 2666,
+        Fitment_Percent: 33,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2469,6 +3041,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Limited",
+        Num_Reviews: 2244,
+        Fitment_Percent: 56,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2476,6 +3050,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "SR5",
+        Num_Reviews: 3819,
+        Fitment_Percent: 86,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2483,6 +3059,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Trail",
+        Num_Reviews: 1166,
+        Fitment_Percent: 42,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2490,6 +3068,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Limited",
+        Num_Reviews: 1893,
+        Fitment_Percent: 55,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2497,6 +3077,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "SR5",
+        Num_Reviews: 2415,
+        Fitment_Percent: 18,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2504,6 +3086,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Trail",
+        Num_Reviews: 1804,
+        Fitment_Percent: 77,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2511,6 +3095,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Limited",
+        Num_Reviews: 3391,
+        Fitment_Percent: 14,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2518,6 +3104,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "SR5",
+        Num_Reviews: 192,
+        Fitment_Percent: 72,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2525,6 +3113,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Trail",
+        Num_Reviews: 3460,
+        Fitment_Percent: 43,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2532,6 +3122,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Limited",
+        Num_Reviews: 1064,
+        Fitment_Percent: 20,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2539,6 +3131,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "SR5",
+        Num_Reviews: 1897,
+        Fitment_Percent: 47,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2546,6 +3140,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Trail",
+        Num_Reviews: 812,
+        Fitment_Percent: 82,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2553,6 +3149,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Limited",
+        Num_Reviews: 518,
+        Fitment_Percent: 53,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2560,6 +3158,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "SR5",
+        Num_Reviews: 3810,
+        Fitment_Percent: 5,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2567,6 +3167,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Trail",
+        Num_Reviews: 1040,
+        Fitment_Percent: 77,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2574,6 +3176,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Limited",
+        Num_Reviews: 83,
+        Fitment_Percent: 3970,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2581,6 +3185,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "SR5",
+        Num_Reviews: 582,
+        Fitment_Percent: 63,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2588,6 +3194,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Trail",
+        Num_Reviews: 97,
+        Fitment_Percent: 29,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2595,6 +3203,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "SR5",
+        Num_Reviews: 3457,
+        Fitment_Percent: 97,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2602,6 +3212,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Limited",
+        Num_Reviews: 3027,
+        Fitment_Percent: 78,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -2609,6 +3221,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Trail",
+        Num_Reviews: 3247,
+        Fitment_Percent: 44,
     },
     {
         Product_Name: "4 Wheel Parts Factory S-Series Wheel, 20x9 with 8 on 180 Bolt Pattern - Black Milled - 8018-298950",
@@ -2616,6 +3230,8 @@ const Compatible_Vehicles = [
         Make: "Universal",
         Model: "Universal",
         Trim: "Universal",
+        Num_Reviews: 1900,
+        Fitment_Percent: 91,
     },
     {
         Product_Name: "4 Wheel Parts T-Series Split Spoke Design Bronze with Black Lip Wheels",
@@ -2623,6 +3239,8 @@ const Compatible_Vehicles = [
         Make: "Universal",
         Model: "Universal",
         Trim: "Universal",
+        Num_Reviews: 358,
+        Fitment_Percent: 66,
     },
     {
         Product_Name: "Method Race Wheels 305 NV, 17x8.5 with 6 on 135 Bolt Pattern - Titanium / Black - ZMR30578516800",
@@ -2630,6 +3248,8 @@ const Compatible_Vehicles = [
         Make: "Universal",
         Model: "Universal",
         Trim: "Universal",
+        Num_Reviews: 694,
+        Fitment_Percent: 52,
     },
     {
         Product_Name: "Pro Comp 72 Series Axis, 17x9 Wheel with 6x5.5 Bolt Pattern - Satin Black Milled - 5172-7939",
@@ -2637,6 +3257,8 @@ const Compatible_Vehicles = [
         Make: "Universal",
         Model: "Universal",
         Trim: "Universal",
+        Num_Reviews: 30,
+        Fitment_Percent: 3970,
     },
     {
         Product_Name: "LRG Rims Burst 117 Matte Black w/ Machined Accents Alloy Wheels",
@@ -2644,6 +3266,8 @@ const Compatible_Vehicles = [
         Make: "Universal",
         Model: "Universal",
         Trim: "Universal",
+        Num_Reviews: 2233,
+        Fitment_Percent: 22,
     },
     {
         Product_Name: "LRG Rims Blades Series 115 Satin Black Milled Alloy Wheels",
@@ -2651,6 +3275,8 @@ const Compatible_Vehicles = [
         Make: "Universal",
         Model: "Universal",
         Trim: "Universal",
+        Num_Reviews: 3326,
+        Fitment_Percent: 35,
     },
     {
         Product_Name: "FUEL Off-Road Maverick D538 Black & Milled Wheels",
@@ -2658,6 +3284,8 @@ const Compatible_Vehicles = [
         Make: "Universal",
         Model: "Universal",
         Trim: "Universal",
+        Num_Reviews: 3218,
+        Fitment_Percent: 78,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2665,6 +3293,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Raptor",
+        Num_Reviews: 2771,
+        Fitment_Percent: 64,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2672,6 +3302,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 83,
+        Fitment_Percent: 3970,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2679,6 +3311,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
+        Num_Reviews: 3457,
+        Fitment_Percent: 1,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2686,6 +3320,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 2553,
+        Fitment_Percent: 24,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2693,6 +3329,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Tremor",
+        Num_Reviews: 2793,
+        Fitment_Percent: 100,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2700,6 +3338,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 1282,
+        Fitment_Percent: 58,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2707,6 +3347,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 3442,
+        Fitment_Percent: 49,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2714,6 +3356,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "SSV",
+        Num_Reviews: 2634,
+        Fitment_Percent: 67,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2721,6 +3365,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Raptor",
+        Num_Reviews: 801,
+        Fitment_Percent: 20,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2728,6 +3374,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 453,
+        Fitment_Percent: 44,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2735,6 +3383,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
+        Num_Reviews: 3024,
+        Fitment_Percent: 33,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2742,6 +3392,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 1219,
+        Fitment_Percent: 22,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2749,6 +3401,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 875,
+        Fitment_Percent: 14,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2756,6 +3410,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
+        Num_Reviews: 3297,
+        Fitment_Percent: 94,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2763,6 +3419,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 3725,
+        Fitment_Percent: 89,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2770,6 +3428,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "SSV",
+        Num_Reviews: 3509,
+        Fitment_Percent: 31,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2777,6 +3437,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 2770,
+        Fitment_Percent: 48,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2784,6 +3446,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 3713,
+        Fitment_Percent: 56,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2791,6 +3455,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 145,
+        Fitment_Percent: 23,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2798,6 +3464,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
+        Num_Reviews: 3858,
+        Fitment_Percent: 70,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2805,6 +3473,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 2622,
+        Fitment_Percent: 8,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2812,6 +3482,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 710,
+        Fitment_Percent: 84,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2819,6 +3491,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 2369,
+        Fitment_Percent: 28,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2826,6 +3500,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "SSV",
+        Num_Reviews: 1995,
+        Fitment_Percent: 28,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2833,6 +3509,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 2660,
+        Fitment_Percent: 36,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2840,6 +3518,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 2236,
+        Fitment_Percent: 24,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2847,6 +3527,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "SSV",
+        Num_Reviews: 1512,
+        Fitment_Percent: 92,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2854,6 +3536,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 1118,
+        Fitment_Percent: 90,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2861,6 +3545,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
+        Num_Reviews: 2634,
+        Fitment_Percent: 61,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2868,6 +3554,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 83,
+        Fitment_Percent: 3970,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2875,6 +3563,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 1762,
+        Fitment_Percent: 51,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2882,6 +3572,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 3709,
+        Fitment_Percent: 57,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2889,6 +3581,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 3983,
+        Fitment_Percent: 24,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2896,6 +3590,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
+        Num_Reviews: 3305,
+        Fitment_Percent: 50,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2903,6 +3599,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 3085,
+        Fitment_Percent: 34,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2910,6 +3608,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "SSV",
+        Num_Reviews: 2985,
+        Fitment_Percent: 25,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2917,6 +3617,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 577,
+        Fitment_Percent: 12,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2924,6 +3626,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 3323,
+        Fitment_Percent: 61,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2931,6 +3635,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 2095,
+        Fitment_Percent: 100,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2938,6 +3644,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 171,
+        Fitment_Percent: 5,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2945,6 +3653,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
+        Num_Reviews: 1175,
+        Fitment_Percent: 22,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2952,6 +3662,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "SSV",
+        Num_Reviews: 2696,
+        Fitment_Percent: 55,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2959,6 +3671,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 115,
+        Fitment_Percent: 66,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2966,6 +3680,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 2269,
+        Fitment_Percent: 32,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2973,6 +3689,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 3703,
+        Fitment_Percent: 84,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2980,6 +3698,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 440,
+        Fitment_Percent: 74,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2987,6 +3707,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "FX4",
+        Num_Reviews: 264,
+        Fitment_Percent: 3,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -2994,6 +3716,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 3829,
+        Fitment_Percent: 19,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3001,6 +3725,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
+        Num_Reviews: 3523,
+        Fitment_Percent: 41,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3008,6 +3734,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 3323,
+        Fitment_Percent: 12,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3015,6 +3743,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "STX",
+        Num_Reviews: 654,
+        Fitment_Percent: 54,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3022,6 +3752,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 2500,
+        Fitment_Percent: 47,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3029,6 +3761,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 823,
+        Fitment_Percent: 45,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3036,6 +3770,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "FX4",
+        Num_Reviews: 3820,
+        Fitment_Percent: 57,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3043,6 +3779,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 1769,
+        Fitment_Percent: 44,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3050,6 +3788,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 2394,
+        Fitment_Percent: 32,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3057,6 +3797,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "STX",
+        Num_Reviews: 1346,
+        Fitment_Percent: 12,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3064,6 +3806,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 29,
+        Fitment_Percent: 125,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3071,6 +3815,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 1711,
+        Fitment_Percent: 73,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3078,6 +3824,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
+        Num_Reviews: 1014,
+        Fitment_Percent: 40,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3085,6 +3833,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "FX4",
+        Num_Reviews: 3415,
+        Fitment_Percent: 85,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3092,6 +3842,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 1632,
+        Fitment_Percent: 27,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3099,6 +3851,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 3525,
+        Fitment_Percent: 72,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3106,6 +3860,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "STX",
+        Num_Reviews: 1878,
+        Fitment_Percent: 38,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3113,6 +3869,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 2980,
+        Fitment_Percent: 63,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3120,6 +3878,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 1756,
+        Fitment_Percent: 65,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3127,6 +3887,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "FX4",
+        Num_Reviews: 2082,
+        Fitment_Percent: 96,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3134,6 +3896,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 3847,
+        Fitment_Percent: 27,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3141,6 +3905,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 1896,
+        Fitment_Percent: 43,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3148,6 +3914,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "STX",
+        Num_Reviews: 2005,
+        Fitment_Percent: 6,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3155,6 +3923,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 3347,
+        Fitment_Percent: 69,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3162,6 +3932,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 2401,
+        Fitment_Percent: 46,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3169,6 +3941,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "FX4",
+        Num_Reviews: 1815,
+        Fitment_Percent: 66,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3176,6 +3950,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 1474,
+        Fitment_Percent: 9,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3183,6 +3959,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 1795,
+        Fitment_Percent: 78,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3190,6 +3968,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "STX",
+        Num_Reviews: 3879,
+        Fitment_Percent: 0,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3197,6 +3977,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 72,
+        Fitment_Percent: 54,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3204,6 +3986,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 1892,
+        Fitment_Percent: 58,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3211,6 +3995,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "FX4",
+        Num_Reviews: 1373,
+        Fitment_Percent: 99,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3218,6 +4004,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 1537,
+        Fitment_Percent: 52,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3225,6 +4013,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 176,
+        Fitment_Percent: 60,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3232,6 +4022,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "STX",
+        Num_Reviews: 3633,
+        Fitment_Percent: 26,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3239,6 +4031,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 829,
+        Fitment_Percent: 38,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3246,6 +4040,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 2342,
+        Fitment_Percent: 64,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3253,6 +4049,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 1892,
+        Fitment_Percent: 19,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3260,6 +4058,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 1484,
+        Fitment_Percent: 56,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3267,6 +4067,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "STX",
+        Num_Reviews: 1570,
+        Fitment_Percent: 12,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3274,6 +4076,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 309,
+        Fitment_Percent: 32,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3281,6 +4085,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "FX4",
+        Num_Reviews: 2434,
+        Fitment_Percent: 32,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3288,6 +4094,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
+        Num_Reviews: 432,
+        Fitment_Percent: 25,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3295,6 +4103,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "FX4",
+        Num_Reviews: 2121,
+        Fitment_Percent: 49,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3302,6 +4112,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 181,
+        Fitment_Percent: 39,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3309,6 +4121,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "STX",
+        Num_Reviews: 241,
+        Fitment_Percent: 4,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3316,6 +4130,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 2151,
+        Fitment_Percent: 9,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3323,6 +4139,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 1809,
+        Fitment_Percent: 62,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3330,6 +4148,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Harley-Davidson",
+        Num_Reviews: 2974,
+        Fitment_Percent: 39,
     },
     {
         Product_Name: "4 Wheel Parts Factory Bronco Level Lift Kit - 62210K",
@@ -3337,6 +4157,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Base",
+        Num_Reviews: 72,
+        Fitment_Percent: 54,
     },
     {
         Product_Name: "4 Wheel Parts Factory Bronco Level Lift Kit - 62210K",
@@ -3344,6 +4166,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Base",
+        Num_Reviews: 2505,
+        Fitment_Percent: 29,
     },
     {
         Product_Name: "Bilstein B8 6112 Series Suspension Kit - 47-259768",
@@ -3351,6 +4175,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Trail",
+        Num_Reviews: 2163,
+        Fitment_Percent: 23,
     },
     {
         Product_Name: "Bilstein B8 6112 Series Suspension Kit - 47-259768",
@@ -3358,6 +4184,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "SR5",
+        Num_Reviews: 1242,
+        Fitment_Percent: 96,
     },
     {
         Product_Name: "Bilstein B8 6112 Series Suspension Kit - 47-259768",
@@ -3365,6 +4193,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Venture",
+        Num_Reviews: 7612,
+        Fitment_Percent: 81,
     },
     {
         Product_Name: "Bilstein B8 6112 Series Suspension Kit - 47-259768",
@@ -3372,6 +4202,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Venture",
+        Num_Reviews: 2059,
+        Fitment_Percent: 57,
     },
     {
         Product_Name: "Bilstein B8 6112 Series Suspension Kit - 47-259768",
@@ -3379,6 +4211,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "SR5",
+        Num_Reviews: 3918,
+        Fitment_Percent: 3,
     },
     {
         Product_Name: "Bilstein B8 6112 Series Suspension Kit - 47-259768",
@@ -3386,6 +4220,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Trail",
+        Num_Reviews: 2482,
+        Fitment_Percent: 33,
     },
     {
         Product_Name: "Bilstein B8 6112 Series Suspension Kit - 47-259768",
@@ -3393,6 +4229,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "SR5",
+        Num_Reviews: 3266,
+        Fitment_Percent: 61,
     },
     {
         Product_Name: "Bilstein B8 6112 Series Suspension Kit - 47-259768",
@@ -3400,6 +4238,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Venture",
+        Num_Reviews: 1791,
+        Fitment_Percent: 51,
     },
     {
         Product_Name: "Bilstein B8 6112 Series Suspension Kit - 47-259768",
@@ -3407,6 +4247,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "SR5",
+        Num_Reviews: 3656,
+        Fitment_Percent: 9,
     },
     {
         Product_Name: "Bilstein B8 6112 Series Suspension Kit - 47-259768",
@@ -3414,6 +4256,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "SR5",
+        Num_Reviews: 1199,
+        Fitment_Percent: 99,
     },
     {
         Product_Name: "Bilstein B8 6112 Series Suspension Kit - 47-259768",
@@ -3421,6 +4265,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "SR5",
+        Num_Reviews: 1052,
+        Fitment_Percent: 12,
     },
     {
         Product_Name: "Bilstein B8 6112 Series Suspension Kit - 47-259768",
@@ -3428,6 +4274,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "SR5",
+        Num_Reviews: 2272,
+        Fitment_Percent: 55,
     },
     {
         Product_Name: "Bilstein B8 6112 Series Suspension Kit - 47-259768",
@@ -3435,6 +4283,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Trail",
+        Num_Reviews: 1046,
+        Fitment_Percent: 3,
     },
     {
         Product_Name: "Bilstein B8 6112 Series Suspension Kit - 47-259768",
@@ -3442,6 +4292,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "SR5",
+        Num_Reviews: 2108,
+        Fitment_Percent: 5,
     },
     {
         Product_Name: "Bilstein B8 6112 Series Suspension Kit - 47-259768",
@@ -3449,6 +4301,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Trail",
+        Num_Reviews: 2716,
+        Fitment_Percent: 86,
     },
     {
         Product_Name: "Bilstein B8 6112 Series Suspension Kit - 47-259768",
@@ -3456,6 +4310,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "SR5",
+        Num_Reviews: 1118,
+        Fitment_Percent: 30,
     },
     {
         Product_Name: "Bilstein B8 6112 Series Suspension Kit - 47-259768",
@@ -3463,6 +4319,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Trail",
+        Num_Reviews: 1630,
+        Fitment_Percent: 85,
     },
     {
         Product_Name: "Bilstein B8 6112 Series Suspension Kit - 47-259768",
@@ -3470,6 +4328,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "SR5",
+        Num_Reviews: 356,
+        Fitment_Percent: 47,
     },
     {
         Product_Name: "Bilstein B8 6112 Series Suspension Kit - 47-259768",
@@ -3477,6 +4337,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Trail",
+        Num_Reviews: 268,
+        Fitment_Percent: 74,
     },
     {
         Product_Name: "Bilstein B8 6112 Series Suspension Kit - 47-259768",
@@ -3484,6 +4346,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "SR5",
+        Num_Reviews: 420,
+        Fitment_Percent: 9,
     },
     {
         Product_Name: "Bilstein B8 6112 Series Suspension Kit - 47-259768",
@@ -3491,6 +4355,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Trail",
+        Num_Reviews: 2098,
+        Fitment_Percent: 8,
     },
     {
         Product_Name: "Bilstein B8 6112 Series Suspension Kit - 47-259768",
@@ -3498,6 +4364,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "SR5",
+        Num_Reviews: 1115,
+        Fitment_Percent: 6,
     },
     {
         Product_Name: "Bilstein B8 6112 Series Suspension Kit - 47-259768",
@@ -3505,6 +4373,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Trail",
+        Num_Reviews: 2138,
+        Fitment_Percent: 49,
     },
     {
         Product_Name: "Bilstein B8 6112 Series Suspension Kit - 47-259768",
@@ -3512,6 +4382,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "SR5",
+        Num_Reviews: 91,
+        Fitment_Percent: 84,
     },
     {
         Product_Name: "Bilstein B8 6112 Series Suspension Kit - 47-259768",
@@ -3519,6 +4391,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Trail",
+        Num_Reviews: 3951,
+        Fitment_Percent: 14,
     },
 
     {
@@ -3527,6 +4401,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "FX2",
+        Num_Reviews: 141,
+        Fitment_Percent: 63,
     },
     {
         Product_Name: "Pro Comp 3 Inch Leveling Lift Kit - 62200",
@@ -3534,6 +4410,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 3412,
+        Fitment_Percent: 75,
     },
     {
         Product_Name: "Pro Comp 3 Inch Leveling Lift Kit - 62200",
@@ -3541,6 +4419,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
+        Num_Reviews: 2614,
+        Fitment_Percent: 89,
     },
     {
         Product_Name: "Pro Comp 3 Inch Leveling Lift Kit - 62200",
@@ -3548,6 +4428,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 0,
+        Fitment_Percent: 0,
     },
     {
         Product_Name: "Pro Comp 3 Inch Leveling Lift Kit - 62200",
@@ -3555,13 +4437,18 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "STX",
+        Num_Reviews: 60,
+        Fitment_Percent: 40,
     },
+    
     {
         Product_Name: "Pro Comp 3 Inch Leveling Lift Kit - 62200",
         Year: "2014",
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 2614,
+        Fitment_Percent: 89,
     },
     {
         Product_Name: "Pro Comp 3 Inch Leveling Lift Kit - 62200",
@@ -3569,6 +4456,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 2658,
+        Fitment_Percent: 40,
     },
     {
         Product_Name: "Pro Comp 3 Inch Leveling Lift Kit - 62200",
@@ -3576,6 +4465,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "FX2",
+        Num_Reviews: 1898,
+        Fitment_Percent: 35,
     },
     {
         Product_Name: "Pro Comp 3 Inch Leveling Lift Kit - 62200",
@@ -3583,6 +4474,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 507,
+        Fitment_Percent: 85,
     },
     {
         Product_Name: "Pro Comp 3 Inch Leveling Lift Kit - 62200",
@@ -3590,6 +4483,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 3013,
+        Fitment_Percent: 95,
     },
     {
         Product_Name: "Pro Comp 3 Inch Leveling Lift Kit - 62200",
@@ -3597,6 +4492,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "STX",
+        Num_Reviews: 587,
+        Fitment_Percent: 87,
     },
     {
         Product_Name: "Pro Comp 3 Inch Leveling Lift Kit - 62200",
@@ -3604,6 +4501,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 3426,
+        Fitment_Percent: 21,
     },
     {
         Product_Name: "Pro Comp 3 Inch Leveling Lift Kit - 62200",
@@ -3611,6 +4510,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 3540,
+        Fitment_Percent: 81,
     },
     {
         Product_Name: "Pro Comp 3 Inch Leveling Lift Kit - 62200",
@@ -3618,6 +4519,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
+        Num_Reviews: 70,
+        Fitment_Percent: 50,
     },
     {
         Product_Name: "Pro Comp 3 Inch Leveling Lift Kit - 62200",
@@ -3625,6 +4528,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "FX2",
+        Num_Reviews: 1816,
+        Fitment_Percent: 21,
     },
     {
         Product_Name: "Pro Comp 3 Inch Leveling Lift Kit - 62200",
@@ -3632,6 +4537,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 0,
+        Fitment_Percent: 0,
     },
     {
         Product_Name: "Pro Comp 3 Inch Leveling Lift Kit - 62200",
@@ -3639,6 +4546,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 199,
+        Fitment_Percent: 45,
     },
     {
         Product_Name: "Pro Comp 3 Inch Leveling Lift Kit - 62200",
@@ -3646,6 +4555,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "STX",
+        Num_Reviews: 847,
+        Fitment_Percent: 83,
     },
     {
         Product_Name: "Pro Comp 3 Inch Leveling Lift Kit - 62200",
@@ -3653,6 +4564,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 2231,
+        Fitment_Percent: 57,
     },
     {
         Product_Name: "Pro Comp 3 Inch Leveling Lift Kit - 62200",
@@ -3660,6 +4573,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 3882,
+        Fitment_Percent: 79,
     },
     {
         Product_Name: "Pro Comp 3 Inch Leveling Lift Kit - 62200",
@@ -3667,6 +4582,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "FX2",
+        Num_Reviews: 2354,
+        Fitment_Percent: 23,
     },
     {
         Product_Name: "Pro Comp 3 Inch Leveling Lift Kit - 62200",
@@ -3674,6 +4591,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 619,
+        Fitment_Percent: 82,
     },
     {
         Product_Name: "Pro Comp 3 Inch Leveling Lift Kit - 62200",
@@ -3681,6 +4600,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 2511,
+        Fitment_Percent: 31,
     },
     {
         Product_Name: "Pro Comp 3 Inch Leveling Lift Kit - 62200",
@@ -3688,6 +4609,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "STX",
+        Num_Reviews: 1361,
+        Fitment_Percent: 76,
     },
     {
         Product_Name: "Pro Comp 3 Inch Leveling Lift Kit - 62200",
@@ -3695,6 +4618,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 502,
+        Fitment_Percent: 51,
     },
     {
         Product_Name: "Pro Comp 3 Inch Leveling Lift Kit - 62200",
@@ -3702,6 +4627,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 1320,
+        Fitment_Percent: 39,
     },
 
     {
@@ -3710,6 +4637,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Badlands",
+        Num_Reviews: 2169,
+        Fitment_Percent: 36,
     },
     {
         Product_Name: "4 Wheel Parts Big Tire Kit - 62213",
@@ -3717,6 +4646,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Base",
+        Num_Reviews: 3343,
+        Fitment_Percent: 42,
     },
     {
         Product_Name: "4 Wheel Parts Big Tire Kit - 62213",
@@ -3724,6 +4655,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Wildtrak",
+        Num_Reviews: 0,
+        Fitment_Percent: 0,
     },
     {
         Product_Name: "4 Wheel Parts Big Tire Kit - 62213",
@@ -3731,6 +4664,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Base",
+        Num_Reviews: 1898,
+        Fitment_Percent: 35,
     },
     {
         Product_Name: "4 Wheel Parts Big Tire Kit - 62213",
@@ -3738,6 +4673,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Badlands",
+        Num_Reviews: 117,
+        Fitment_Percent: 98,
     },
     {
         Product_Name: "4 Wheel Parts Big Tire Kit - 62213",
@@ -3745,6 +4682,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Wildtrak",
+        Num_Reviews: 3446,
+        Fitment_Percent: 93,
     },
     {
         Product_Name: "Pro Comp 2.5' Nitro Level Lift Kit - 62214K",
@@ -3752,6 +4691,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 2672,
+        Fitment_Percent: 25,
     },
     {
         Product_Name: "Pro Comp 2.5' Nitro Level Lift Kit - 62214K",
@@ -3759,6 +4700,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 3693,
+        Fitment_Percent: 35,
     },
     {
         Product_Name: "Pro Comp 2.5' Nitro Level Lift Kit - 62214K",
@@ -3766,6 +4709,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "SSV",
+        Num_Reviews: 10,
+        Fitment_Percent: 50,
     },
     {
         Product_Name: "Pro Comp 2.5' Nitro Level Lift Kit - 62214K",
@@ -3773,6 +4718,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 75,
+        Fitment_Percent: 202,
     },
     {
         Product_Name: "Pro Comp 2.5' Nitro Level Lift Kit - 62214K",
@@ -3780,6 +4727,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
+        Num_Reviews: 2228,
+        Fitment_Percent: 17,
     },
     {
         Product_Name: "Pro Comp 2.5' Nitro Level Lift Kit - 62214K",
@@ -3787,6 +4736,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 1564,
+        Fitment_Percent: 13,
     },
     {
         Product_Name: "Pro Comp 2.5' Nitro Level Lift Kit - 62214K",
@@ -3794,6 +4745,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Tremor",
+        Num_Reviews: 2479,
+        Fitment_Percent: 51,
     },
     {
         Product_Name: "Pro Comp 2.5' Nitro Level Lift Kit - 62214K",
@@ -3801,6 +4754,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 50,
+        Fitment_Percent: 85,
     },
     {
         Product_Name: "Pro Comp 2.5' Nitro Level Lift Kit - 62214K",
@@ -3808,6 +4763,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 1511,
+        Fitment_Percent: 73,
     },
     {
         Product_Name: "Pro Comp 2.5' Nitro Level Lift Kit - 62214K",
@@ -3815,6 +4772,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "SSV",
+        Num_Reviews: 2387,
+        Fitment_Percent: 59,
     },
     {
         Product_Name: "Pro Comp 2.5' Nitro Level Lift Kit - 62214K",
@@ -3822,6 +4781,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 3013,
+        Fitment_Percent: 90,
     },
     {
         Product_Name: "Pro Comp 2.5' Nitro Level Lift Kit - 62214K",
@@ -3829,6 +4790,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
+        Num_Reviews: 55,
+        Fitment_Percent: 20,
     },
     {
         Product_Name: "Pro Comp 2.5' Nitro Level Lift Kit - 62214K",
@@ -3836,6 +4799,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 853,
+        Fitment_Percent: 28,
     },
     {
         Product_Name: "Pro Comp 2.5' Nitro Level Lift Kit - 62214K",
@@ -3843,6 +4808,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Tremor",
+        Num_Reviews: 650,
+        Fitment_Percent: 51,
     },
     {
         Product_Name: "Pro Comp Nitro 2.5 Inch Leveling Lift Kit - 61180K",
@@ -3850,6 +4817,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Sport",
+        Num_Reviews: 1190,
+        Fitment_Percent: 73,
     },
     {
         Product_Name: "Pro Comp Nitro 2.5 Inch Leveling Lift Kit - 61180K",
@@ -3857,6 +4826,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Limited",
+        Num_Reviews: 3013,
+        Fitment_Percent: 90,
     },
     {
         Product_Name: "Pro Comp Nitro 2.5 Inch Leveling Lift Kit - 61180K",
@@ -3864,6 +4835,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Laramie",
+        Num_Reviews: 293,
+        Fitment_Percent: 15,
     },
     {
         Product_Name: "Pro Comp Nitro 2.5 Inch Leveling Lift Kit - 61180K",
@@ -3871,6 +4844,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Rebel",
+        Num_Reviews: 1420,
+        Fitment_Percent: 82,
     },
     {
         Product_Name: "Pro Comp Nitro 2.5 Inch Leveling Lift Kit - 61180K",
@@ -3878,6 +4853,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Tradesman",
+        Num_Reviews: 140,
+        Fitment_Percent: 10,
     },
     {
         Product_Name: "Pro Comp Nitro 2.5 Inch Leveling Lift Kit - 61180K",
@@ -3885,6 +4862,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "SLT",
+        Num_Reviews: 361,
+        Fitment_Percent: 66,
     },
     {
         Product_Name: "Pro Comp Nitro 2.5 Inch Leveling Lift Kit - 61180K",
@@ -3892,6 +4871,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Express",
+        Num_Reviews: 2986,
+        Fitment_Percent: 76,
     },
     {
         Product_Name: "Pro Comp Nitro 2.5 Inch Leveling Lift Kit - 61180K",
@@ -3899,6 +4880,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Tradesman",
+        Num_Reviews: 2541,
+        Fitment_Percent: 88,
     },
     {
         Product_Name: "Pro Comp Nitro 2.5 Inch Leveling Lift Kit - 61180K",
@@ -3906,6 +4889,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "SLT",
+        Num_Reviews: 1868,
+        Fitment_Percent: 40,
     },
     {
         Product_Name: "Pro Comp Nitro 2.5 Inch Leveling Lift Kit - 61180K",
@@ -3913,6 +4898,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Sport",
+        Num_Reviews: 2403,
+        Fitment_Percent: 63,
     },
     {
         Product_Name: "Pro Comp Nitro 2.5 Inch Leveling Lift Kit - 61180K",
@@ -3920,6 +4907,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Laramie",
+        Num_Reviews: 3962,
+        Fitment_Percent: 99,
     },
     {
         Product_Name: "Pro Comp Nitro 2.5 Inch Leveling Lift Kit - 61180K",
@@ -3927,6 +4916,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Rebel",
+        Num_Reviews: 0,
+        Fitment_Percent: 0,
     },
     {
         Product_Name: "Pro Comp Nitro 2.5 Inch Leveling Lift Kit - 61180K",
@@ -3934,6 +4925,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Express",
+        Num_Reviews: 20,
+        Fitment_Percent: 75,
     },
     {
         Product_Name: "Pro Comp Nitro 2.5 Inch Leveling Lift Kit - 61180K",
@@ -3941,6 +4934,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Limited",
+        Num_Reviews: 99,
+        Fitment_Percent: 86,
     },
     {
         Product_Name: "Pro Comp Nitro 2.5 Inch Leveling Lift Kit - 61180K",
@@ -3948,6 +4943,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Tradesman",
+        Num_Reviews: 2363,
+        Fitment_Percent: 42,
     },
     {
         Product_Name: "Pro Comp Nitro 2.5 Inch Leveling Lift Kit - 61180K",
@@ -3955,6 +4952,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "SLT",
+        Num_Reviews: 2183,
+        Fitment_Percent: 8,
     },
     {
         Product_Name: "Pro Comp Nitro 2.5 Inch Leveling Lift Kit - 61180K",
@@ -3962,6 +4961,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Laramie",
+        Num_Reviews: 1470,
+        Fitment_Percent: 64,
     },
     {
         Product_Name: "Pro Comp Nitro 2.5 Inch Leveling Lift Kit - 61180K",
@@ -3969,6 +4970,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Sport",
+        Num_Reviews: 3193,
+        Fitment_Percent: 17,
     },
     {
         Product_Name: "Pro Comp Nitro 2.5 Inch Leveling Lift Kit - 61180K",
@@ -3976,6 +4979,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Rebel",
+        Num_Reviews: 2054,
+        Fitment_Percent: 24,
     },
     {
         Product_Name: "Pro Comp Nitro 2.5 Inch Leveling Lift Kit - 61180K",
@@ -3983,6 +4988,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Express",
+        Num_Reviews: 952,
+        Fitment_Percent: 56,
     },
     {
         Product_Name: "Pro Comp Nitro 2.5 Inch Leveling Lift Kit - 61180K",
@@ -3990,6 +4997,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Outdoorsman",
+        Num_Reviews: 3201,
+        Fitment_Percent: 23,
     },
     {
         Product_Name: "Pro Comp Nitro 2.5 Inch Leveling Lift Kit - 61180K",
@@ -3997,6 +5006,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Limited",
+        Num_Reviews: 1742,
+        Fitment_Percent: 48,
     },
     {
         Product_Name: "Pro Comp Nitro 2.5 Inch Leveling Lift Kit - 61180K",
@@ -4004,6 +5015,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Express",
+        Num_Reviews: 2682,
+        Fitment_Percent: 98,
     },
     {
         Product_Name: "Pro Comp Nitro 2.5 Inch Leveling Lift Kit - 61180K",
@@ -4011,6 +5024,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Laramie",
+        Num_Reviews: 2142,
+        Fitment_Percent: 70,
     },
     {
         Product_Name: "Pro Comp Nitro 2.5 Inch Leveling Lift Kit - 61180K",
@@ -4018,6 +5033,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Outdoorsman",
+        Num_Reviews: 257,
+        Fitment_Percent: 76,
     },
     {
         Product_Name: "Pro Comp Nitro 2.5 Inch Leveling Lift Kit - 61180K",
@@ -4025,6 +5042,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "SLT",
+        Num_Reviews: 2060,
+        Fitment_Percent: 74,
     },
     {
         Product_Name: "Pro Comp Nitro 2.5 Inch Leveling Lift Kit - 61180K",
@@ -4032,6 +5051,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Sport",
+        Num_Reviews: 2519,
+        Fitment_Percent: 60,
     },
     {
         Product_Name: "Pro Comp Nitro 2.5 Inch Leveling Lift Kit - 61180K",
@@ -4039,6 +5060,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Tradesman",
+        Num_Reviews: 610,
+        Fitment_Percent: 82,
     },
     {
         Product_Name: "Pro Comp Nitro 2.5 Inch Leveling Lift Kit - 61180K",
@@ -4046,6 +5069,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Rebel",
+        Num_Reviews: 2567,
+        Fitment_Percent: 68,
     },
     {
         Product_Name: "Pro Comp Nitro 2.5 Inch Leveling Lift Kit - 61180K",
@@ -4053,6 +5078,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Limited",
+        Num_Reviews: 449,
+        Fitment_Percent: 48,
     },
     {
         Product_Name: "Pro Comp Nitro 2.5 Inch Leveling Lift Kit - 61180K",
@@ -4060,6 +5087,8 @@ const Compatible_Vehicles = [
         Make: "Ram",
         Model: "1500",
         Trim: "Laramie",
+        Num_Reviews: 2343,
+        Fitment_Percent: 63,
     },
     {
         Product_Name: "Pro Comp 1.5 Inch Leveling Lift Kit - 63231",
@@ -4067,6 +5096,8 @@ const Compatible_Vehicles = [
         Make: "Chevrolet",
         Model: "Suburban",
         Trim: "LS",
+        Num_Reviews: 1724,
+        Fitment_Percent: 26,
     },
     {
         Product_Name: "Pro Comp 1.5 Inch Leveling Lift Kit - 63231",
@@ -4074,6 +5105,8 @@ const Compatible_Vehicles = [
         Make: "Chevrolet",
         Model: "Suburban",
         Trim: "LT",
+        Num_Reviews: 1477,
+        Fitment_Percent: 77,
     },
     {
         Product_Name: "Pro Comp 1.5 Inch Leveling Lift Kit - 63231",
@@ -4081,6 +5114,8 @@ const Compatible_Vehicles = [
         Make: "Chevrolet",
         Model: "Suburban",
         Trim: "Premier",
+        Num_Reviews: 90,
+        Fitment_Percent: 72,
     },
     {
         Product_Name: "Pro Comp 1.5 Inch Leveling Lift Kit - 63231",
@@ -4088,6 +5123,8 @@ const Compatible_Vehicles = [
         Make: "Chevrolet",
         Model: "Tahoe",
         Trim: "LS",
+        Num_Reviews: 2727,
+        Fitment_Percent: 45,
     },
     {
         Product_Name: "Pro Comp 1.5 Inch Leveling Lift Kit - 63231",
@@ -4095,6 +5132,8 @@ const Compatible_Vehicles = [
         Make: "Chevrolet",
         Model: "Tahoe",
         Trim: "LT",
+        Num_Reviews: 267,
+        Fitment_Percent: 6,
     },
     {
         Product_Name: "Pro Comp 1.5 Inch Leveling Lift Kit - 63231",
@@ -4102,6 +5141,8 @@ const Compatible_Vehicles = [
         Make: "Chevrolet",
         Model: "Tahoe",
         Trim: "Premier",
+        Num_Reviews: 2273,
+        Fitment_Percent: 43,
     },
     {
         Product_Name: "Pro Comp 1.5 Inch Leveling Lift Kit - 63231",
@@ -4109,6 +5150,8 @@ const Compatible_Vehicles = [
         Make: "Chevrolet",
         Model: "Tahoe",
         Trim: "PPV",
+        Num_Reviews: 0,
+        Fitment_Percent: 0,
     },
     {
         Product_Name: "Pro Comp 1.5 Inch Leveling Lift Kit - 63231",
@@ -4116,6 +5159,8 @@ const Compatible_Vehicles = [
         Make: "Chevrolet",
         Model: "Tahoe",
         Trim: "SSV",
+        Num_Reviews: 2677,
+        Fitment_Percent: 90,
     },
     {
         Product_Name: "Pro Comp 1.5 Inch Leveling Lift Kit - 63231",
@@ -4123,6 +5168,8 @@ const Compatible_Vehicles = [
         Make: "GMC",
         Model: "Yukon",
         Trim: "Denali",
+        Num_Reviews: 22,
+        Fitment_Percent: 93,
     },
     {
         Product_Name: "Pro Comp 1.5 Inch Leveling Lift Kit - 63231",
@@ -4130,6 +5177,8 @@ const Compatible_Vehicles = [
         Make: "GMC",
         Model: "Yukon",
         Trim: "SLE",
+        Num_Reviews: 931,
+        Fitment_Percent: 42,
     },
     {
         Product_Name: "Pro Comp 1.5 Inch Leveling Lift Kit - 63231",
@@ -4137,6 +5186,8 @@ const Compatible_Vehicles = [
         Make: "GMC",
         Model: "Yukon",
         Trim: "SLT",
+        Num_Reviews: 3692,
+        Fitment_Percent: 58,
     },
     {
         Product_Name: "Pro Comp 1.5 Inch Leveling Lift Kit - 63231",
@@ -4144,6 +5195,8 @@ const Compatible_Vehicles = [
         Make: "Chevrolet",
         Model: "Suburban",
         Trim: "LS",
+        Num_Reviews: 3903,
+        Fitment_Percent: 77,
     },
     {
         Product_Name: "Pro Comp 1.5 Inch Leveling Lift Kit - 63231",
@@ -4151,6 +5204,8 @@ const Compatible_Vehicles = [
         Make: "Chevrolet",
         Model: "Suburban",
         Trim: "LT",
+        Num_Reviews: 1782,
+        Fitment_Percent: 85,
     },
     {
         Product_Name: "Pro Comp 1.5 Inch Leveling Lift Kit - 63231",
@@ -4158,6 +5213,8 @@ const Compatible_Vehicles = [
         Make: "Chevrolet",
         Model: "Suburban",
         Trim: "LTZ",
+        Num_Reviews: 3254,
+        Fitment_Percent: 64,
     },
     {
         Product_Name: "Pro Comp 1.5 Inch Leveling Lift Kit - 63231",
@@ -4165,6 +5222,8 @@ const Compatible_Vehicles = [
         Make: "Chevrolet",
         Model: "Tahoe",
         Trim: "LS",
+        Num_Reviews: 3113,
+        Fitment_Percent: 31,
     },
     {
         Product_Name: "Pro Comp 1.5 Inch Leveling Lift Kit - 63231",
@@ -4172,6 +5231,8 @@ const Compatible_Vehicles = [
         Make: "Chevrolet",
         Model: "Tahoe",
         Trim: "LT",
+        Num_Reviews: 3126,
+        Fitment_Percent: 45,
     },
     {
         Product_Name: "Pro Comp 1.5 Inch Leveling Lift Kit - 63231",
@@ -4179,6 +5240,8 @@ const Compatible_Vehicles = [
         Make: "Chevrolet",
         Model: "Tahoe",
         Trim: "LTZ",
+        Num_Reviews: 619,
+        Fitment_Percent: 47,
     },
     {
         Product_Name: "Pro Comp 1.5 Inch Leveling Lift Kit - 63231",
@@ -4186,6 +5249,8 @@ const Compatible_Vehicles = [
         Make: "Chevrolet",
         Model: "Tahoe",
         Trim: "PPV",
+        Num_Reviews: 147,
+        Fitment_Percent: 12,
     },
     {
         Product_Name: "Pro Comp 1.5 Inch Leveling Lift Kit - 63231",
@@ -4193,6 +5258,8 @@ const Compatible_Vehicles = [
         Make: "Chevrolet",
         Model: "Tahoe",
         Trim: "SSV",
+        Num_Reviews: 3084,
+        Fitment_Percent: 31,
     },
     {
         Product_Name: "Pro Comp 1.5 Inch Leveling Lift Kit - 63231",
@@ -4200,6 +5267,8 @@ const Compatible_Vehicles = [
         Make: "GMC",
         Model: "Yukon",
         Trim: "Denali",
+        Num_Reviews: 0,
+        Fitment_Percent: 0,
     },
     {
         Product_Name: "Pro Comp 1.5 Inch Leveling Lift Kit - 63231",
@@ -4207,6 +5276,8 @@ const Compatible_Vehicles = [
         Make: "GMC",
         Model: "Yukon",
         Trim: "SLE",
+        Num_Reviews: 20,
+        Fitment_Percent: 80,
     },
     {
         Product_Name: "Pro Comp 1.5 Inch Leveling Lift Kit - 63231",
@@ -4214,6 +5285,8 @@ const Compatible_Vehicles = [
         Make: "GMC",
         Model: "Yukon",
         Trim: "SLT",
+        Num_Reviews: 3637,
+        Fitment_Percent: 26,
     },
     {
         Product_Name: "Pro Comp 1.5 Inch Leveling Lift Kit - 63231",
@@ -4221,6 +5294,8 @@ const Compatible_Vehicles = [
         Make: "Chevrolet",
         Model: "Tahoe",
         Trim: "LS",
+        Num_Reviews: 1443,
+        Fitment_Percent: 9,
     },
     {
         Product_Name: "Pro Comp 1.5 Inch Leveling Lift Kit - 63231",
@@ -4228,6 +5303,8 @@ const Compatible_Vehicles = [
         Make: "Chevrolet",
         Model: "Tahoe",
         Trim: "LT",
+        Num_Reviews: 1393,
+        Fitment_Percent: 41,
     },
     {
         Product_Name: "Pro Comp 1.5 Inch Leveling Lift Kit - 63231",
@@ -4235,6 +5312,8 @@ const Compatible_Vehicles = [
         Make: "Chevrolet",
         Model: "Tahoe",
         Trim: "LTZ",
+        Num_Reviews: 1465,
+        Fitment_Percent: 9,
     },
     {
         Product_Name: "Pro Comp 1.5 Inch Leveling Lift Kit - 63231",
@@ -4242,6 +5321,8 @@ const Compatible_Vehicles = [
         Make: "GMC",
         Model: "Yukon",
         Trim: "Denali",
+        Num_Reviews: 2906,
+        Fitment_Percent: 24,
     },
     {
         Product_Name: "Pro Comp 1.5 Inch Leveling Lift Kit - 63231",
@@ -4249,6 +5330,8 @@ const Compatible_Vehicles = [
         Make: "GMC",
         Model: "Yukon",
         Trim: "SLE",
+        Num_Reviews: 3790,
+        Fitment_Percent: 87,
     },
     {
         Product_Name: "Pro Comp 1.5 Inch Leveling Lift Kit - 63231",
@@ -4256,6 +5339,8 @@ const Compatible_Vehicles = [
         Make: "GMC",
         Model: "Yukon",
         Trim: "SLT",
+        Num_Reviews: 720,
+        Fitment_Percent: 79,
     },
     {
         Product_Name: "Pro Comp 1.5 Inch Leveling Lift Kit - 63231",
@@ -4263,6 +5348,8 @@ const Compatible_Vehicles = [
         Make: "Chevrolet",
         Model: "Suburban",
         Trim: "LS",
+        Num_Reviews: 1512,
+        Fitment_Percent: 54,
     },
     {
         Product_Name: "Pro Comp 1.5 Inch Leveling Lift Kit - 63231",
@@ -4270,6 +5357,8 @@ const Compatible_Vehicles = [
         Make: "Chevrolet",
         Model: "Suburban",
         Trim: "LT",
+        Num_Reviews: 2730,
+        Fitment_Percent: 65,
     },
     {
         Product_Name: "Pro Comp 1.5 Inch Leveling Lift Kit - 63231",
@@ -4277,6 +5366,8 @@ const Compatible_Vehicles = [
         Make: "Chevrolet",
         Model: "Suburban",
         Trim: "LTZ",
+        Num_Reviews: 2827,
+        Fitment_Percent: 53,
     },
     {
         Product_Name: "Pro Comp 1.5 Inch Leveling Lift Kit - 63231",
@@ -4284,6 +5375,8 @@ const Compatible_Vehicles = [
         Make: "Chevrolet",
         Model: "Tahoe",
         Trim: "SSV",
+        Num_Reviews: 3325,
+        Fitment_Percent: 13,
     },
     {
         Product_Name: "Pro Comp 1.5 Inch Leveling Lift Kit - 63231",
@@ -4291,6 +5384,8 @@ const Compatible_Vehicles = [
         Make: "Chevrolet",
         Model: "Tahoe",
         Trim: "PPV",
+        Num_Reviews: 1477,
+        Fitment_Percent: 77,
     },
     {
         Product_Name: "Pro Comp Nitro 2.75 Inch Leveling Lift Kit - 65660K",
@@ -4298,6 +5393,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Base",
+        Num_Reviews: 1586,
+        Fitment_Percent: 32,
     },
     {
         Product_Name: "Pro Comp Nitro 2.75 Inch Leveling Lift Kit - 65660K",
@@ -4305,6 +5402,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Base",
+        Num_Reviews: 102,
+        Fitment_Percent: 77,
     },
     {
         Product_Name: "Pro Comp Nitro 2.75 Inch Leveling Lift Kit - 65660K",
@@ -4312,6 +5411,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Base",
+        Num_Reviews: 1192,
+        Fitment_Percent: 67,
     },
     {
         Product_Name: "Pro Comp Nitro 2.75 Inch Leveling Lift Kit - 65660K",
@@ -4319,6 +5420,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "X-Runner",
+        Num_Reviews: 2244,
+        Fitment_Percent: 76,
     },
     {
         Product_Name: "Pro Comp Nitro 2.75 Inch Leveling Lift Kit - 65660K",
@@ -4326,6 +5429,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Base",
+        Num_Reviews: 205,
+        Fitment_Percent: 4,
     },
     {
         Product_Name: "Pro Comp Nitro 2.75 Inch Leveling Lift Kit - 65660K",
@@ -4333,6 +5438,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "X-Runner",
+        Num_Reviews: 741,
+        Fitment_Percent: 97,
     },
     {
         Product_Name: "Pro Comp Nitro 2.75 Inch Leveling Lift Kit - 65660K",
@@ -4340,6 +5447,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Base",
+        Num_Reviews: 2680,
+        Fitment_Percent: 73,
     },
     {
         Product_Name: "Pro Comp Nitro 2.75 Inch Leveling Lift Kit - 65660K",
@@ -4347,6 +5456,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "X-Runner",
+        Num_Reviews: 95,
+        Fitment_Percent: 73,
     },
     {
         Product_Name: "Pro Comp Nitro 2.75 Inch Leveling Lift Kit - 65660K",
@@ -4354,6 +5465,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Base",
+        Num_Reviews: 1579,
+        Fitment_Percent: 47,
     },
     {
         Product_Name: "Pro Comp Nitro 2.75 Inch Leveling Lift Kit - 65660K",
@@ -4361,6 +5474,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "X-Runner",
+        Num_Reviews: 3944,
+        Fitment_Percent: 80,
     },
     {
         Product_Name: "Pro Comp Nitro 2.75 Inch Leveling Lift Kit - 65660K",
@@ -4368,6 +5483,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "X-Runner",
+        Num_Reviews: 987,
+        Fitment_Percent: 68,
     },
     {
         Product_Name: "Pro Comp Nitro 2.75 Inch Leveling Lift Kit - 65660K",
@@ -4375,6 +5492,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Base",
+        Num_Reviews: 1721,
+        Fitment_Percent: 66,
     },
     {
         Product_Name: "Pro Comp Nitro 2.75 Inch Leveling Lift Kit - 65660K",
@@ -4382,6 +5501,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "X-Runner",
+        Num_Reviews: 2886,
+        Fitment_Percent: 99,
     },
     {
         Product_Name: "Pro Comp Nitro 2.75 Inch Leveling Lift Kit - 65660K",
@@ -4389,6 +5510,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Base",
+        Num_Reviews: 1550,
+        Fitment_Percent: 23,
     },
     {
         Product_Name: "Pro Comp Nitro 2.75 Inch Leveling Lift Kit - 65660K",
@@ -4396,6 +5519,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Base",
+        Num_Reviews: 2885,
+        Fitment_Percent: 28,
     },
     {
         Product_Name: "Pro Comp Nitro 2.75 Inch Leveling Lift Kit - 65660K",
@@ -4403,6 +5528,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "X-Runner",
+        Num_Reviews: 0,
+        Fitment_Percent: 0,
     },
     {
         Product_Name: "Pro Comp Nitro 2.75 Inch Leveling Lift Kit - 65660K",
@@ -4410,6 +5537,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Base",
+        Num_Reviews: 2613,
+        Fitment_Percent: 16,
     },
     {
         Product_Name: "Pro Comp Nitro 2.75 Inch Leveling Lift Kit - 65660K",
@@ -4417,6 +5546,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "X-Runner",
+        Num_Reviews: 81,
+        Fitment_Percent: 39,
     },
     {
         Product_Name: "Pro Comp Nitro 2.75 Inch Leveling Lift Kit - 65660K",
@@ -4424,6 +5555,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Base",
+        Num_Reviews: 843,
+        Fitment_Percent: 19,
     },
     {
         Product_Name: "Pro Comp Nitro 2.75 Inch Leveling Lift Kit - 65660K",
@@ -4431,6 +5564,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "X-Runner",
+        Num_Reviews: 357,
+        Fitment_Percent: 30,
     },
     {
         Product_Name: "4 Wheel Parts Factory Bronco Fender Delete Kit (2-Door) - 61769W",
@@ -4438,6 +5573,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Badlands",
+        Num_Reviews: 761,
+        Fitment_Percent: 22,
     },
     {
         Product_Name: "4 Wheel Parts Factory Bronco Fender Delete Kit (2-Door) - 61769W",
@@ -4445,6 +5582,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Base",
+        Num_Reviews: 3013,
+        Fitment_Percent: 78,
     },
     {
         Product_Name: "4 Wheel Parts Factory Bronco Fender Delete Kit (2-Door) - 61769W",
@@ -4452,6 +5591,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Wildtrak",
+        Num_Reviews: 30,
+        Fitment_Percent: 85,
     },
     {
         Product_Name: "4 Wheel Parts Factory Bronco Fender Delete Kit (2-Door) - 61769W",
@@ -4459,6 +5600,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Base",
+        Num_Reviews: 3249,
+        Fitment_Percent: 77,
     },
     {
         Product_Name: "4 Wheel Parts Factory Bronco Fender Delete Kit (2-Door) - 61769W",
@@ -4466,6 +5609,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Badlands",
+        Num_Reviews: 3639,
+        Fitment_Percent: 48,
     },
     {
         Product_Name: "4 Wheel Parts Factory Bronco Fender Delete Kit (2-Door) - 61769W",
@@ -4473,6 +5618,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Wildtrak",
+        Num_Reviews: 1491,
+        Fitment_Percent: 56,
     },
     {
         Product_Name: "4 Wheel Parts Factory Bronco Fender Delete Kit (4-Door) - 61768W",
@@ -4480,6 +5627,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Badlands",
+        Num_Reviews: 81,
+        Fitment_Percent: 3570,
     },
     {
         Product_Name: "4 Wheel Parts Factory Bronco Fender Delete Kit (4-Door) - 61768W",
@@ -4487,6 +5636,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Base",
+        Num_Reviews: 60,
+        Fitment_Percent: 29,
     },
     {
         Product_Name: "4 Wheel Parts Factory Bronco Fender Delete Kit (4-Door) - 61768W",
@@ -4494,6 +5645,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Wildtrak",
+        Num_Reviews: 125,
+        Fitment_Percent: 82,
     },
     {
         Product_Name: "4 Wheel Parts Factory Bronco Fender Delete Kit (4-Door) - 61768W",
@@ -4501,6 +5654,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Base",
+        Num_Reviews: 2166,
+        Fitment_Percent: 82,
     },
     {
         Product_Name: "4 Wheel Parts Factory Bronco Fender Delete Kit (4-Door) - 61768W",
@@ -4508,6 +5663,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Badlands",
+        Num_Reviews: 3494,
+        Fitment_Percent: 50,
     },
     {
         Product_Name: "4 Wheel Parts Factory Bronco Fender Delete Kit (4-Door) - 61768W",
@@ -4515,6 +5672,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Wildtrak",
+        Num_Reviews: 3934,
+        Fitment_Percent: 70,
     },
     {
         Product_Name: "Bushwacker Pocket Style Front and rear Fender",
@@ -4522,6 +5681,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 3022,
+        Fitment_Percent: 74,
     },
     {
         Product_Name: "Bushwacker Pocket Style Front and rear Fender",
@@ -4529,6 +5690,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 2436,
+        Fitment_Percent: 53,
     },
     {
         Product_Name: "Bushwacker Pocket Style Front and rear Fender",
@@ -4536,6 +5699,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "SSV",
+        Num_Reviews: 1228,
+        Fitment_Percent: 88,
     },
     {
         Product_Name: "Bushwacker Pocket Style Front and rear Fender",
@@ -4543,6 +5708,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Raptor",
+        Num_Reviews: 3031,
+        Fitment_Percent: 35,
     },
     {
         Product_Name: "Bushwacker Pocket Style Front and rear Fender",
@@ -4550,6 +5717,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 0,
+        Fitment_Percent: 0,
     },
     {
         Product_Name: "Bushwacker Pocket Style Front and rear Fender",
@@ -4557,6 +5726,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
+        Num_Reviews: 2628,
+        Fitment_Percent: 57,
     },
     {
         Product_Name: "Bushwacker Pocket Style Front and rear Fender",
@@ -4564,6 +5735,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 1643,
+        Fitment_Percent: 37,
     },
     {
         Product_Name: "Bushwacker Pocket Style Front and rear Fender",
@@ -4571,6 +5744,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Tremor",
+        Num_Reviews: 870,
+        Fitment_Percent: 37,
     },
     {
         Product_Name: "Bushwacker Pocket Style Front and rear Fender",
@@ -4578,6 +5753,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 3404,
+        Fitment_Percent: 91,
     },
     {
         Product_Name: "Bushwacker Pocket Style Front and rear Fender",
@@ -4585,6 +5762,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 1447,
+        Fitment_Percent: 82,
     },
     {
         Product_Name: "Bushwacker Pocket Style Front and rear Fender",
@@ -4592,6 +5771,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "SSV",
+        Num_Reviews: 1388,
+        Fitment_Percent: 57,
     },
     {
         Product_Name: "Bushwacker Pocket Style Front and rear Fender",
@@ -4599,6 +5780,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 3688,
+        Fitment_Percent: 99,
     },
     {
         Product_Name: "Bushwacker Pocket Style Front and rear Fender",
@@ -4606,6 +5789,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
+        Num_Reviews: 377,
+        Fitment_Percent: 77,
     },
     {
         Product_Name: "Bushwacker Pocket Style Front and rear Fender",
@@ -4613,6 +5798,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 3157,
+        Fitment_Percent: 69,
     },
     {
         Product_Name: "Bushwacker Pocket Style Front and rear Fender",
@@ -4620,6 +5807,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Tremor",
+        Num_Reviews: 1652,
+        Fitment_Percent: 79,
     },
     {
         Product_Name: "Smittybilt M1 Color-Matched Fender Flares (Shadow Black) - 17397-G1",
@@ -4627,6 +5816,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 2697,
+        Fitment_Percent: 65,
     },
     {
         Product_Name: "Smittybilt M1 Color-Matched Fender Flares (Shadow Black) - 17397-G1",
@@ -4634,6 +5825,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
+        Num_Reviews: 104,
+        Fitment_Percent: 100,
     },
     {
         Product_Name: "Smittybilt M1 Color-Matched Fender Flares (Shadow Black) - 17397-G1",
@@ -4641,6 +5834,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 77,
+        Fitment_Percent: 71,
     },
     {
         Product_Name: "Smittybilt M1 Color-Matched Fender Flares (Shadow Black) - 17397-G1",
@@ -4648,6 +5843,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "SSV",
+        Num_Reviews: 2815,
+        Fitment_Percent: 23,
     },
     {
         Product_Name: "Smittybilt M1 Color-Matched Fender Flares (Shadow Black) - 17397-G1",
@@ -4655,6 +5852,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 835,
+        Fitment_Percent: 92,
     },
     {
         Product_Name: "Smittybilt M1 Color-Matched Fender Flares (Shadow Black) - 17397-G1",
@@ -4662,6 +5861,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 242,
+        Fitment_Percent: 11,
     },
     {
         Product_Name: "Smittybilt M1 Color-Matched Fender Flares (Shadow Black) - 17397-G1",
@@ -4669,6 +5870,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 2275,
+        Fitment_Percent: 64,
     },
     {
         Product_Name: "Smittybilt M1 Color-Matched Fender Flares (Shadow Black) - 17397-G1",
@@ -4676,6 +5879,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
+        Num_Reviews: 2715,
+        Fitment_Percent: 62,
     },
     {
         Product_Name: "Smittybilt M1 Color-Matched Fender Flares (Shadow Black) - 17397-G1",
@@ -4683,6 +5888,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 3136,
+        Fitment_Percent: 25,
     },
     {
         Product_Name: "Smittybilt M1 Color-Matched Fender Flares (Shadow Black) - 17397-G1",
@@ -4690,6 +5897,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 2710,
+        Fitment_Percent: 50,
     },
     {
         Product_Name: "Smittybilt M1 Color-Matched Fender Flares (Shadow Black) - 17397-G1",
@@ -4697,6 +5906,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 1354,
+        Fitment_Percent: 94,
     },
     {
         Product_Name: "Smittybilt M1 Color-Matched Fender Flares (Shadow Black) - 17397-G1",
@@ -4704,6 +5915,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "SSV",
+        Num_Reviews: 184,
+        Fitment_Percent: 6,
     },
     {
         Product_Name: "Smittybilt M1 Color-Matched Fender Flares (Shadow Black) - 17397-G1",
@@ -4711,6 +5924,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 0,
+        Fitment_Percent: 0,
     },
     {
         Product_Name: "Smittybilt M1 Color-Matched Fender Flares (Shadow Black) - 17397-G1",
@@ -4718,6 +5933,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 1694,
+        Fitment_Percent: 14,
     },
     {
         Product_Name: "Smittybilt M1 Color-Matched Fender Flares (Shadow Black) - 17397-G1",
@@ -4725,6 +5942,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "SSV",
+        Num_Reviews: 3429,
+        Fitment_Percent: 89,
     },
     {
         Product_Name: "Smittybilt M1 Color-Matched Fender Flares (Shadow Black) - 17397-G1",
@@ -4732,6 +5951,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 1163,
+        Fitment_Percent: 43,
     },
     {
         Product_Name: "Smittybilt M1 Color-Matched Fender Flares (Shadow Black) - 17397-G1",
@@ -4739,6 +5960,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
+        Num_Reviews: 2966,
+        Fitment_Percent: 71,
     },
     {
         Product_Name: "Smittybilt M1 Color-Matched Fender Flares (Shadow Black) - 17397-G1",
@@ -4746,6 +5969,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 301,
+        Fitment_Percent: 27,
     },
     {
         Product_Name: "Smittybilt M1 Color-Matched Fender Flares (Shadow Black) - 17397-G1",
@@ -4753,6 +5978,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 3045,
+        Fitment_Percent: 18,
     },
     {
         Product_Name: "Smittybilt M1 Color-Matched Fender Flares (Shadow Black) - 17397-G1",
@@ -4760,6 +5987,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 648,
+        Fitment_Percent: 55,
     },
     {
         Product_Name: "Smittybilt M1 Color-Matched Fender Flares (Shadow Black) - 17397-G1",
@@ -4767,6 +5996,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 3147,
+        Fitment_Percent: 4,
     },
     {
         Product_Name: "Smittybilt M1 Color-Matched Fender Flares (Shadow Black) - 17397-G1",
@@ -4774,6 +6005,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
+        Num_Reviews: 3277,
+        Fitment_Percent: 73,
     },
     {
         Product_Name: "Smittybilt M1 Color-Matched Fender Flares (Shadow Black) - 17397-G1",
@@ -4781,6 +6014,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 43,
+        Fitment_Percent: 24,
     },
     {
         Product_Name: "Smittybilt M1 Color-Matched Fender Flares (Shadow Black) - 17397-G1",
@@ -4788,6 +6023,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "SSV",
+        Num_Reviews: 2547,
+        Fitment_Percent: 14,
     },
     {
         Product_Name: "Bushwacker Max Pocket Style Fender Flares - 20946-02",
@@ -4795,6 +6032,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 2969,
+        Fitment_Percent: 36,
     },
     {
         Product_Name: "Bushwacker Max Pocket Style Fender Flares - 20946-02",
@@ -4802,6 +6041,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
+        Num_Reviews: 89,
+        Fitment_Percent: 3362,
     },
     {
         Product_Name: "Bushwacker Max Pocket Style Fender Flares - 20946-02",
@@ -4809,6 +6050,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 847,
+        Fitment_Percent: 18,
     },
     {
         Product_Name: "Bushwacker Max Pocket Style Fender Flares - 20946-02",
@@ -4816,6 +6059,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "SSV",
+        Num_Reviews: 620,
+        Fitment_Percent: 31,
     },
     {
         Product_Name: "Bushwacker Max Pocket Style Fender Flares - 20946-02",
@@ -4823,6 +6068,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 2895,
+        Fitment_Percent: 72,
     },
     {
         Product_Name: "Bushwacker Max Pocket Style Fender Flares - 20946-02",
@@ -4830,6 +6077,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 204,
+        Fitment_Percent: 19,
     },
     {
         Product_Name: "Bushwacker Max Pocket Style Fender Flares - 20946-02",
@@ -4837,6 +6086,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 2539,
+        Fitment_Percent: 49,
     },
     {
         Product_Name: "Bushwacker Max Pocket Style Fender Flares - 20946-02",
@@ -4844,6 +6095,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
+        Num_Reviews: 2937,
+        Fitment_Percent: 92,
     },
     {
         Product_Name: "Bushwacker Max Pocket Style Fender Flares - 20946-02",
@@ -4851,6 +6104,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 2062,
+        Fitment_Percent: 33,
     },
     {
         Product_Name: "Bushwacker Max Pocket Style Fender Flares - 20946-02",
@@ -4858,6 +6113,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 679,
+        Fitment_Percent: 72,
     },
     {
         Product_Name: "Bushwacker Max Pocket Style Fender Flares - 20946-02",
@@ -4865,6 +6122,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 1478,
+        Fitment_Percent: 43,
     },
     {
         Product_Name: "Bushwacker Max Pocket Style Fender Flares - 20946-02",
@@ -4872,6 +6131,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "SSV",
+        Num_Reviews: 1515,
+        Fitment_Percent: 83,
     },
     {
         Product_Name: "Bushwacker Max Pocket Style Fender Flares - 20946-02",
@@ -4879,6 +6140,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 2144,
+        Fitment_Percent: 47,
     },
     {
         Product_Name: "Bushwacker Max Pocket Style Fender Flares - 20946-02",
@@ -4886,6 +6149,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 2592,
+        Fitment_Percent: 93,
     },
     {
         Product_Name: "Bushwacker Max Pocket Style Fender Flares - 20946-02",
@@ -4893,6 +6158,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "SSV",
+        Num_Reviews: 1660,
+        Fitment_Percent: 85,
     },
     {
         Product_Name: "Bushwacker Max Pocket Style Fender Flares - 20946-02",
@@ -4900,6 +6167,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 491,
+        Fitment_Percent: 21,
     },
     {
         Product_Name: "Bushwacker Max Pocket Style Fender Flares - 20946-02",
@@ -4907,6 +6176,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
+        Num_Reviews: 3605,
+        Fitment_Percent: 12,
     },
     {
         Product_Name: "Bushwacker Max Pocket Style Fender Flares - 20946-02",
@@ -4914,6 +6185,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 867,
+        Fitment_Percent: 53,
     },
     {
         Product_Name: "Bushwacker OE Style Fender Flare Set (Black) - 20962-02",
@@ -4921,6 +6194,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 508,
+        Fitment_Percent: 78,
     },
     {
         Product_Name: "Bushwacker OE Style Fender Flare Set (Black) - 20962-02",
@@ -4928,6 +6203,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 2781,
+        Fitment_Percent: 22,
     },
     {
         Product_Name: "Bushwacker OE Style Fender Flare Set (Black) - 20962-02",
@@ -4935,6 +6212,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "SSV",
+        Num_Reviews: 2935,
+        Fitment_Percent: 43,
     },
     {
         Product_Name: "Bushwacker OE Style Fender Flare Set (Black) - 20962-02",
@@ -4942,6 +6221,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Raptor",
+        Num_Reviews: 2509,
+        Fitment_Percent: 73,
     },
     {
         Product_Name: "Bushwacker OE Style Fender Flare Set (Black) - 20962-02",
@@ -4949,6 +6230,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 257,
+        Fitment_Percent: 13,
     },
     {
         Product_Name: "Bushwacker OE Style Fender Flare Set (Black) - 20962-02",
@@ -4956,6 +6239,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
+        Num_Reviews: 2511,
+        Fitment_Percent: 75,
     },
     {
         Product_Name: "Bushwacker OE Style Fender Flare Set (Black) - 20962-02",
@@ -4963,6 +6248,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 2961,
+        Fitment_Percent: 26,
     },
     {
         Product_Name: "Bushwacker OE Style Fender Flare Set (Black) - 20962-02",
@@ -4970,6 +6257,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Tremor",
+        Num_Reviews: 3364,
+        Fitment_Percent: 78,
     },
     {
         Product_Name: "Bushwacker OE Style Fender Flare Set (Black) - 20962-02",
@@ -4977,6 +6266,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
+        Num_Reviews: 548,
+        Fitment_Percent: 67,
     },
     {
         Product_Name: "Bushwacker OE Style Fender Flare Set (Black) - 20962-02",
@@ -4984,6 +6275,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XLT",
+        Num_Reviews: 894,
+        Fitment_Percent: 44,
     },
     {
         Product_Name: "Bushwacker OE Style Fender Flare Set (Black) - 20962-02",
@@ -4991,6 +6284,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "SSV",
+        Num_Reviews: 1282,
+        Fitment_Percent: 67,
     },
     {
         Product_Name: "Bushwacker OE Style Fender Flare Set (Black) - 20962-02",
@@ -4998,6 +6293,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
+        Num_Reviews: 2771,
+        Fitment_Percent: 33,
     },
     {
         Product_Name: "Bushwacker OE Style Fender Flare Set (Black) - 20962-02",
@@ -5005,6 +6302,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
+        Num_Reviews: 0,
+        Fitment_Percent: 0,
     },
     {
         Product_Name: "Bushwacker OE Style Fender Flare Set (Black) - 20962-02",
@@ -5012,6 +6311,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Lariat",
+        Num_Reviews: 5,
+        Fitment_Percent: 80,
     },
     {
         Product_Name: "Bushwacker OE Style Fender Flare Set (Black) - 20962-02",
@@ -5019,6 +6320,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Tremor",
+        Num_Reviews: 67,
+        Fitment_Percent: 616,
     },
     {
         Product_Name: "Jeep Fender Flare Kit (Paintable) - 82215740",
@@ -5026,6 +6329,8 @@ const Compatible_Vehicles = [
         Make: "Jeep",
         Model: "Wrangler",
         Trim: "Universal",
+        Num_Reviews: 1756,
+        Fitment_Percent: 63,
 
     },
     {
@@ -5034,6 +6339,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Base",
+        Num_Reviews: 1871,
+        Fitment_Percent: 32,
     },
     {
         Product_Name: "Bushwacker Toyota Tacoma Pocket Style Fender Flare Set (Paintable) - 31920-02",
@@ -5041,6 +6348,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Base",
+        Num_Reviews: 3005,
+        Fitment_Percent: 9,
     },
     {
         Product_Name: "Bushwacker Toyota Tacoma Pocket Style Fender Flare Set (Paintable) - 31920-02",
@@ -5048,6 +6357,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Base",
+        Num_Reviews: 3933,
+        Fitment_Percent: 40,
     },
     {
         Product_Name: "Bushwacker Toyota Tacoma Pocket Style Fender Flare Set (Paintable) - 31920-02",
@@ -5055,6 +6366,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Base",
+        Num_Reviews: 2080,
+        Fitment_Percent: 16,
     },
     {
         Product_Name: "Bushwacker Toyota Tacoma Pocket Style Fender Flare Set (Paintable) - 31920-02",
@@ -5062,6 +6375,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Base",
+        Num_Reviews: 147,
+        Fitment_Percent: 14,
     },
     {
         Product_Name: "Bushwacker Toyota Tacoma Pocket Style Fender Flare Set (Paintable) - 31920-02",
@@ -5069,6 +6384,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Base",
+        Num_Reviews: 3131,
+        Fitment_Percent: 72,
     },
     {
         Product_Name: "Bushwacker Toyota Tacoma Pocket Style Fender Flare Set (Paintable) - 31920-02",
@@ -5076,6 +6393,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "Base",
+        Num_Reviews: 306,
+        Fitment_Percent: 54,
     },
 ];
 

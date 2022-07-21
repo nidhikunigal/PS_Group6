@@ -48,7 +48,14 @@
       <form id="form1">
          <h2>Find Parts For Your Vehicle</h2>
          <formOptions>
-            <select id="year">
+            <style>
+               select:disabled {
+                  background: #969292; 
+                  opacity: 1;
+               }
+            </style>
+
+            <select id="year" onChange="getOption(this)">
                <option value="0">year</option>
                <option value="2022">2022</option>
                <option value="2021">2021</option>
@@ -60,7 +67,7 @@
                <option value="2015">2015</option>
             </select>
             
-            <select id="make">
+            <select name="make" id="make" disabled onChange="getOption2(this)">
                <option value="0">make</option>
                <option value="Ford">Ford</option>
                <option value="Jeep">Jeep</option>
@@ -70,7 +77,8 @@
                <option value="GMC">GMC</option>
                <option value="Ram">Ram</option>
             </select>
-            <select id="model">
+
+            <select name="model" id="model" disabled onChange="getOption3(this)">
                <option value="0">model</option>
                <option value="F-150">F-150</option>
                <option value="Gladiator">Gladiator</option>
@@ -84,14 +92,38 @@
                <option value="Silverado">Silverado</option>
                <option value="Sierra">Sierra</option>
             </select>
-            <select id="part">
+
+            <select name="part" id="part" disabled>
                <option value="All Part">part</option>
                <option value="Bumper">Bumper</option>
-               <option value="Tire">Tire</option>
+               <option value="Wheel">Wheel</option>
                <option value="Turning Kit">Turning Kit</option>
                <option value="All Part">All Parts</option>
             </select>
          </formOptions>
+
+         <script>
+            cursor1 = document.getElementById("make").style.cursor = "not-allowed";
+            cursor2 = document.getElementById("model").style.cursor = "not-allowed"; 
+            cursor3 = document.getElementById("part").style.cursor = "not-allowed"; 
+         </script>
+
+         <script>
+            function getOption(el){
+               cursor_1 = document.getElementById("make").style.cursor = "auto";
+               hello = document.getElementById("make").disabled = false; 
+            }
+
+            function getOption2(el){
+               cursor_2 = document.getElementById("model").style.cursor = "auto";
+               hello2 = document.getElementById("model").disabled = false;
+            }
+
+            function getOption3(el){
+               cursor_3 = document.getElementById("part").style.cursor = "auto";
+               hello4 = document.getElementById("part").disabled = false; 
+            }
+         </script>
          
          <p><button id ="submitButton" type="button" value="Submit" onclick="quizResult()">see results</button></p>
          <script type="text/javascript">
@@ -116,7 +148,6 @@
                localStorage["year"] = selYear;
                localStorage["make"]=selMake;
                localStorage["model"] = selModel;
-               localStorage["results"] = 8;
                location.href="result.html";
                //use these results to send a query & then send user to result.html page
                
