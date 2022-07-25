@@ -33,9 +33,9 @@ function DetailsPage(src, name){
    nav(path);
    }
    return(
-      <Deal1 onClick={routeChange}>
-         <img id="deal1img"src={src} ></img>
-         <a>{name}</a> 
+      <Deal1 title={name} onClick={routeChange}>
+         <img id="deal1img"src={src} title={name} ></img>
+         <a title={name}>{name}</a> 
       </Deal1>
    )
 }
@@ -111,7 +111,7 @@ return (
       <Deals>
          <a>Shop Deals For Your Vehicle</a>
       </Deals>
-      <FeatDeals>
+      <FeatDeals onClick={(e) => self.Name = e.target.title}>
          <Deal1>
             {DetailsPage(tire, "Mickey Thompson Baja Legend EXP Tires")}
          </Deal1>
@@ -125,7 +125,7 @@ return (
       <Deals>
          <a>Shop New Products</a>
       </Deals>
-	  <FeatDeals>
+	  <FeatDeals onClick={(e) => self.Name = e.target.title}>
          <Deal1>
             {DetailsPage(tire, "Mickey Thompson Baja Legend EXP Tires")}
          </Deal1>
@@ -146,6 +146,6 @@ export const self =
       Year: Home.year,
       Make: Home.make,
       Model: Home.model,
-      Part: Home.part
-
+      Part: Home.part,
+      Name: Home.name
    };

@@ -11,25 +11,25 @@ return (
 		<NavMenu>
 			<NavLink to="/" activeStyle>
 				<Logo>
-					<img src ={companyLogo} width="400px"></img>
+					<img src ={companyLogo} width="300px"></img>
 				</Logo>
 			</NavLink>
 		</NavMenu>
         <search>
-            <input type="text" placeholder="Search..."/>
+            <input type="text" placeholder="SEARCH..."/>
         </search>
 		<NavMenu>
 		<NavLink to="/support" activeStyle>
-			Support
+			SUPPORT
 		</NavLink>
 		<NavLink to="/cart" activeStyle>
-			Cart
+			CART
 		</NavLink>
 		<NavLink to="/storesNear" activeStyle>
-			Stores Near Me
+			STORES NEAR ME
 		</NavLink>
 		<NavLink to="/Account" activeStyle>
-			My Account
+			MY ACCOUNT
 		</NavLink>
 		</NavMenu>
 	</Nav>
