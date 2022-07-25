@@ -1,4 +1,4 @@
-const { PartList, Compatible_Vehicles } = require("../allDataThree");
+const { PartList, Compatible_Vehicles } = require("../completeData");
 
 
 //resolver function is where we define all our query functions
@@ -50,17 +50,57 @@ const resolvers = {
             return PartList.filter((a) => a.Product_Name == Product_Name);
         },
         partByYear(parent, args) {
-            const { Year } = args;
-            return Compatible_Vehicles.filter((a) => a.Year == Year);
+            const { Year, Make, Model } = args;
+            console.log(Year + " " + Make + " " + Model);
+            if (Year == null && Make == null && Model == null) {
+                console.log("nothing");
+                return Compatible_Vehicles;
+            }
+            else if (Year != null && Make == null && Model == null) {
+                //when only year is given
+                console.log("year");
+                //console.log(Make);
+                return Compatible_Vehicles.filter((a) => a.Year == Year);
+            }
+            else if (Year == null && Make != null && Model == null) {
+                //when only Make is given
+                console.log("make");
+                return Compatible_Vehicles.filter((a) => a.Make == Make);
+            }
+            else if (Year == null && Make == null && Model != null) {
+                //when only Model is given
+                console.log("model");
+                return Compatible_Vehicles.filter((a) => a.Model == Model);
+            }
+            else if (Year != null && Make != null && Model == null) {
+                //when year and make are given
+                console.log("year and make");
+                return Compatible_Vehicles.filter((a) => a.Year == Year && a.Make == Make);
+            }
+            else if (Year != null && Make == null && Model != null) {
+                //when year and Model are given
+                console.log("year and model");
+                return Compatible_Vehicles.filter((a) => a.Year == Year && a.Model == Model);
+            }
+            else if (Year == null && Make != null && Model != null) {
+                //when Model and make are given
+                console.log("model and make");
+                return Compatible_Vehicles.filter((a) => a.Make == Make && a.Model == Model);
+            }
+            else {
+                //all are given
+                console.log("ELSE");
+                return Compatible_Vehicles.filter((a) => a.Year == Year && a.Make == Make && a.Model == Model);
+            }
         },
-        partByMake(parent, args){
-            const { Make } = args;
-            return Compatible_Vehicles.filter((a) => a.Make == Make);
-        },
-        partByModel(parent, args){
-            const { Model } = args;
-            return Compatible_Vehicles.filter((a) => a.Model == Model);
-        }
+        // partByMake(parent, args) {
+        //     const { Make } = args;
+        //     return Compatible_Vehicles.filter((a) => a.Make == Make);
+        // },
+        // partByModel(parent, args) {
+        //     const { Model } = args;
+        //     return Compatible_Vehicles.filter((a) => a.Model == Model);
+        // }
     },
     Part: {
         //gets the proper compatible vehicles
