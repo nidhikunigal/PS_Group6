@@ -7,21 +7,23 @@ import {Form, formOptions, Deals, FeatDeals, Deal1} from "./homeStyle.js";
 
 
 function ResultsPage(){
-   if(self.Year.value == "0" || self.Make.value=="0" || self.Model.value=="0"){
-      alert("Please complete the year, make, and model fields before submitting.");
-   }else{
-      let nav = useNavigate();
-      const routeChange = () =>{
+   let nav = useNavigate();
+
+   const routeChange = () =>{
+      if(self.Year == undefined || self.Make == undefined || self.Model == undefined){
+         alert("Please fill out the year, make, and model field before submitting");
+      }else{
          let path = '/results';
          nav(path);
       }
-      return (
-         <button color="white" className="px-4"onClick={routeChange}
-                 >
-                 see results
-               </button>
-      )
    }
+   return (
+      <button color="white" className="px-4"onClick={routeChange}
+               >
+               see results
+            </button>
+      )
+   
 }
 
 function quizResult(year, make, model, part){
@@ -34,11 +36,8 @@ function quizResult(year, make, model, part){
 
 const Home = () => {
 	const[year, setYear] = useState();
-	
 	const[make, setMake] = useState();
-	
 	const[model, setModel] = useState();
-	
 	const[part, setPart] = useState();
 return (
 	<div>
