@@ -4,10 +4,10 @@ import Navbar from './components';
 import { BrowserRouter as Router, Routes, Route}
 	from 'react-router-dom';
 import Home from './pages';
-import About from './pages/about';
-import Blogs from './pages/blogs';
-import SignUp from './pages/signup';
-import Contact from './pages/contact';
+import Support from './pages/support';
+import Stores from './pages/storesNear';
+import Cart from './pages/cart';
+import Account from './pages/Account';
 import Results from './pages/results';
 import Details from './pages/details';
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
@@ -21,10 +21,10 @@ return (
 	<Navbar />
 	<Routes>
 		<Route exact path='/' element={<Home />} />
-		<Route path='/about' element={<About/>} />
-		<Route path='/contact' element={<Contact/>} />
-		<Route path='/blogs' element={<Blogs/>} />
-		<Route path='/sign-up' element={<SignUp/>} />
+		<Route path='/support' element={<Support/>} />
+		<Route path='/Account' element={<Account/>} />
+		<Route path='/storesNear' element={<Stores/>} />
+		<Route path='/cart' element={<Cart/>} />
 		<Route path='/results' element={<Results/>} />
 		<Route path='/details' element={<Details/>} />
 	</Routes>
