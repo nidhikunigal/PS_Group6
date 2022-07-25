@@ -26,12 +26,20 @@ function ResultsPage(){
    
 }
 
-// function detailsPage(){
-//    let nav = useNavigate();
-//    let path = '/details';
-//    nav(path);
-//    return (<div></div>);
-// }
+function DetailsPage(src, name){
+   let nav = useNavigate();
+   const routeChange = () =>{
+   let path = '/details';
+   nav(path);
+   }
+   return(
+      <Deal1 onClick={routeChange}>
+         <img id="deal1img"src={src} ></img>
+         <a>{name}</a> 
+      </Deal1>
+   )
+}
+
 
 function quizResult(year, make, model, part){
 	self.Year = year;
@@ -105,16 +113,13 @@ return (
       </Deals>
       <FeatDeals>
          <Deal1>
-            <img id="deal1img"src={tire}></img>
-            Mickey Thompson Baja Legend EXP Tires 
+            {DetailsPage(tire, "Mickey Thompson Baja Legend EXP Tires")}
          </Deal1>
          <Deal1>
-            <img id="deal2img" src={bumper} ></img>
-            Fab Fours Matrix Series Front Bumper with Pre-Runner Guard (black)
+            {DetailsPage(bumper, "Fab Fours Matrix Series Front Bumper with Pre-Runner Guard (black)")}
          </Deal1>
          <Deal1>
-            <img id="deal3img" src={levelingKit}></img>
-            Pro Comp 2.5 Inch Leveling Lift Kit
+            {DetailsPage(levelingKit, "Pro Comp 2.5 Inch Leveling Lift Kit")}
          </Deal1>
       </FeatDeals>
       <Deals>
@@ -122,16 +127,13 @@ return (
       </Deals>
 	  <FeatDeals>
          <Deal1>
-            <img id="deal1img"src={tire}></img>
-            Mickey Thompson Baja Legend EXP Tires 
+            {DetailsPage(tire, "Mickey Thompson Baja Legend EXP Tires")}
          </Deal1>
          <Deal1>
-            <img id="deal2img" src={bumper} ></img>
-            Fab Fours Matrix Series Front Bumper with Pre-Runner Guard (Black) 
+            {DetailsPage(bumper, "Fab Fours Matrix Series Front Bumper with Pre-Runner Guard (black)")}
          </Deal1>
          <Deal1>
-            <img id="deal3img" src={levelingKit}></img>
-            Pro Comp 2.5 Inch Leveling Lift Kit
+            {DetailsPage(levelingKit, "Pro Comp 2.5 Inch Leveling Lift Kit")}
          </Deal1>
       </FeatDeals>
 	</div>
