@@ -26,6 +26,13 @@ function ResultsPage(){
    
 }
 
+// function detailsPage(){
+//    let nav = useNavigate();
+//    let path = '/details';
+//    nav(path);
+//    return (<div></div>);
+// }
+
 function quizResult(year, make, model, part){
 	self.Year = year;
  	self.Make = make;
