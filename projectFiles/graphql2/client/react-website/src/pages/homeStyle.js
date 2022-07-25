@@ -14,6 +14,7 @@ flex-flow: column nowrap;
 align-items: center;
 justify-content: center;
 text-align: center;
+font-family: Sans-serif;
 `
 
 
@@ -37,6 +38,8 @@ height: 100px;
 width: 100%;
 margin-top: 10px;
 font-size: 24px;
+font-weight: bolder;
+font-family: Sans-serif;
 `
 
 export const FeatDeals = styled.form`

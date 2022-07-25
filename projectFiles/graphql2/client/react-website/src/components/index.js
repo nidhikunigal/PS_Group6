@@ -7,32 +7,33 @@ import companyLogo from "./logo.png";
 
 const Navbar = () => {
 return (
-	<>
 	<Nav>
-        <Logo>
-            <img src ={companyLogo} width="400px"></img>
-        </Logo>
+		<NavMenu>
+			<NavLink to="/" activeStyle>
+				<Logo>
+					<img src ={companyLogo} width="300px"></img>
+				</Logo>
+			</NavLink>
+		</NavMenu>
         <search>
-            <input type="text" placeholder="Search..."/>
+            <input type="text" placeholder="SEARCH..."/>
         </search>
 		<NavMenu>
-		<NavLink to="/about" activeStyle>
-			Support
+		<NavLink to="/support" activeStyle>
+			SUPPORT
 		</NavLink>
-		<NavLink to="/contact" activeStyle>
-			My Account
+		<NavLink to="/cart" activeStyle>
+			CART
 		</NavLink>
-		<NavLink to="/blogs" activeStyle>
-			Stores Near Me
+		<NavLink to="/storesNear" activeStyle>
+			STORES NEAR ME
 		</NavLink>
-		<NavLink to="/sign-up" activeStyle>
-			Cart
+		<NavLink to="/Account" activeStyle>
+			MY ACCOUNT
 		</NavLink>
 		</NavMenu>
 	</Nav>
-    
-	</>
-);
+	);
 };
 
 export default Navbar;

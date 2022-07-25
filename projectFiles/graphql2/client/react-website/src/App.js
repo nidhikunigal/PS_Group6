@@ -4,11 +4,12 @@ import Navbar from './components';
 import { BrowserRouter as Router, Routes, Route }
 	from 'react-router-dom';
 import Home from './pages';
-import About from './pages/about';
-import Blogs from './pages/blogs';
-import SignUp from './pages/signup';
-import Contact from './pages/contact';
+import Support from './pages/support';
+import Stores from './pages/storesNear';
+import Cart from './pages/cart';
+import Account from './pages/Account';
 import Results from './pages/results';
+import Details from './pages/details';
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 
 
@@ -27,6 +28,7 @@ function App() {
 					<Route path='/blogs' element={<Blogs />} />
 					<Route path='/sign-up' element={<SignUp />} />
 					<Route path='/results' element={<Results />} />
+					<Route path='/details' element={<Details />} />
 				</Routes>
 			</Router>
 		</ApolloProvider>

@@ -20,27 +20,38 @@ query yearMakeModel($year: String, $make: String, $model: String) {
 }
  `;
 
-
 function ResultsPage() {
+   let nav = useNavigate();
 
-   //const [loadData, { data: ymmdata }] = useLazyQuery(QUERY_YEAR_MAKE_MODEL);
+   const routeChange = () => {
+      if (self.Year == undefined || self.Make == undefined || self.Model == undefined) {
+         alert("Please fill out the year, make, and model field before submitting");
+      } else {
+         let path = '/results';
+         nav(path);
+      }
+   }
+   return (
+      <button color="white" className="px-4" onClick={routeChange}
+      >
+         see results
+      </button>
+   )
+
+}
+
+function DetailsPage(src, name) {
    let nav = useNavigate();
    const routeChange = () => {
-      let path = '/results';
+      let path = '/details';
       nav(path);
-
    }
-
-
-
    return (
-
-      <button color="white" className="px-4" onClick={routeChange}>
-         see results
-      </button >
-
-
-   );
+      <Deal1 title={name} onClick={routeChange}>
+         <img id="deal1img" src={src} title={name} ></img>
+         <a title={name}>{name}</a>
+      </Deal1>
+   )
 }
 
 
@@ -73,6 +84,47 @@ function DisplayData(year) {
    );
 
    console.log(ymmdata);
+   function ResultsPage() {
+      let nav = useNavigate();
+
+      const routeChange = () => {
+         if (self.Year == undefined || self.Make == undefined || self.Model == undefined) {
+            alert("Please fill out the year, make, and model field before submitting");
+         } else {
+            let path = '/results';
+            nav(path);
+         }
+      }
+      return (
+         <button color="white" className="px-4" onClick={routeChange}
+         >
+            see results
+         </button>
+      )
+
+   }
+
+   function DetailsPage(src, name) {
+      let nav = useNavigate();
+      const routeChange = () => {
+         let path = '/details';
+         nav(path);
+      }
+      return (
+         <Deal1 title={name} onClick={routeChange}>
+            <img id="deal1img" src={src} title={name} ></img>
+            <a title={name}>{name}</a>
+         </Deal1>
+      )
+   }
+
+
+   function quizResult(year, make, model, part) {
+      self.Year = year;
+      self.Make = make;
+      self.Model = model;
+      self.Part = part;
+   }
 
 }
 
@@ -157,38 +209,33 @@ const Home = () => {
          <Deals>
             <a>Shop Deals For Your Vehicle</a>
          </Deals>
-         <FeatDeals>
+         <FeatDeals onClick={(e) => self.Name = e.target.title}>
             <Deal1>
-               <img id="deal1img" src={tire}></img>
-               Mickey Thompson Baja Legend EXP Tires
+               {DetailsPage(tire, "Mickey Thompson Baja Legend EXP Tires")}
             </Deal1>
             <Deal1>
-               <img id="deal2img" src={bumper} ></img>
-               Fab Fours Matrix Series Front Bumper with Pre-Runner Guard (black)
+               {DetailsPage(bumper, "Fab Fours Matrix Series Front Bumper with Pre-Runner Guard (black)")}
             </Deal1>
             <Deal1>
-               <img id="deal3img" src={levelingKit}></img>
-               Pro Comp 2.5 Inch Leveling Lift Kit
+               {DetailsPage(levelingKit, "Pro Comp 2.5 Inch Leveling Lift Kit")}
             </Deal1>
          </FeatDeals>
          <Deals>
             <a>Shop New Products</a>
          </Deals>
-         <FeatDeals>
+         <FeatDeals onClick={(e) => self.Name = e.target.title}>
             <Deal1>
-               <img id="deal1img" src={tire}></img>
-               Mickey Thompson Baja Legend EXP Tires
+               {DetailsPage(tire, "Mickey Thompson Baja Legend EXP Tires")}
             </Deal1>
             <Deal1>
-               <img id="deal2img" src={bumper} ></img>
-               Fab Fours Matrix Series Front Bumper with Pre-Runner Guard (Black)
+               {DetailsPage(bumper, "Fab Fours Matrix Series Front Bumper with Pre-Runner Guard (black)")}
             </Deal1>
             <Deal1>
-               <img id="deal3img" src={levelingKit}></img>
-               Pro Comp 2.5 Inch Leveling Lift Kit
+               {DetailsPage(levelingKit, "Pro Comp 2.5 Inch Leveling Lift Kit")}
             </Deal1>
          </FeatDeals>
       </div>
+
    );
 };
 
@@ -198,6 +245,6 @@ export const self =
    Year: Home.year,
    Make: Home.make,
    Model: Home.model,
-   Part: Home.part
-
+   Part: Home.part,
+   Name: Home.name
 };
