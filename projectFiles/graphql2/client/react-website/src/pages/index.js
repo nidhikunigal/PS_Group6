@@ -7,19 +7,21 @@ import {Form, formOptions, Deals, FeatDeals, Deal1} from "./homeStyle.js";
 
 
 function ResultsPage(){
-	let nav = useNavigate();
-	const routeChange = () =>{
-		let path = '/results';
-		nav(path);
-
-	}
-
-	return (
-		<button color="white" className="px-4"onClick={routeChange}
-              >
-              see results
-            </button>
-	)
+   if(self.Year.value == "0" || self.Make.value=="0" || self.Model.value=="0"){
+      alert("Please complete the year, make, and model fields before submitting.");
+   }else{
+      let nav = useNavigate();
+      const routeChange = () =>{
+         let path = '/results';
+         nav(path);
+      }
+      return (
+         <button color="white" className="px-4"onClick={routeChange}
+                 >
+                 see results
+               </button>
+      )
+   }
 }
 
 function quizResult(year, make, model, part){

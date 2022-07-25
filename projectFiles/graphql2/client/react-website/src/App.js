@@ -9,6 +9,7 @@ import Blogs from './pages/blogs';
 import SignUp from './pages/signup';
 import Contact from './pages/contact';
 import Results from './pages/results';
+import Details from './pages/details';
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 
 
@@ -25,6 +26,7 @@ return (
 		<Route path='/blogs' element={<Blogs/>} />
 		<Route path='/sign-up' element={<SignUp/>} />
 		<Route path='/results' element={<Results/>} />
+		<Route path='/details' element={<Details/>} />
 	</Routes>
 	</Router>
 );

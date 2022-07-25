@@ -16,6 +16,20 @@ function ResultGridFun(){
     )
 }
 
+
+function PDPage(){
+	let nav = useNavigate();
+	const routeChange = () =>{
+		let path = '/details';
+		nav(path);
+
+	}
+
+	return (
+        <div></div>
+	)
+}
+
 function ChangeVehFun(){
     let nav = useNavigate();
 	const routeChange = () =>{
