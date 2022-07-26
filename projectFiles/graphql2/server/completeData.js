@@ -7,8 +7,6 @@
 //         NumberOfStars: 0,
 
 //     },
-
-
 // ]
 
 const PartList = [

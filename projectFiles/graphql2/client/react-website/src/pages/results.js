@@ -3,17 +3,86 @@ import { RefineHead, RefineResults, ChangeVeh, Silly, ResultHeader, ResultsPage,
 import { useNavigate } from "react-router-dom";
 import littleCar from "./currveh.jfif";
 import {self} from "./index";
+import Home from "./index";
+import { useQuery, useLazyQuery, gql } from "@apollo/client";
+import tire from "./tire.jpg";
+import bumper from "./tempBumper.jpg";
+import levelingKit from "./levelingKit.jpg";
 
+const QUERY_YEAR_MAKE_MODEL = gql`
+query yearMakeModel($year: String, $make: String, $model: String) {
+  partByYear(Year: $year, Make: $make, Model: $model) {
+    Product_Name
+    Year
+    Make
+    Model
+    Trim
+    VehicleParts {
+      Type
+      Product_Name
+      Company
+      Cost
+      Specifications
+      Technical_Details
+      General_Vehicle
+    }
+  }
+}
+`;
 
-function ResultGridFun(){
+var unique;
+function ResultGridFun(data, error, loading){
     let j = "";
-    for(let i = 0; i < 8; i++){
-        j+="<div class=\"grid-item\">1</div>";
+    if(!error && !loading){
+        unique = [... new Map(data.partByYear.map(item => [item.Product_Name, item])).values()];
+        console.log(data);
+        console.log(unique); 
+        console.log(self.Part);
+        if(self.Part != "All Part" && self.Part != ""){
+            refineUnique(unique);
+        }
+        for(let i = 0; i <unique.length; i++){
+            if(unique[i] != null){
+                console.log("should be here");
+                j+="<div class=\"grid-item\">" + internalGrid(unique[i]) + "</div>";
+            }
+        }
     }
     return(
         <ResultGrid dangerouslySetInnerHTML={{__html: j}}>
         </ResultGrid>
     )
+}
+
+function refineUnique(data){
+    for(let i = 0; i < data.length; i++){
+        if(data[i].VehicleParts[0].Type != self.Part){
+            delete data[i];
+        }
+    }
+}
+
+function internalGrid(value){
+    var display = "<div>"+ value.Product_Name + "</div>";
+    switch(value.VehicleParts[0].Type){
+        case 'Bumper':
+            display = display.concat("<img src={bumper}/>");
+            break;
+        case 'Suspension':
+            display = display.concat("<img src={bumper}/>");
+            break;
+        case 'Leveling':
+            display = display.concat("<img src={levelingKit}/>");
+            break;
+        case 'Wheel':
+            display = display.concat("<img src={tire}/>");
+            break;
+        case 'Fenders':
+            display = display.concat("<img src={bumper}/>");
+    }
+    console.log(display);
+    return display;
+   
 }
 
 
@@ -48,8 +117,20 @@ function ChangeVehFun(){
 }
 
 const Results = () => {
+    //const [loadData, { data: yearData }] = useLazyQuery(QUERY_YEAR_MAKE_MODEL);
+    const{data, error, loading} = useQuery(QUERY_YEAR_MAKE_MODEL, {variables: { year: self.Year,
+        make: self.Make,
+        model: self.Model,}});
+    console.log("hi");
+    console.log(data);
+    if( !error && !loading){
+        console.log(data.partByYear.length);
+        var size = data.partByYear.length;
+    }
+    //console.log(data.partByYear.length);
+    //var size = data.partByYear.length;
 return (
-	<ResultsPage>
+	<ResultsPage >
         <Column1>
             <Silly> 
                 <img src={littleCar}  height="60px"/>
@@ -70,7 +151,7 @@ return (
                     <option value="bumper">Bumper</option>
                     <option value="none">List rest of products</option>
                 </select>
-                <button id="refine" onclick="refine()">Refine</button>
+                <button id="refine" onClick="refine()">Refine</button>
 
             </RefineResults>
              
@@ -84,7 +165,7 @@ return (
             </ResultHeader>
             
             <div id="grid-container" class="grid">
-                <ResultGridFun />
+                {ResultGridFun(data, error, loading) }
             </div>
             
             <div id="grid-container" class="grid">

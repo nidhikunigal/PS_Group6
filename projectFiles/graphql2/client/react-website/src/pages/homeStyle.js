@@ -2,11 +2,24 @@ import styled from "styled-components";
 import car from "./car.jpg";
 import line from "./line.png";
 
+export const Button = styled.button`
+background-color: white;
+color: black;
+font-size: 11.5px;
+padding: 3px 15px;
+border-radius: 7px;
+margin: 5px 0px;
+cursor: pointer;
+font-family: Sans-serif;
+width:100px;
+height:25px;
+`
+
 export const Form = styled.form`
 background-image: url(${car});
 background-size: cover;
-color: white;
-text-shadow: -1.2px 1px 0 black;
+color: black;
+text-shadow: -0.8px 1px 0 black;
 font-size: 23px;
 height: 300px;
 display: flex;
@@ -17,7 +30,6 @@ text-align: center;
 font-family: Sans-serif;
 `
 
-
 export const formOptions = styled.form`
 display: flex;
 flex-flow: row;
@@ -25,7 +37,6 @@ justify-content: center;
 align-items: center;
 text-align: center;
 `
-
 
 export const Deals = styled.form`
 display: flex;
