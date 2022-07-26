@@ -20,6 +20,8 @@ type CompatibleVehicle { #type def for the compatible vehicles
     Make: String!
     Model: String!
     Trim: String!
+    Num_Reviews: Int!
+    Fitment_Percent: Int!
     VehicleParts:[Part!]!
 }
 
@@ -28,7 +30,7 @@ type Query { #queries we want implimented
 getParts(Type: String, Company: String ,General_Vehicle: String) : [Part]
 vehicles:[CompatibleVehicle]!
 partByName(Product_Name:String!): [Part!]
-partByYear(Year:String, Make:String, Model:String):[CompatibleVehicle]
+partByYear(Year:String, Make:String, Model:String, Type:String):[CompatibleVehicle]
 }
 
 

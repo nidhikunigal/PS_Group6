@@ -16,9 +16,35 @@ query yearMakeModel($year: String, $make: String, $model: String) {
     Make
     Model
     Trim
+    Num_Reviews
+    Fitment_Percent
+    VehicleParts {
+      Type
+      Product_Name
+      Company
+      Cost
+      Specifications
+      Technical_Details
+      General_Vehicle
+    }
   }
 }
  `;
+
+const QUERY_BY_TYPE = gql`
+   query queryByType($type: String) {
+      getParts(Type: $type) {
+     Type
+     Product_Name
+     Company
+     Cost
+     Specifications
+     Technical_Details
+     General_Vehicle
+   }
+ }`;
+
+
 
 function ResultsPage() {
    let nav = useNavigate();
@@ -131,12 +157,13 @@ function DisplayData(year) {
 const Home = () => {
    const [yearSearched, setYearSearched] = useState(" ");
    const [loadData, { data: yearData }] = useLazyQuery(QUERY_YEAR_MAKE_MODEL);
+   const [loadDataPart, { data: partData }] = useLazyQuery(QUERY_BY_TYPE);
 
    const [makeSearched, setMakeSearched] = useState("");
 
    const [modelSearched, setModelSearched] = useState("");
 
-   const [part, setPart] = useState("");
+   const [partSearched, setPart] = useState("");
 
    return (
       <div>
@@ -180,7 +207,7 @@ const Home = () => {
                      <option value="Silverado">Silverado</option>
                      <option value="Sierra">Sierra</option>
                   </select>
-                  <select id="part" value={part} onChange={(e) => setPart(e.target.value)}>
+                  <select id="part" value={partSearched} onChange={(e) => setPart(e.target.value)}>
                      <option value="All Part">part</option>
                      <option value="Bumper">Bumper</option>
                      <option value="Tire">Tire</option>
@@ -198,12 +225,20 @@ const Home = () => {
                               model: modelSearched,
                            },
                         });
+                     let newData = [];
+                     if (yearData) {
+                        yearData.partByYear.map(newData => {
+                           return (newData.Make);
+                        })
+                     }
+
+
                      console.log("year searched: " + yearSearched);
                      console.log("data: ");
-                     console.log(yearData);
+                     console.log(newData);
                   }}>
                   {" "}fetch data</button>
-               <ResultsPage type="button" onClick={quizResult(yearSearched, makeSearched, modelSearched, part)} />
+               <ResultsPage type="button" onClick={quizResult(yearSearched, makeSearched, modelSearched, partSearched)} />
             </form>
          </Form>
          <Deals>
