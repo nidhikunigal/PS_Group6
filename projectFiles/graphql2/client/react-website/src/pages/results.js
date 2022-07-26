@@ -3,18 +3,39 @@ import { RefineHead, RefineResults, ChangeVeh, Silly, ResultHeader, ResultsPage,
 import { useNavigate } from "react-router-dom";
 import littleCar from "./currveh.jfif";
 import {self} from "./index";
+import Home from "./index";
+import { useQuery, useLazyQuery, gql } from "@apollo/client";
 
+const QUERY_YEAR_MAKE_MODEL = gql`
+query yearMakeModel($year: String, $make: String, $model: String) {
+  partByYear(Year: $year, Make: $make, Model: $model) {
+    Product_Name
+    Year
+    Make
+    Model
+    Trim
+  }
+}
+ `;
 
-function ResultGridFun(){
+var unique;
+function ResultGridFun(data, error, loading){
     let j = "";
-    for(let i = 0; i < 8; i++){
-        j+="<div class=\"grid-item\">1</div>";
+    if(!error && !loading){
+        unique = [... new Map(data.partByYear.map(item => [item.Product_Name, item])).values()];
+        console.log(data);
+        console.log(unique);
+        for(let i = 0; i <unique.length; i++){
+            j+="<div class=\"grid-item\">" + unique[i].Product_Name + "</div>";
+        }
     }
     return(
         <ResultGrid dangerouslySetInnerHTML={{__html: j}}>
         </ResultGrid>
     )
 }
+
+
 
 
 function PDPage(){
@@ -48,8 +69,20 @@ function ChangeVehFun(){
 }
 
 const Results = () => {
+    //const [loadData, { data: yearData }] = useLazyQuery(QUERY_YEAR_MAKE_MODEL);
+    const{data, error, loading} = useQuery(QUERY_YEAR_MAKE_MODEL, {variables: { year: self.Year,
+        make: self.Make,
+        model: self.Model,}});
+    console.log("hi");
+    console.log(data);
+    if( !error && !loading){
+        console.log(data.partByYear.length);
+        var size = data.partByYear.length;
+    }
+    //console.log(data.partByYear.length);
+    //var size = data.partByYear.length;
 return (
-	<ResultsPage>
+	<ResultsPage >
         <Column1>
             <Silly> 
                 <img src={littleCar}  height="60px"/>
@@ -70,7 +103,7 @@ return (
                     <option value="bumper">Bumper</option>
                     <option value="none">List rest of products</option>
                 </select>
-                <button id="refine" onclick="refine()">Refine</button>
+                <button id="refine" onClick="refine()">Refine</button>
 
             </RefineResults>
              
@@ -84,7 +117,7 @@ return (
             </ResultHeader>
             
             <div id="grid-container" class="grid">
-                <ResultGridFun />
+                {ResultGridFun(data, error, loading) }
             </div>
             
             <div id="grid-container" class="grid">
