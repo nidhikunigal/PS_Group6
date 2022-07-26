@@ -71,7 +71,7 @@ function ResultGridFun(data, error, loading){
                 //         img.setAttribute('width', '50px');
                 //         //display = display.concat(" <img src={bumper}/>");
                 //}
-                j+="<div class=\"grid-item\">" + "<div id=" + i + ">" + unique[i].Product_Name + "</div>" +  "</div>";
+                j+="<div class=\"grid-item\" onload=internalGrid()>" + "<div id=" + i + ">" + unique[i].Product_Name + "</div>" +  "</div>";
             }
         }
         //console.log(j);
@@ -94,9 +94,9 @@ function refineUnique(data){
     }
 }
 
-function internalGrid(datas){
-    for(let i = 0; i < datas.length; i++ ){
-        var value = datas[i];
+function internalGrid(){
+    for(let i = 0; i < unique.length; i++ ){
+        var value = unique[i];
         var img = document.createElement('img');
         switch(value.VehicleParts[0].Type){
             case 'Bumper':
