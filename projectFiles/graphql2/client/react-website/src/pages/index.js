@@ -5,6 +5,7 @@ import levelingKit from "./levelingKit.jpg";
 import { useNavigate } from "react-router-dom";
 import { Form, formOptions, Deals, FeatDeals, Deal1, Button } from "./homeStyle.js";
 import { useQuery, useLazyQuery, gql } from "@apollo/client";
+import '../App.css'
 
 let yearGlobal;
 
@@ -37,61 +38,61 @@ query yearMakeModel($year: String, $make: String, $model: String) {
 //    );
 
 //    console.log(ymmdata);
-   function ResultsPage() {
-      let nav = useNavigate();
-      //const [loadData, { data: yearData }] = useLazyQuery(QUERY_YEAR_MAKE_MODEL);
-      const routeChange = () => {
-         if (self.Year == "" || self.Make == "" || self.Model == "") {
-            alert("Please fill out the year, make, and model field before submitting");
-         } else {
-            let path = '/results';
-            nav(path);
-         }
-      }
-      return (
-         <div>
-         <Button onClick={() => {
-                                 //    loadData(
-                                 //       {
-                                 //          variables: {
-                                 //             year: self.Year,
-                                 //             make: self.Make,
-                                 //             model: self.Model,
-                                 //          },
-                                 //       });
-                                 // console.log("year searched: " + self.Year);
-                                 // console.log("data: ");
-                                 // console.log(yearData); 
-                                 routeChange();
-                                 }}>
-            See Results
-         </Button>
-         </div>
-      )
-
-   }
-
-   function DetailsPage(src, name) {
-      let nav = useNavigate();
-      const routeChange = () => {
-         let path = '/details';
+function ResultsPage() {
+   let nav = useNavigate();
+   //const [loadData, { data: yearData }] = useLazyQuery(QUERY_YEAR_MAKE_MODEL);
+   const routeChange = () => {
+      if (self.Year == "" || self.Make == "" || self.Model == "") {
+         alert("Please fill out the year, make, and model field before submitting");
+      } else {
+         let path = '/results';
          nav(path);
       }
-      return (
-         <Deal1 title={name} onClick={routeChange}>
-            <img id="deal1img" src={src} title={name} ></img>
-            <a title={name}>{name}</a>
-         </Deal1>
-      )
    }
+   return (
+      <div>
+         <Button onClick={() => {
+            //    loadData(
+            //       {
+            //          variables: {
+            //             year: self.Year,
+            //             make: self.Make,
+            //             model: self.Model,
+            //          },
+            //       });
+            // console.log("year searched: " + self.Year);
+            // console.log("data: ");
+            // console.log(yearData); 
+            routeChange();
+         }}>
+            See Results
+         </Button>
+      </div>
+   )
+
+}
+
+function DetailsPage(src, name) {
+   let nav = useNavigate();
+   const routeChange = () => {
+      let path = '/details';
+      nav(path);
+   }
+   return (
+      <Deal1 title={name} onClick={routeChange}>
+         <img id="deal1img" src={src} title={name} ></img>
+         <a title={name}>{name}</a>
+      </Deal1>
+   )
+}
 
 
-   function quizResult(yearSearched, makeSearched, modelSearched, part) {
-      self.Year = yearSearched;
-      self.Make = makeSearched;
-      self.Model = modelSearched;
-      self.Part = part;
-   }
+function quizResult(yearSearched, makeSearched, modelSearched, part) {
+   self.Year = yearSearched;
+   self.Make = makeSearched;
+   self.Model = modelSearched;
+   self.Part = part;
+}
 
 
 
@@ -125,7 +126,7 @@ const Home = () => {
                      <option value="2016">2016</option>
                      <option value="2015">2015</option>
                   </select>
-
+                  <div class='space'></div>
                   <select id="make" value={makeSearched} onChange={(x) => setMakeSearched(x.target.value)}>
                      <option value="0">Make</option>
                      <option value="Ford">Ford</option>
@@ -136,6 +137,7 @@ const Home = () => {
                      <option value="GMC">GMC</option>
                      <option value="Ram">Ram</option>
                   </select>
+                  <div class='space'> </div>
                   <select id="model" value={modelSearched} onChange={(y) => setModelSearched(y.target.value)}>
                      <option value="0">Model</option>
                      <option value="F-150">F-150</option>
@@ -150,7 +152,12 @@ const Home = () => {
                      <option value="Silverado">Silverado</option>
                      <option value="Sierra">Sierra</option>
                   </select>
+                  <div class='space'> </div>
                   <select id="part" value={part} onChange={(e) => setPart(e.target.value)}>
+                     <option value="All Part">Part</option>
+                     <option value="Suspension">Suspension</option>
+                     <option value="Wheel">Wheel</option>
+                     <option value="Leveling Kit">Leveling Kit</option>
                      <option value="All Part">Part</option>
                      <option value="Suspension">Suspension</option>
                      <option value="Wheel">Wheel</option>
@@ -159,15 +166,13 @@ const Home = () => {
                      <option value="Bumper">Bumper</option>
                      <option value="All Part">All Part</option>
                   </select>
-               
                </formOptions>
-               
-               
+
                {/* {self.Year = Home.yearSearched}
                {self.Make = Home.makeSearched}
                {self.Model= Home.modelSearched}
                {self.Part= Home.part} */}
-            
+
                {/* <button type="button"
                   onClick={() => {
                      loadData(
@@ -209,7 +214,6 @@ const Home = () => {
                   console.log("year searched: " + yearSearched);
                   console.log("data: ");
                   console.log(yearData);
-
                }}>TEST</button> */}
             </form>
          </Form>

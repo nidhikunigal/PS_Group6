@@ -44,6 +44,8 @@ function ResultGridFun(data, error, loading){
         for(let i = 0; i <unique.length; i++){
             if(unique[i] != null){
                 j+="<div class=\"grid-item\">" + "<div id=" + i + ">" + unique[i].Product_Name + "</div>" +  "</div>";
+                console.log("should be here");
+                j+="<div class=\"grid-item\">" + internalGrid(unique[i]) + "</div>";
             }
         }
         console.log(j);
@@ -96,7 +98,27 @@ function internalGrid(datas){
         //console.log(document.getElementById(i));
     }
     
-   
+function internalGrid(value){
+    var display = "<div>"+ value.Product_Name + "</div>";
+    switch(value.VehicleParts[0].Type){
+        case 'Bumper':
+            display = display.concat("<img src={bumper}/>");
+            break;
+        case 'Suspension':
+            display = display.concat("<img src={bumper}/>");
+            break;
+        case 'Leveling':
+            display = display.concat("<img src={levelingKit}/>");
+            break;
+        case 'Wheel':
+            display = display.concat("<img src={tire}/>");
+            break;
+        case 'Fenders':
+            display = display.concat("<img src={bumper}/>");
+    }
+    console.log(display);
+    return display;
+ 
 }
 
 

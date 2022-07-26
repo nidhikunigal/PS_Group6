@@ -28,6 +28,21 @@
   color: #61dafb;
 }
 
+.space {
+  width: 10px;
+  height: auto;
+  display: inline-block;
+}
+
+select { width: 130px; text-align-last:center; height:30px; border-radius: 7px;
+  font-size: 13px;
+  padding: 3px 15px;
+  margin: 5px 5px;
+  cursor: pointer;
+  font-family: Sans-serif;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
