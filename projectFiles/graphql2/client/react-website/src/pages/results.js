@@ -128,9 +128,8 @@ function internalGrid(){
         //console.log(document.getElementById(i));
         return (img);
     }
-    
-   
 }
+    
 
 
 function PDPage(){
