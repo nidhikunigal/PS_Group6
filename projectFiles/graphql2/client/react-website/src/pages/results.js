@@ -43,12 +43,42 @@ function ResultGridFun(data, error, loading){
         }
         for(let i = 0; i <unique.length; i++){
             if(unique[i] != null){
-                j+="<div class=\"grid-item\">" + "<div id=" + i + ">" + unique[i].Product_Name + "</div>" +  "</div>";
-                console.log("should be here");
-                j+="<div class=\"grid-item\">" + internalGrid(unique[i]) + "</div>";
+                // var value = unique[i];
+                // var img = document.createElement('img');
+                // switch(value.VehicleParts[0].Type){
+                //     case 'Bumper':
+                //         //img = ' <img src={bumper} />';
+                //         img.setAttribute('src', bumper);
+                //         img.setAttribute('width', '50px');
+                //         break;
+                //     case 'Suspension':
+                //         img.setAttribute('src', bumper);
+                //         img.setAttribute('width', '50px');
+                //         //display = display.concat(" <img src={bumper}/>");
+                //         break;
+                //     case 'Leveling':
+                //         img.setAttribute('src', levelingKit);
+                //         img.setAttribute('width', '50px');
+                //         //display = display.concat(" <img src={levelingKit}/>");
+                //         break;
+                //     case 'Wheel':
+                //         img.setAttribute('src', tire);
+                //         img.setAttribute('width', '50px');
+                //         //display = display.concat(" <img src={tire}/>");
+                //         break;
+                //     case 'Fenders':
+                //         img.setAttribute('src', bumper);
+                //         img.setAttribute('width', '50px');
+                //         //display = display.concat(" <img src={bumper}/>");
+                //}
+                j+="<div class=\"grid-item\" onload=internalGrid()>" + "<div id=" + i + ">" + unique[i].Product_Name + "</div>" +  "</div>";
             }
         }
-        console.log(j);
+        //console.log(j);
+        //const currHTML = document.getElementsByTagName('ResultGrid')[0].innerHTML;
+       // const nextHTML = currHTML + j; 
+        //document.getElementsByTagName('ResultGrid')[0].innerHTML = j;
+       
     }
     return(
         <ResultGrid dangerouslySetInnerHTML={{__html: j}}>
@@ -64,9 +94,9 @@ function refineUnique(data){
     }
 }
 
-function internalGrid(datas){
-    for(let i = 0; i < datas.length; i++ ){
-        var value = datas[i];
+function internalGrid(){
+    for(let i = 0; i < unique.length; i++ ){
+        var value = unique[i];
         var img = document.createElement('img');
         switch(value.VehicleParts[0].Type){
             case 'Bumper':
@@ -94,32 +124,12 @@ function internalGrid(datas){
                 img.setAttribute('width', '50px');
                 //display = display.concat(" <img src={bumper}/>");
         }
-       // document.getElementById(i).appendChild(img);
+        //document.getElementById(i).appendChild(img);
         //console.log(document.getElementById(i));
+        return (img);
     }
-    
-function internalGrid(value){
-    var display = "<div>"+ value.Product_Name + "</div>";
-    switch(value.VehicleParts[0].Type){
-        case 'Bumper':
-            display = display.concat("<img src={bumper}/>");
-            break;
-        case 'Suspension':
-            display = display.concat("<img src={bumper}/>");
-            break;
-        case 'Leveling':
-            display = display.concat("<img src={levelingKit}/>");
-            break;
-        case 'Wheel':
-            display = display.concat("<img src={tire}/>");
-            break;
-        case 'Fenders':
-            display = display.concat("<img src={bumper}/>");
-    }
-    console.log(display);
-    return display;
- 
 }
+    
 
 
 function PDPage(){
@@ -201,10 +211,11 @@ return (
             </ResultHeader>
             
             <div id="grid-container" class="grid">
-                {ResultGridFun(data, error, loading) }
-                {internalGrid(unique)}
+                <ResultGrid>
+                    {ResultGridFun(data, error, loading) }
+                </ResultGrid>
+                {/* {internalGrid(unique)} */}
             </div>
-            
             <div id="grid-container" class="grid">
             </div>
         </Column2>
