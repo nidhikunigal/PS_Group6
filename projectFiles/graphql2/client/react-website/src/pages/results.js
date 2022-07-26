@@ -30,7 +30,7 @@ query yearMakeModel($year: String, $make: String, $model: String) {
 }
 `;
 
-var unique;
+var unique = [];
 function ResultGridFun(data, error, loading){
     let j = "";
     if(!error && !loading){
@@ -43,10 +43,42 @@ function ResultGridFun(data, error, loading){
         }
         for(let i = 0; i <unique.length; i++){
             if(unique[i] != null){
-                console.log("should be here");
-                j+="<div class=\"grid-item\">" + internalGrid(unique[i]) + "</div>";
+                // var value = unique[i];
+                // var img = document.createElement('img');
+                // switch(value.VehicleParts[0].Type){
+                //     case 'Bumper':
+                //         //img = ' <img src={bumper} />';
+                //         img.setAttribute('src', bumper);
+                //         img.setAttribute('width', '50px');
+                //         break;
+                //     case 'Suspension':
+                //         img.setAttribute('src', bumper);
+                //         img.setAttribute('width', '50px');
+                //         //display = display.concat(" <img src={bumper}/>");
+                //         break;
+                //     case 'Leveling':
+                //         img.setAttribute('src', levelingKit);
+                //         img.setAttribute('width', '50px');
+                //         //display = display.concat(" <img src={levelingKit}/>");
+                //         break;
+                //     case 'Wheel':
+                //         img.setAttribute('src', tire);
+                //         img.setAttribute('width', '50px');
+                //         //display = display.concat(" <img src={tire}/>");
+                //         break;
+                //     case 'Fenders':
+                //         img.setAttribute('src', bumper);
+                //         img.setAttribute('width', '50px');
+                //         //display = display.concat(" <img src={bumper}/>");
+                //}
+                j+="<div class=\"grid-item\" onload=internalGrid()>" + "<div id=" + i + ">" + unique[i].Product_Name + "</div>" +  "</div>";
             }
         }
+        //console.log(j);
+        //const currHTML = document.getElementsByTagName('ResultGrid')[0].innerHTML;
+       // const nextHTML = currHTML + j; 
+        //document.getElementsByTagName('ResultGrid')[0].innerHTML = j;
+       
     }
     return(
         <ResultGrid dangerouslySetInnerHTML={{__html: j}}>
@@ -62,28 +94,42 @@ function refineUnique(data){
     }
 }
 
-function internalGrid(value){
-    var display = "<div>"+ value.Product_Name + "</div>";
-    switch(value.VehicleParts[0].Type){
-        case 'Bumper':
-            display = display.concat("<img src={bumper}/>");
-            break;
-        case 'Suspension':
-            display = display.concat("<img src={bumper}/>");
-            break;
-        case 'Leveling':
-            display = display.concat("<img src={levelingKit}/>");
-            break;
-        case 'Wheel':
-            display = display.concat("<img src={tire}/>");
-            break;
-        case 'Fenders':
-            display = display.concat("<img src={bumper}/>");
+function internalGrid(){
+    for(let i = 0; i < unique.length; i++ ){
+        var value = unique[i];
+        var img = document.createElement('img');
+        switch(value.VehicleParts[0].Type){
+            case 'Bumper':
+                //img = ' <img src={bumper} />';
+                img.setAttribute('src', bumper);
+                img.setAttribute('width', '50px');
+                break;
+            case 'Suspension':
+                img.setAttribute('src', bumper);
+                img.setAttribute('width', '50px');
+                //display = display.concat(" <img src={bumper}/>");
+                break;
+            case 'Leveling':
+                img.setAttribute('src', levelingKit);
+                img.setAttribute('width', '50px');
+                //display = display.concat(" <img src={levelingKit}/>");
+                break;
+            case 'Wheel':
+                img.setAttribute('src', tire);
+                img.setAttribute('width', '50px');
+                //display = display.concat(" <img src={tire}/>");
+                break;
+            case 'Fenders':
+                img.setAttribute('src', bumper);
+                img.setAttribute('width', '50px');
+                //display = display.concat(" <img src={bumper}/>");
+        }
+        //document.getElementById(i).appendChild(img);
+        //console.log(document.getElementById(i));
+        return (img);
     }
-    console.log(display);
-    return display;
-   
 }
+    
 
 
 function PDPage(){
@@ -165,9 +211,11 @@ return (
             </ResultHeader>
             
             <div id="grid-container" class="grid">
-                {ResultGridFun(data, error, loading) }
+                <ResultGrid>
+                    {ResultGridFun(data, error, loading) }
+                </ResultGrid>
+                {/* {internalGrid(unique)} */}
             </div>
-            
             <div id="grid-container" class="grid">
             </div>
         </Column2>
