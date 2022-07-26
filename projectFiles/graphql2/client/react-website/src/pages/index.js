@@ -154,15 +154,21 @@ const Home = () => {
                   </select>
                   <div class='space'> </div>
                   <select id="part" value={part} onChange={(e) => setPart(e.target.value)}>
+
                      <option value="All Part">Part</option>
+
                      <option value="Suspension">Suspension</option>
+
                      <option value="Wheel">Wheel</option>
+
                      <option value="Leveling Kit">Leveling Kit</option>
+
                      <option value="Fender">Fender</option>
                      <option value="Bumper">Bumper</option>
                      <option value="All Part">All Part</option>
                   </select>
                </formOptions>
+
 
                {/* {self.Year = Home.yearSearched}
                {self.Make = Home.makeSearched}

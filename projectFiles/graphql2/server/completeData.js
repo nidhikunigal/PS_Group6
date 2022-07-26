@@ -1623,7 +1623,7 @@ const Compatible_Vehicles = [
         Model: "F-150",
         Trim: "Platinum",
         Num_Reviews: 536,
-        Fitment_Percent: 82, 
+        Fitment_Percent: 82,
     },
     {
         Product_Name: "Premium Rear Bumper (Black)",
@@ -1929,7 +1929,7 @@ const Compatible_Vehicles = [
         Model: "F-150",
         Trim: "Platinum",
         Num_Reviews: 1817,
-        Fitment_Percent: 52, 
+        Fitment_Percent: 52,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T",
@@ -1956,7 +1956,7 @@ const Compatible_Vehicles = [
         Model: "F-150",
         Trim: "SSV",
         Num_Reviews: 3604,
-        Fitment_Percent: 47, 
+        Fitment_Percent: 47,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T",
@@ -2037,7 +2037,7 @@ const Compatible_Vehicles = [
         Model: "F-150",
         Trim: "XLT",
         Num_Reviews: 482,
-        Fitment_Percent: 61, 
+        Fitment_Percent: 61,
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T",
@@ -2894,7 +2894,7 @@ const Compatible_Vehicles = [
         Year: "2022",
         Make: "Toyota",
         Model: "4Runner",
-        Trim: "Venture", 
+        Trim: "Venture",
         Num_Reviews: 1230,
         Fitment_Percent: 86,
     },
@@ -4438,7 +4438,7 @@ const Compatible_Vehicles = [
         Num_Reviews: 60,
         Fitment_Percent: 40,
     },
-    
+
     {
         Product_Name: "Pro Comp 3 Inch Leveling Lift Kit - 62200",
         Year: "2014",

@@ -12,7 +12,7 @@ margin: 5px 0px;
 cursor: pointer;
 font-family: Sans-serif;
 width:100px;
-height:25px;
+height:23px;
 `
 
 export const Form = styled.form`
