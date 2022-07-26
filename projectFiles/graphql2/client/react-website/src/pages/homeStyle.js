@@ -17,6 +17,25 @@ text-align: center;
 font-family: Sans-serif;
 `
 
+export const Button = styled.button`
+
+background-color: white;
+
+color: black;
+
+font-size: 11.5px;
+
+padding: 3px 15px;
+
+border-radius: 5px;
+
+margin: 0px 0px;
+
+cursor: pointer;
+
+font-family: Sans-serif;
+`
+
 
 export const formOptions = styled.form`
 display: flex;
