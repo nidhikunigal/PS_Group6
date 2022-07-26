@@ -75,14 +75,14 @@ function ResultGridFun(data, error, loading){
             }
         }
         //console.log(j);
-        console.log(document.getElementsByTagName('ResultGrid'))
+        //const currHTML = document.getElementsByTagName('ResultGrid')[0].innerHTML;
+       // const nextHTML = currHTML + j; 
         //document.getElementsByTagName('ResultGrid')[0].innerHTML = j;
        
     }
     return(
-        // <ResultGrid dangerouslySetInnerHTML={{__html: j}}>
-        // </ResultGrid>
-        <div></div>
+        <ResultGrid dangerouslySetInnerHTML={{__html: j}}>
+        </ResultGrid>
     )
 }
 
