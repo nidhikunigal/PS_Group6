@@ -151,24 +151,16 @@ const Home = () => {
                      <option value="Sierra">Sierra</option>
                   </select>
                   <select id="part" value={part} onChange={(e) => setPart(e.target.value)}>
-
-                        <option value="All Part">Part</option>
-
-                        <option value="Suspension">Suspension</option>
-
-                        <option value="Wheel">Wheel</option>
-
-                        <option value="Leveling Kit">Leveling Kit</option>
-
-                        <option value="Fender">Fender</option>
-
-                        <option value="Bumper">Bumper</option>
-
-                        <option value="All Part">All Part</option>
-
-                     </select>
+                     <option value="All Part">Part</option>
+                     <option value="Suspension">Suspension</option>
+                     <option value="Wheel">Wheel</option>
+                     <option value="Leveling Kit">Leveling Kit</option>
+                     <option value="Fender">Fender</option>
+                     <option value="Bumper">Bumper</option>
+                     <option value="All Part">All Part</option>
+                  </select>
                
-                  </formOptions>
+               </formOptions>
                
                
                {/* {self.Year = Home.yearSearched}

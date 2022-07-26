@@ -5,6 +5,9 @@ import littleCar from "./currveh.jfif";
 import {self} from "./index";
 import Home from "./index";
 import { useQuery, useLazyQuery, gql } from "@apollo/client";
+import tire from "./tire.jpg";
+import bumper from "./tempBumper.jpg";
+import levelingKit from "./levelingKit.jpg";
 
 const QUERY_YEAR_MAKE_MODEL = gql`
 query yearMakeModel($year: String, $make: String, $model: String) {
@@ -14,9 +17,18 @@ query yearMakeModel($year: String, $make: String, $model: String) {
     Make
     Model
     Trim
+    VehicleParts {
+      Type
+      Product_Name
+      Company
+      Cost
+      Specifications
+      Technical_Details
+      General_Vehicle
+    }
   }
 }
- `;
+`;
 
 var unique;
 function ResultGridFun(data, error, loading){
@@ -26,7 +38,7 @@ function ResultGridFun(data, error, loading){
         console.log(data);
         console.log(unique);
         for(let i = 0; i <unique.length; i++){
-            j+="<div class=\"grid-item\">" + unique[i].Product_Name + "</div>";
+            j+="<div class=\"grid-item\">" + internalGrid(unique[i]) + "</div>";
         }
     }
     return(
@@ -35,7 +47,28 @@ function ResultGridFun(data, error, loading){
     )
 }
 
-
+function internalGrid(value){
+    var display = "<div>"+ value.Product_Name + "</div>";
+    switch(value.VehicleParts[0].Type){
+        case 'Bumper':
+            display = display.concat("<img src={bumper}/>");
+            break;
+        case 'Suspension':
+            display = display.concat("<img src={bumper}/>");
+            break;
+        case 'Leveling':
+            display = display.concat("<img src={levelingKit}/>");
+            break;
+        case 'Wheel':
+            display = display.concat("<img src={tire}/>");
+            break;
+        case 'Fenders':
+            display = display.concat("<img src={bumper}/>");
+    }
+    console.log(display);
+    return display;
+   
+}
 
 
 function PDPage(){
