@@ -36,15 +36,30 @@ function ResultGridFun(data, error, loading){
     if(!error && !loading){
         unique = [... new Map(data.partByYear.map(item => [item.Product_Name, item])).values()];
         console.log(data);
-        console.log(unique);
+        console.log(unique); 
+        console.log(self.Part);
+        if(self.Part != "All Part" && self.Part != ""){
+            refineUnique(unique);
+        }
         for(let i = 0; i <unique.length; i++){
-            j+="<div class=\"grid-item\">" + internalGrid(unique[i]) + "</div>";
+            if(unique[i] != null){
+                console.log("should be here");
+                j+="<div class=\"grid-item\">" + internalGrid(unique[i]) + "</div>";
+            }
         }
     }
     return(
         <ResultGrid dangerouslySetInnerHTML={{__html: j}}>
         </ResultGrid>
     )
+}
+
+function refineUnique(data){
+    for(let i = 0; i < data.length; i++){
+        if(data[i].VehicleParts[0].Type != self.Part){
+            delete data[i];
+        }
+    }
 }
 
 function internalGrid(value){
