@@ -1,5 +1,5 @@
 import React from "react";
-import { RefineHead, RefineResults, ChangeVeh, Silly, ResultHeader, ResultsPage, Column1, Column2, ResultGrid, GridEl } from "./resultStyle";
+import { RefineHead, RefineResults, ChangeVeh, Silly, ResultHeader, ResultsPage, Column1, Column2, ResultGrid, gridel } from "./resultStyle";
 import { useNavigate } from "react-router-dom";
 import littleCar from "./currveh.jfif";
 import {self} from "./index";
@@ -43,42 +43,9 @@ function ResultGridFun(data, error, loading){
         }
         for(let i = 0; i <unique.length; i++){
             if(unique[i] != null){
-                // var value = unique[i];
-                // var img = document.createElement('img');
-                // switch(value.VehicleParts[0].Type){
-                //     case 'Bumper':
-                //         //img = ' <img src={bumper} />';
-                //         img.setAttribute('src', bumper);
-                //         img.setAttribute('width', '50px');
-                //         break;
-                //     case 'Suspension':
-                //         img.setAttribute('src', bumper);
-                //         img.setAttribute('width', '50px');
-                //         //display = display.concat(" <img src={bumper}/>");
-                //         break;
-                //     case 'Leveling':
-                //         img.setAttribute('src', levelingKit);
-                //         img.setAttribute('width', '50px');
-                //         //display = display.concat(" <img src={levelingKit}/>");
-                //         break;
-                //     case 'Wheel':
-                //         img.setAttribute('src', tire);
-                //         img.setAttribute('width', '50px');
-                //         //display = display.concat(" <img src={tire}/>");
-                //         break;
-                //     case 'Fenders':
-                //         img.setAttribute('src', bumper);
-                //         img.setAttribute('width', '50px');
-                //         //display = display.concat(" <img src={bumper}/>");
-                //}
-                j+="<div class=grid-item>" + unique[i].Product_Name + internalGrid(unique[i].VehicleParts[0].Type)+ "</div> ";
+                j+="<div class=grid-item><style type=text/css> .grid-item{display: flex; flex-direction:column; align-items: center; justify-content: flex-start;  text-align: center; background-color: pink;}</style>" + internalGrid(unique[i].VehicleParts[0].Type) + "<a style=\"color:blue; font-weight: 600; font-family:Sans-serif; font-size:1em; \" activeStyle>" + unique[i].Product_Name + "</a> <p id=price><style type=text/css> #price{position:relative;  bottom: 0; left: 0; }</style>" +unique[i].VehicleParts[0].Cost + "</p> </div> ";
             }
         }
-        //console.log(j);
-        //const currHTML = document.getElementsByTagName('ResultGrid')[0].innerHTML;
-       // const nextHTML = currHTML + j; 
-        //document.getElementsByTagName('ResultGrid')[0].innerHTML = j;
-       
     }
     return(
         <ResultGrid dangerouslySetInnerHTML={{__html: j}}>
@@ -114,11 +81,7 @@ function internalGrid(type){
             case 'Fenders':
                 SRC = bumper;
         }
-        // if(document.getElementById(id) != null){
-        //     document.getElementById(id).appendChild(img);
-        // }
-        //console.log(document.getElementById(i));
-        return ("<img src=" + SRC + " width=100% />");
+        return ("<img src=" + SRC + " width=250px />");
 }
 
     
@@ -206,7 +169,6 @@ return (
                 <ResultGrid>
                     {ResultGridFun(data, error, loading) }
                 </ResultGrid>
-                {/* {internalGrid(unique)} */}
             </div>
             <div id="grid-container" class="grid">
             </div>

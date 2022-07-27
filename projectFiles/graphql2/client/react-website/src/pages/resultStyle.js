@@ -59,6 +59,13 @@ display: grid;
 grid-gap: 2px;
 box-sizing: border-box;
 grid-template-columns: [col1-start] auto  [col2-start] auto  [col3-start] auto;
-grid-auto-rows: 300px;
+grid-auto-rows: 350px;
+`
+
+export const gridel = styled.form`
+display: flex; 
+flex-direction: center; 
+text-align: center; 
+background-color: pink;
 `
 
