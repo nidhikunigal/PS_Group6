@@ -91,7 +91,9 @@ function quizResult(yearSearched, makeSearched, modelSearched, part) {
    self.Year = yearSearched;
    self.Make = makeSearched;
    self.Model = modelSearched;
-   self.Part = part;
+   if(part != ""){
+      self.Part = part;
+   }
 }
 
 
@@ -256,6 +258,6 @@ export const self =
    Year: "hello",
    Make: "hi",
    Model: "hey",
-   Part: Home.part,
+   Part: "All Part",
    Name: Home.name,
 };
