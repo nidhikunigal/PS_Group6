@@ -96,42 +96,29 @@ function refineUnique(data){
 
 function internalGrid(type){
     var SRC = null;
-    var WIDTH = null;
     //var img = document.createElement("img");
 
         switch(type){
             case 'Bumper':
-                //img = ' <img src={bumper} />';
-                SRC = 'bumper';
-                WIDTH = '50px'; 
-                // img.setAttribute('src', bumper);
-                // img.setAttribute('width', '100px');
+                SRC = bumper;
                 break;
             case 'Suspension':
-                // img.setAttribute('src', bumper);
-                // img.setAttribute('width', '50px');
-                //display = display.concat(" <img src={bumper}/>");
+                SRC = bumper;
                 break;
             case 'Leveling':
-                // img.setAttribute('src', levelingKit);
-                // img.setAttribute('width', '50px');
-                //display = display.concat(" <img src={levelingKit}/>");
+                SRC = levelingKit;
                 break;
             case 'Wheel':
-                // img.setAttribute('src', tire);
-                // img.setAttribute('width', '50px');
-                //display = display.concat(" <img src={tire}/>");
+                SRC = tire;
                 break;
             case 'Fenders':
-                // img.setAttribute('src', bumper);
-                // img.setAttribute('width', '50px');
-                //display = display.concat(" <img src={bumper}/>");
+                SRC = bumper;
         }
         // if(document.getElementById(id) != null){
         //     document.getElementById(id).appendChild(img);
         // }
         //console.log(document.getElementById(i));
-        return ("<img src=" + {SRC} + " width=" + {WIDTH}+ ">HI</img>");
+        return ("<img src=" + SRC + " width=100% />");
 }
 
     
