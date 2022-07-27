@@ -91,7 +91,9 @@ function quizResult(yearSearched, makeSearched, modelSearched, part) {
    self.Year = yearSearched;
    self.Make = makeSearched;
    self.Model = modelSearched;
-   self.Part = part;
+   if(part != ""){
+      self.Part = part;
+   }
 }
 
 
@@ -167,54 +169,8 @@ const Home = () => {
                      <option value="All Part">All Part</option>
                   </select>
                </formOptions>
-
-               {/* {self.Year = Home.yearSearched}
-               {self.Make = Home.makeSearched}
-               {self.Model= Home.modelSearched}
-               {self.Part= Home.part} */}
-
-               {/* <button type="button"
-                  onClick={() => {
-                     loadData(
-                        {
-                           variables: {
-                              year: yearSearched,
-                              make: makeSearched,
-                              model: modelSearched,
-                           },
-                        });
-                     console.log("year searched: " + yearSearched);
-                     console.log("data: ");
-                     console.log(yearData);
-                  }}>
-                  {" "}
-                     TEST
-                  </button> */}
-               {/* {quizResult(yearSearched, makeSearched, modelSearched, part)} */}
                {quizResult(yearSearched, makeSearched, modelSearched, part)}
                <ResultsPage />
-               {/* <button onClick={()=> {
-                  const routeChange = () => {
-                     if (self.Year == undefined || self.Make == undefined || self.Model == undefined) {
-                        alert("Please fill out the year, make, and model field before submitting");
-                     } else {
-                        let path = '/results';
-                        nav(path);
-                     }
-                  }
-                  loadData(
-                     {
-                        variables: {
-                           year: yearSearched,
-                           make: makeSearched,
-                           model: modelSearched,
-                        },
-                     });
-                  routeChange();
-                  console.log("year searched: " + yearSearched);
-                  console.log("data: ");
-                  console.log(yearData);
-               }}>TEST</button> */}
             </form>
          </Form>
          <Deals>
@@ -256,6 +212,6 @@ export const self =
    Year: "hello",
    Make: "hi",
    Model: "hey",
-   Part: Home.part,
+   Part: "All Part",
    Name: Home.name,
 };

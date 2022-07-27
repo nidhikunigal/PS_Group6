@@ -29,15 +29,26 @@ font-size: small;
 align-items: center;
 `
 
+export const NoResults=styled.form`
+font-size: 2em;
+font-weight: 600;
+font-family: Sans-serif;
+margin-top: 2em;
+
+`
+
 export const ResultHeader = styled.form`
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 font-size: large;
+font-weight: 500;
+padding: 10px;
 `
 
 export const ResultsPage = styled.form`
 display: flex;
 flex-direction: row;
 flex: 1 1 auto;
+height: 100vh;
 `
 
 export const Column1 = styled.form`
@@ -46,6 +57,7 @@ padding: 2px;
 align-items: stretch;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 display: flex;
+height: fill;
 flex-direction: column;
 text-align: center;
 `
@@ -53,12 +65,16 @@ text-align: center;
 export const Column2 = styled.form`
 width: 80%;
 `
-
+//grid-template-columns: [col1-start] auto  [col2-start] auto  [col3-start] auto ;
 export const ResultGrid = styled.form`
 display: grid;
 grid-gap: 2px;
 box-sizing: border-box;
-grid-template-columns: [col1-start] auto  [col2-start] auto  [col3-start] auto;
-grid-auto-rows: 300px;
+grid-template-columns: [col1-start] 22em  [col2-start] 22em  [col3-start] 22em ;
+grid-auto-rows: 400px;
 `
-
+export const NumRes = styled.form`
+font-size: 1em;
+font-family: sans-serif;
+margin-left: 20px;
+`
