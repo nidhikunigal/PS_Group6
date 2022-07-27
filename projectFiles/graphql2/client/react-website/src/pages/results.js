@@ -71,7 +71,7 @@ function ResultGridFun(data, error, loading){
                 //         img.setAttribute('width', '50px');
                 //         //display = display.concat(" <img src={bumper}/>");
                 //}
-                j+="<div class=\"grid-item\" onload=internalGrid()>" + "<div id=" + i + ">" + unique[i].Product_Name + "</div>" +  "</div>";
+                j+="<div class=grid-item>" + unique[i].Product_Name + internalGrid(unique[i].VehicleParts[0].Type)+ "</div> ";
             }
         }
         //console.log(j);
@@ -94,41 +94,46 @@ function refineUnique(data){
     }
 }
 
-function internalGrid(){
-    for(let i = 0; i < unique.length; i++ ){
-        var value = unique[i];
-        var img = document.createElement('img');
-        switch(value.VehicleParts[0].Type){
+function internalGrid(type){
+    var SRC = null;
+    var WIDTH = null;
+    //var img = document.createElement("img");
+
+        switch(type){
             case 'Bumper':
                 //img = ' <img src={bumper} />';
-                img.setAttribute('src', bumper);
-                img.setAttribute('width', '50px');
+                SRC = 'bumper';
+                WIDTH = '50px'; 
+                // img.setAttribute('src', bumper);
+                // img.setAttribute('width', '100px');
                 break;
             case 'Suspension':
-                img.setAttribute('src', bumper);
-                img.setAttribute('width', '50px');
+                // img.setAttribute('src', bumper);
+                // img.setAttribute('width', '50px');
                 //display = display.concat(" <img src={bumper}/>");
                 break;
             case 'Leveling':
-                img.setAttribute('src', levelingKit);
-                img.setAttribute('width', '50px');
+                // img.setAttribute('src', levelingKit);
+                // img.setAttribute('width', '50px');
                 //display = display.concat(" <img src={levelingKit}/>");
                 break;
             case 'Wheel':
-                img.setAttribute('src', tire);
-                img.setAttribute('width', '50px');
+                // img.setAttribute('src', tire);
+                // img.setAttribute('width', '50px');
                 //display = display.concat(" <img src={tire}/>");
                 break;
             case 'Fenders':
-                img.setAttribute('src', bumper);
-                img.setAttribute('width', '50px');
+                // img.setAttribute('src', bumper);
+                // img.setAttribute('width', '50px');
                 //display = display.concat(" <img src={bumper}/>");
         }
-        //document.getElementById(i).appendChild(img);
+        // if(document.getElementById(id) != null){
+        //     document.getElementById(id).appendChild(img);
+        // }
         //console.log(document.getElementById(i));
-        return (img);
-    }
+        return ("<img src=" + {SRC} + " width=" + {WIDTH}+ ">HI</img>");
 }
+
     
 
 
