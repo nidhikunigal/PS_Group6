@@ -48,6 +48,7 @@ export const ResultsPage = styled.form`
 display: flex;
 flex-direction: row;
 flex: 1 1 auto;
+height: 100vh;
 `
 
 export const Column1 = styled.form`
@@ -56,6 +57,7 @@ padding: 2px;
 align-items: stretch;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 display: flex;
+height: fill;
 flex-direction: column;
 text-align: center;
 `
@@ -71,4 +73,8 @@ box-sizing: border-box;
 grid-template-columns: [col1-start] 22em  [col2-start] 22em  [col3-start] 22em ;
 grid-auto-rows: 400px;
 `
-
+export const NumRes = styled.form`
+font-size: 1em;
+font-family: sans-serif;
+margin-left: 20px;
+`

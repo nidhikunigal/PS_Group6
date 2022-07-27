@@ -1,13 +1,15 @@
 import React from "react";
-import { NoResults, RefineHead, RefineResults, ChangeVeh, Silly, ResultHeader, ResultsPage, Column1, Column2, ResultGrid, gridel } from "./resultStyle";
+import { NoResults, RefineHead, RefineResults, ChangeVeh, Silly, ResultHeader, ResultsPage, Column1, Column2, ResultGrid, NumRes } from "./resultStyle";
 import { useNavigate } from "react-router-dom";
 import littleCar from "./currveh.jfif";
 import {self} from "./index";
 import Home from "./index";
 import { useQuery, useLazyQuery, gql } from "@apollo/client";
-import tire from "./tire.jpg";
-import bumper from "./tempBumper.jpg";
+import tire from "./wheels.jpg";
+import bumper from "./bumper.jpg";
 import levelingKit from "./levelingKit.jpg";
+import suspension from "./suspension.jpg";
+import fender from "./fender.jpg";
  
 const QUERY_YEAR_MAKE_MODEL = gql`
 query yearMakeModel($year: String, $make: String, $model: String) {
@@ -43,7 +45,7 @@ function ResultGridFun(data, error, loading){
         }
         for(let i = 0; i <unique.length; i++){
             if(unique[i] != null){
-                j+="<div class=grid-item><style type=text/css> .grid-item{display: flex; flex-direction:column; align-items: center; text-align: center;}</style>" + internalGrid(unique[i].VehicleParts[0].Type) + "<a style=\"color:blue; font-weight: 600; font-family:Sans-serif; font-size:1em; text-decoration-line: underline;  \">" + unique[i].Product_Name + "</a> <p id=price><style type=text/css> #price{justify-self: flex-end; align-self: flex-start; font-family:Sans-serif; font-weight:600; margin-left: 30px; height: 8px; }</style> $" +unique[i].VehicleParts[0].Cost + "</p> <div id=bottom><style type=text/css> #bottom{display: flex; flex-direction: row; align-self: center;} #quan{width: 5em;} #buy{background-color: red; width:15em; display: block; border: none; color: white; font-family: Sans-serif; font-weight: 600;}</style><select id=quan value=quan><option value=1>1</option> <option value=2>2</option> <option value=3>3</option></select><button id=buy>Add To Cart </button></div> </div> ";
+                j+="<div class=grid-item><style type=text/css> .grid-item{display: flex; flex-direction:column; align-items: center; text-align: center; border: 1px solid grey;}</style>" + internalGrid(unique[i].VehicleParts[0].Type) + "<a style=\"color:blue; font-weight: 600; font-family:Sans-serif; font-size:1em; text-decoration-line: underline;  \">" + unique[i].Product_Name + "</a> <p id=price><style type=text/css> #price{justify-self: flex-end; align-self: flex-start; font-family:Sans-serif; font-weight:600; margin-left: 30px; height: 8px; }</style> $" +unique[i].VehicleParts[0].Cost + "</p> <div id=bottom><style type=text/css> #bottom{display: flex; flex-direction: row; align-self: center;} #quan{width: 5em;} #buy{background-color: red; width:15em; display: block; border: none; color: white; font-family: Sans-serif; font-weight: 600;}</style><select id=quan value=quan><option value=1>1</option> <option value=2>2</option> <option value=3>3</option></select><button id=buy>Add To Cart </button></div> </div> ";
             }
         }
     }
@@ -70,7 +72,7 @@ function internalGrid(type){
                 SRC = bumper;
                 break;
             case 'Suspension':
-                SRC = bumper;
+                SRC = suspension;
                 break;
             case 'Leveling':
                 SRC = levelingKit;
@@ -79,7 +81,7 @@ function internalGrid(type){
                 SRC = tire;
                 break;
             case 'Fenders':
-                SRC = bumper;
+                SRC = fender;
         }
         return ("<img src=" + SRC + " width=250px />");
 }
@@ -124,7 +126,6 @@ const Results = () => {
         model: self.Model,}});
     console.log(data);
     if( !error && !loading){
-        console.log(data.partByYear.length);
         var size = data.partByYear.length;
         if(size == 0){
             return(
@@ -167,8 +168,6 @@ const Results = () => {
             );
         }
     }
-    //console.log(data.partByYear.length);
-    //var size = data.partByYear.length;
 return (
     <ResultsPage >
         <Column1>
@@ -201,7 +200,9 @@ return (
             <ResultHeader>
                 Showing {self.Part}'s for {self.Year} {self.Make} {self.Model}
             </ResultHeader>
-           
+            <NumRes> 
+                {unique.length} Results
+            </NumRes>
             <div id="grid-container" class="grid">
                 <ResultGrid>
                     {ResultGridFun(data, error, loading) }
