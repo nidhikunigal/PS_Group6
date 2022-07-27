@@ -18,8 +18,8 @@ height:23px;
 export const Form = styled.form`
 background-image: url(${car});
 background-size: cover;
-color: black;
-text-shadow: -0.8px 1px 0 black;
+color: white; 
+-webkit-text-stroke:  1px black;
 font-size: 23px;
 height: 300px;
 display: flex;
