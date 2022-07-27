@@ -29,9 +29,19 @@ font-size: small;
 align-items: center;
 `
 
+export const NoResults=styled.form`
+font-size: 2em;
+font-weight: 600;
+font-family: Sans-serif;
+margin-top: 2em;
+
+`
+
 export const ResultHeader = styled.form`
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 font-size: large;
+font-weight: 500;
+padding: 10px;
 `
 
 export const ResultsPage = styled.form`

@@ -1,5 +1,5 @@
 import React from "react";
-import { RefineHead, RefineResults, ChangeVeh, Silly, ResultHeader, ResultsPage, Column1, Column2, ResultGrid, gridel } from "./resultStyle";
+import { NoResults, RefineHead, RefineResults, ChangeVeh, Silly, ResultHeader, ResultsPage, Column1, Column2, ResultGrid, gridel } from "./resultStyle";
 import { useNavigate } from "react-router-dom";
 import littleCar from "./currveh.jfif";
 import {self} from "./index";
@@ -43,7 +43,7 @@ function ResultGridFun(data, error, loading){
         }
         for(let i = 0; i <unique.length; i++){
             if(unique[i] != null){
-                j+="<div class=grid-item><style type=text/css> .grid-item{display: flex; flex-direction:column; align-items: center; text-align: center;}</style>" + internalGrid(unique[i].VehicleParts[0].Type) + "<a style=\"color:blue; font-weight: 600; font-family:Sans-serif; font-size:1em; text-decoration-line: underline;  \">" + unique[i].Product_Name + "</a> <p id=price><style type=text/css> #price{justify-self: flex-end; align-self: flex-start; font-family:Sans-serif; font-weight:600; margin-left: 30px; }</style> $" +unique[i].VehicleParts[0].Cost + "</p> <div id=bottom><style type=text/css> #bottom{display: flex; flex-direction: row; align-self: center;} #quan{width: 5em;} #buy{background-color: red; width:15em; display: block; border: none; color: white; font-family: Sans-serif; font-weight: 600;}</style><select id=quan value=quan><option value=1>1</option> <option value=2>2</option> <option value=3>3</option></select><button id=buy>Add To Cart </button></div> </div> ";
+                j+="<div class=grid-item><style type=text/css> .grid-item{display: flex; flex-direction:column; align-items: center; text-align: center;}</style>" + internalGrid(unique[i].VehicleParts[0].Type) + "<a style=\"color:blue; font-weight: 600; font-family:Sans-serif; font-size:1em; text-decoration-line: underline;  \">" + unique[i].Product_Name + "</a> <p id=price><style type=text/css> #price{justify-self: flex-end; align-self: flex-start; font-family:Sans-serif; font-weight:600; margin-left: 30px; height: 8px; }</style> $" +unique[i].VehicleParts[0].Cost + "</p> <div id=bottom><style type=text/css> #bottom{display: flex; flex-direction: row; align-self: center;} #quan{width: 5em;} #buy{background-color: red; width:15em; display: block; border: none; color: white; font-family: Sans-serif; font-weight: 600;}</style><select id=quan value=quan><option value=1>1</option> <option value=2>2</option> <option value=3>3</option></select><button id=buy>Add To Cart </button></div> </div> ";
             }
         }
     }
@@ -122,11 +122,50 @@ const Results = () => {
     const{data, error, loading} = useQuery(QUERY_YEAR_MAKE_MODEL, {variables: { year: self.Year,
         make: self.Make,
         model: self.Model,}});
-    console.log("hi");
     console.log(data);
     if( !error && !loading){
         console.log(data.partByYear.length);
         var size = data.partByYear.length;
+        if(size == 0){
+            return(
+            <ResultsPage >
+                <Column1>
+                    <Silly>
+                        <img src={littleCar}  height="60px"/>
+                        Current Vehicle: {self.Year} {self.Make} {self.Model}
+                    </Silly>
+                
+                    <ChangeVehFun />
+                    
+                    <RefineHead> Refine By:</RefineHead>
+                    <RefineResults>
+                        <select id="Brand">
+                            <option value="brand ex">Put brand examples here</option>
+                        </select>
+                        <select id="Fitment">
+                            <option value="cars">List all cars</option>
+                        </select>
+                        <select id="ProductCategory">
+                            <option value="bumper">Bumper</option>
+                            <option value="none">List rest of products</option>
+                        </select>
+                        <button id="refine" onClick="refine()">Refine</button>
+        
+                    </RefineResults>
+                </Column1>
+                <Column2>
+                    <center>
+                    <NoResults>
+                        We're Sorry, We Couldn't Find Any Parts Matching Your Search For {self.Year} {self.Make} {self.Model}
+                    </NoResults>
+                        Change your vehicle or search for another part for more results. 
+                    </center>
+                </Column2>
+            </ResultsPage>
+
+             
+            );
+        }
     }
     //console.log(data.partByYear.length);
     //var size = data.partByYear.length;
@@ -161,8 +200,6 @@ return (
         <Column2>
             <ResultHeader>
                 Showing {self.Part}'s for {self.Year} {self.Make} {self.Model}
-               
-       
             </ResultHeader>
            
             <div id="grid-container" class="grid">
