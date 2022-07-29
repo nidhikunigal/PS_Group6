@@ -1,4 +1,4 @@
-import React from 'react';
+import React , {useState, } from 'react';
 import './App.css';
 import Navbar from './components';
 import { BrowserRouter as Router, Routes, Route }
@@ -31,7 +31,7 @@ function App() {
 					<Route path='/details' element={<Details />} />
 
 				</Routes>
-			</Router>
+			</Router>		
 		</ApolloProvider>
 	);
 }

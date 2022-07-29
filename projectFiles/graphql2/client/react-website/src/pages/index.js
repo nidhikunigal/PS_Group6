@@ -21,23 +21,6 @@ query yearMakeModel($year: String, $make: String, $model: String) {
 }
  `;
 
-
-
-
-// function DisplayData(year) {
-//    const [loadData, { data: ymmdata }] = useLazyQuery(QUERY_YEAR_MAKE_MODEL);
-//    console.log("hi");
-
-//    loadData(
-//       {
-//          variables: {
-//             Year: year,
-
-//          },
-//       }
-//    );
-
-//    console.log(ymmdata);
 function ResultsPage() {
    let nav = useNavigate();
    //const [loadData, { data: yearData }] = useLazyQuery(QUERY_YEAR_MAKE_MODEL);
@@ -173,6 +156,7 @@ const Home = () => {
             <a>Shop Deals For Your Vehicle</a>
          </Deals>
          <FeatDeals onClick={(e) => self.Name = e.target.title}>
+            <a class="Back">&#10094;</a>
             <Deal1>
                {DetailsPage(tire, "Mickey Thompson Baja Legend EXP Tires")}
             </Deal1>
@@ -182,11 +166,13 @@ const Home = () => {
             <Deal1>
                {DetailsPage(levelingKit, "Pro Comp 2.5 Inch Leveling Lift Kit")}
             </Deal1>
+            <a class="forward">&#10095;</a>
          </FeatDeals>
          <Deals>
             <a>Shop New Products</a>
          </Deals>
          <FeatDeals onClick={(e) => self.Name = e.target.title}>
+         <a class="Back">&#10094;</a>
             <Deal1>
                {DetailsPage(tire, "Mickey Thompson Baja Legend EXP Tires")}
             </Deal1>
@@ -196,6 +182,7 @@ const Home = () => {
             <Deal1>
                {DetailsPage(levelingKit, "Pro Comp 2.5 Inch Leveling Lift Kit")}
             </Deal1>
+            <a class="forward">&#10095;</a>
          </FeatDeals>
       </div>
 
