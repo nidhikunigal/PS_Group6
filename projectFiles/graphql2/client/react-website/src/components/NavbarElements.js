@@ -26,7 +26,7 @@ padding: 0 1.5rem;
 height: 100%;
 cursor: pointer;
 font-family: Sans-serif;
-font-size: 15px;
+font-size: 0.9em;
 &.active {
 	color: yellow;
 }

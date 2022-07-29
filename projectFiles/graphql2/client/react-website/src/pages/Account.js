@@ -3,7 +3,7 @@ import React from 'react';
 const Account = () => {
 return (
 	<div>
-	<h1>my acc</h1>
+	<h1>Account Placeholder</h1>
 	</div>
 );
 };

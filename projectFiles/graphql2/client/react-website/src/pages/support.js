@@ -4,7 +4,7 @@ const Support = () => {
 return (
 	<div>
 	<h1>
-		support
+		Support Placeholder
 	</h1>
 	</div>
 );

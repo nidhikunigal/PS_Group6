@@ -31,7 +31,7 @@ height:30px;
 display: flex;
 align-items: center;
 font-family: Sans-serif;
-margin: 30px;
+margin: 20px;
 /* Second Nav */
 /* margin-right: 24px; */
 /* Third Nav */

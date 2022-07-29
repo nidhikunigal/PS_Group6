@@ -2,7 +2,7 @@ import React from 'react';
 
 const storesNear = () => {
 return (
-	<h1>stores...</h1>
+	<h1>Stores Placeholder</h1>
 );
 };
 
