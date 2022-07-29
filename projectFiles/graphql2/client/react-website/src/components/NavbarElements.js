@@ -17,17 +17,15 @@ align-items: flex-start;
 `
 
 export const NavLink = styled(Link)`
-color: black;
-display: flex;
-text-weight: 500;
+color: white;
 align-items: center;
-text-decoration: none;
 padding: 0 1.5rem;
 height: 100%;
 cursor: pointer;
 font-family: Sans-serif;
+font-size: 0.9em;
 &.active {
-	color: red;
+	color: yellow;
 }
 `;
 

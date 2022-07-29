@@ -2,7 +2,7 @@ import React from "react";
 import { Nav, NavLink, NavMenu, Logo }
 	from "./NavbarElements";
 import companyLogo from "./logo.png";
-
+import { Button1 } from "../pages/homeStyle.js";
 
 
 const Navbar = () => {
@@ -18,20 +18,26 @@ return (
         <search>
             <input type="text" placeholder="SEARCH..."/>
         </search>
-		<NavMenu>
+		<Button1>
 		<NavLink to="/support" activeStyle>
 			SUPPORT
 		</NavLink>
+		</Button1>
+		<Button1>
 		<NavLink to="/cart" activeStyle>
 			CART
 		</NavLink>
+		</Button1>
+		<Button1>
 		<NavLink to="/storesNear" activeStyle>
 			STORES NEAR ME
 		</NavLink>
+		</Button1>
+		<Button1>
 		<NavLink to="/Account" activeStyle>
 			MY ACCOUNT
 		</NavLink>
-		</NavMenu>
+		</Button1>
 	</Nav>
 	);
 };

@@ -13,13 +13,40 @@ cursor: pointer;
 font-family: Sans-serif;
 width:100px;
 height:23px;
+-webkit-text-stroke:  0.7px black;
+`
+
+export const Button1 = styled.button`
+color: white;
+background-color: #36454f;
+font-size: 11.5px;
+padding: 3px 15px;
+border-radius: 7px;
+cursor: pointer;
+font-family: Sans-serif;
+width:150;
+height:30px;
+-webkit-text-stroke:  0.7px black;
+
+display: flex;
+align-items: center;
+font-family: Sans-serif;
+margin: 20px;
+/* Second Nav */
+/* margin-right: 24px; */
+/* Third Nav */
+/* width: 100vw;
+white-space: nowrap; */
+@media screen and (max-width: 768px) {
+	display: none;
+}
 `
 
 export const Form = styled.form`
 background-image: url(${car});
 background-size: cover;
 color: white; 
--webkit-text-stroke:  1.5px black;
+-webkit-text-stroke:  1.6px black;
 font-size: 23px;
 height: 300px;
 display: flex;

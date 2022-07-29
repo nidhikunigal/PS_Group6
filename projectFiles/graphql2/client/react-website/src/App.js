@@ -1,4 +1,4 @@
-import React from 'react';
+import React , {useState, } from 'react';
 import './App.css';
 import Navbar from './components';
 import {useNavigate, BrowserRouter as Router, Routes, Route }
@@ -35,7 +35,7 @@ function App() {
 					<Route path='/details' element={<Details />} />
 
 				</Routes>
-			</Router>
+			</Router>		
 		</ApolloProvider>
 	);
 }
