@@ -3,7 +3,7 @@ import {self} from "./index";
 import MyImage from './levelingKit.jpg';
 import MyImage2 from './clearstars.png';
 import MyImage3 from './0stars.png';
-import MyImage4 from './logos.png'
+import MyImage4 from './cart.png'
 import Popup from './popup';
 
 const Details = () => {
@@ -17,7 +17,8 @@ const Details = () => {
         <>
         <div>{self.Name}</div>
 
-        <div class="flex-vibes">
+
+        <div class="flex-container">
         <nav class="nav left"></nav>
             <div> <img src={MyImage} className="img" alt=" "/></div>
             <div> 
@@ -32,68 +33,35 @@ const Details = () => {
             <div class="borderbox">
             <section class="nav right">
 
+{/*INSERT PRICE -----------------------------*/}
+            <div>
+               <h2> $000.00 </h2>
+            </div>
+
             <div class="flex-container">
                 <div class="col top">                
                     <select>
+                        <option value="1">1 </option>
+                        <option value="2">2 </option>
+                        <option value="3">3</option>
                         <option value="4">4 </option>
+                        <option value="5">5 </option>
+                        <option value="6">6 </option>
+                        <option value="7">7 </option>
+                        <option value="8">8 </option>
+                        <option value="9">9 </option>
+                        <option value="10">10 </option>
+                        <option value="11">11 </option>
+                        <option value="12">12 </option>
+                        <option value="13">13 </option>
+                        <option value="14">14 </option>
+                        <option value="15">15 </option>
                     </select></div>
                     <div class="col bottom">
                     <input type="button" class="button_css" value="ADD TO CART"/>
                 </div>
             </div>
 
-                <div class="col middle">
-                    <div class="textyes">
-                    <div><h6>$40 /Suggested monthly payments with 6 mo. special financing. Learn More</h6></div>
-                    </div>
-                </div>
-
-                <div class="col bottom">
-                <div class="flex-container">
-                    <div><input type="checkbox" value=""></input>
-                    </div>
-
-                    <hr
-                    style={{
-                        color:'light gray',
-                        height: '1px',
-                    }}
-                />
-
-                    <div class="textyes">
-                    <div> <h6> Free! Curbside & In-Store Pickup: 4 Wheel Parts Cherry Hill NJ #264</h6></div>
-                    </div>
-                </div>
-
-                <hr
-                    style={{
-                        color:'light gray',
-                        height: '1px',
-                    }}
-                />
-
-
-                <div class="flex-container">
-                    <div> 
-                    <input type="checkbox" value=""></input>
-                    </div>
-                    <div class="textyes"> <h6> Ship to Home </h6></div>
-                </div>
-
-                <hr
-                    style={{
-                        color:'light gray',
-                        height: '1px',
-                    }}
-                />
-                <div class="flex-container">
-                    <div>
-                    <input type="checkbox" value=""></input>
-                    </div>
-                    <div class="textyes"> <h6> Add Protection Plan for $23.80 </h6></div>
-                </div>
-
-                </div>
 
                 <hr
                     style={{

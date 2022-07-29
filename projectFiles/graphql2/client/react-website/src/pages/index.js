@@ -80,8 +80,6 @@ function quizResult(yearSearched, makeSearched, modelSearched, part) {
 }
 
 
-
-
 const Home = () => {
    const [yearSearched, setYearSearched] = useState(" ");
    const [loadData, { data: yearData }] = useLazyQuery(QUERY_YEAR_MAKE_MODEL);
@@ -92,15 +90,45 @@ const Home = () => {
 
    const [part, setPart] = useState("");
 
+   const [isDisabled, setIsDisabled] = useState(true);
+   const handleClick = () => {
+      setIsDisabled(!isDisabled)
+   }
+
+   const [isDisabled1, setIsDisabled1] = useState(true);
+   const handleClick1 = () => {
+      setIsDisabled1(!isDisabled1)
+   }
+
+   const [cursor, setCursor] = useState('not-allowed');
+   const changeCursor = () => {
+      setCursor(prevState => {
+         if(prevState == 'not-allowed'){
+            return 'auto';
+         }
+         return 'auto';
+      });
+   }
+
+   const [cursor1, setCursor1] = useState('not-allowed');
+   const changeCursor1 = () => {
+      setCursor1(prevState1 => {
+         if(prevState1 == 'not-allowed'){
+            return 'auto';
+         }
+         return 'auto';
+      });
+   }
+
    //let nav = useNavigate();
 
-   return (
+   return ( 
       <div>
          <Form>
             <form id="form1">
                <h2>Find Parts For Your Vehicle</h2>
                <formOptions>
-                  <select id="year" value={yearSearched} onChange={(e) => setYearSearched(e.target.value)}>
+                  <select id="year" value={yearSearched} onChange={(e) => {setYearSearched(e.target.value); handleClick(); changeCursor()}}>
                      <option value="0">Year</option>
                      <option value="2022">2022</option>
                      <option value="2021">2021</option>
@@ -111,8 +139,9 @@ const Home = () => {
                      <option value="2016">2016</option>
                      <option value="2015">2015</option>
                   </select>
-                  <div class='space'></div>
-                  <select id="make" value={makeSearched} onChange={(x) => setMakeSearched(x.target.value)}>
+      
+                  <div class='space' style={{cursor: cursor}}></div>
+                  <select name="make" id="make" value={makeSearched} disabled={isDisabled} onChange={(x) => {setMakeSearched(x.target.value); handleClick1(); changeCursor1()}} style={{cursor:cursor}}>
                      <option value="0">Make</option>
                      <option value="Ford">Ford</option>
                      <option value="Jeep">Jeep</option>
@@ -123,7 +152,8 @@ const Home = () => {
                      <option value="Ram">Ram</option>
                   </select>
                   <div class='space'> </div>
-                  <select id="model" value={modelSearched} onChange={(y) => setModelSearched(y.target.value)}>
+
+                  <select name="model" id="model" value={modelSearched} disabled={isDisabled1} onChange={(y) => setModelSearched(y.target.value)} style={{cursor:cursor1}}>
                      <option value="0">Model</option>
                      <option value="F-150">F-150</option>
                      <option value="Gladiator">Gladiator</option>
@@ -138,7 +168,7 @@ const Home = () => {
                      <option value="Sierra">Sierra</option>
                   </select>
                   <div class='space'> </div>
-                  <select id="part" value={part} onChange={(e) => setPart(e.target.value)}>
+                  <select name="part" id="part" value={part} disabled={isDisabled1} onChange={(e) => setPart(e.target.value)} style={{cursor:cursor1}}>
                      <option value="All Part">Part</option>
                      <option value="Suspension">Suspension</option>
                      <option value="Wheel">Wheel</option>
@@ -152,6 +182,7 @@ const Home = () => {
                      <option value="All Part">All Part</option>
                   </select>
                </formOptions>
+
                {quizResult(yearSearched, makeSearched, modelSearched, part)}
                <ResultsPage />
             </form>
@@ -189,7 +220,7 @@ const Home = () => {
             <a class="forward">&#10095;</a>
          </FeatDeals>
       </div>
-
+   
    );
 };
 
