@@ -7,6 +7,8 @@
 //         NumberOfStars: 0,
 
 //     },
+
+
 // ]
 
 const PartList = [
@@ -478,8 +480,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "Tacoma",
         Trim: "SR",
-        Num_Reviews: 95,
-        Fitment_Percent: 2034,
+        Num_Reviews: 2034,
+        Fitment_Percent: 95,
     },
     {
         Product_Name: "Bushwacker Pocket Style Fender Flares - 30048-02",
@@ -1263,7 +1265,7 @@ const Compatible_Vehicles = [
         Model: "Tacoma",
         Trim: "Limited",
         Num_Reviews: 247,
-        Fitment_Percent: 92
+        Fitment_Percent: 92,
     },
     {
         Product_Name: "Tacoma High Clearance Wings",
@@ -1623,7 +1625,7 @@ const Compatible_Vehicles = [
         Model: "F-150",
         Trim: "Platinum",
         Num_Reviews: 536,
-        Fitment_Percent: 82,
+        Fitment_Percent: 82, 
     },
     {
         Product_Name: "Premium Rear Bumper (Black)",
@@ -1929,7 +1931,7 @@ const Compatible_Vehicles = [
         Model: "F-150",
         Trim: "Platinum",
         Num_Reviews: 1817,
-        Fitment_Percent: 52,
+        Fitment_Percent: 52, 
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T",
@@ -1956,7 +1958,7 @@ const Compatible_Vehicles = [
         Model: "F-150",
         Trim: "SSV",
         Num_Reviews: 3604,
-        Fitment_Percent: 47,
+        Fitment_Percent: 47, 
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T",
@@ -2037,7 +2039,7 @@ const Compatible_Vehicles = [
         Model: "F-150",
         Trim: "XLT",
         Num_Reviews: 482,
-        Fitment_Percent: 61,
+        Fitment_Percent: 61, 
     },
     {
         Product_Name: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T",
@@ -2633,8 +2635,8 @@ const Compatible_Vehicles = [
         Make: "Lexus",
         Model: "GX460",
         Trim: "Base",
-        Num_Reviews: 93,
-        Fitment_Percent: 2760,
+        Num_Reviews: 2760,
+        Fitment_Percent: 93,
     },
     {
         Product_Name: "ICON Vehicle Dynamics Lexus GX460 0-3.5 Inch Stage 2 Suspension System with Tubular UCAs - K53182T",
@@ -2679,7 +2681,7 @@ const Compatible_Vehicles = [
         Model: "GX460",
         Trim: "Luxury",
         Num_Reviews: 3,
-        Fitment_Percent: 46,
+        Fitment_Percent: 33,
     },
     {
         Product_Name: "ICON Vehicle Dynamics Lexus GX460 0-3.5 Inch Stage 2 Suspension System with Tubular UCAs - K53182T",
@@ -2894,7 +2896,7 @@ const Compatible_Vehicles = [
         Year: "2022",
         Make: "Toyota",
         Model: "4Runner",
-        Trim: "Venture",
+        Trim: "Venture", 
         Num_Reviews: 1230,
         Fitment_Percent: 86,
     },
@@ -3174,8 +3176,8 @@ const Compatible_Vehicles = [
         Make: "Toyota",
         Model: "4Runner",
         Trim: "Limited",
-        Num_Reviews: 83,
-        Fitment_Percent: 3970,
+        Num_Reviews: 3970,
+        Fitment_Percent: 83,
     },
     {
         Product_Name: "ICON Suspension 0-3.5 Inch Stage 2 Suspension System (Tubular) - K53062T",
@@ -3255,8 +3257,8 @@ const Compatible_Vehicles = [
         Make: "Universal",
         Model: "Universal",
         Trim: "Universal",
-        Num_Reviews: 30,
-        Fitment_Percent: 3970,
+        Num_Reviews: 3970,
+        Fitment_Percent: 30,
     },
     {
         Product_Name: "LRG Rims Burst 117 Matte Black w/ Machined Accents Alloy Wheels",
@@ -3300,8 +3302,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
-        Num_Reviews: 83,
-        Fitment_Percent: 3970,
+        Num_Reviews: 3970,
+        Fitment_Percent: 83,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3552,8 +3554,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
-        Num_Reviews: 83,
-        Fitment_Percent: 3970,
+        Num_Reviews: 3970,
+        Fitment_Percent: 83,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3804,8 +3806,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "XL",
-        Num_Reviews: 29,
-        Fitment_Percent: 125,
+        Num_Reviews: 125,
+        Fitment_Percent: 29,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -3967,7 +3969,7 @@ const Compatible_Vehicles = [
         Model: "F-150",
         Trim: "STX",
         Num_Reviews: 3879,
-        Fitment_Percent: 0,
+        Fitment_Percent: 89,
     },
     {
         Product_Name: "Pro Comp 2.5 Inch Leveling Lift Kit - 62206",
@@ -4438,7 +4440,7 @@ const Compatible_Vehicles = [
         Num_Reviews: 60,
         Fitment_Percent: 40,
     },
-
+    
     {
         Product_Name: "Pro Comp 3 Inch Leveling Lift Kit - 62200",
         Year: "2014",
@@ -4716,8 +4718,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Platinum",
-        Num_Reviews: 75,
-        Fitment_Percent: 202,
+        Num_Reviews: 202,
+        Fitment_Percent: 75,
     },
     {
         Product_Name: "Pro Comp 2.5' Nitro Level Lift Kit - 62214K",
@@ -5625,8 +5627,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "Bronco",
         Trim: "Badlands",
-        Num_Reviews: 81,
-        Fitment_Percent: 3570,
+        Num_Reviews: 3570,
+        Fitment_Percent: 81,
     },
     {
         Product_Name: "4 Wheel Parts Factory Bronco Fender Delete Kit (4-Door) - 61768W",
@@ -6039,8 +6041,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Limited",
-        Num_Reviews: 89,
-        Fitment_Percent: 3362,
+        Num_Reviews: 3362,
+        Fitment_Percent: 89,
     },
     {
         Product_Name: "Bushwacker Max Pocket Style Fender Flares - 20946-02",
@@ -6318,8 +6320,8 @@ const Compatible_Vehicles = [
         Make: "Ford",
         Model: "F-150",
         Trim: "Tremor",
-        Num_Reviews: 67,
-        Fitment_Percent: 616,
+        Num_Reviews: 616,
+        Fitment_Percent: 67,
     },
     {
         Product_Name: "Jeep Fender Flare Kit (Paintable) - 82215740",

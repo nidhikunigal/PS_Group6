@@ -17,6 +17,8 @@ query yearMakeModel($year: String, $make: String, $model: String) {
     Make
     Model
     Trim
+    Num_Reviews
+    Fitment_Percent
     VehicleParts {
       Type
       Product_Name
@@ -36,14 +38,18 @@ function ResultGridFun(data, error, loading){
     if(!error && !loading){
         unique = [... new Map(data.partByYear.map(item => [item.Product_Name, item])).values()];
         console.log(data);
+       let bestFitCheck = bestFit(data);
         console.log(unique);
         console.log(self.Part);
         if(self.Part != "All Part" && self.Part != ""){
             refineUnique(unique);
         }
-        for(let i = 0; i <unique.length; i++){
+        for(let i = 0; i < unique.length; i++){
             if(unique[i] != null){
                 j+="<div class=grid-item><style type=text/css> .grid-item{display: flex; flex-direction:column; align-items: center; justify-content: flex-start;  text-align: center; background-color: pink;}</style>" + internalGrid(unique[i].VehicleParts[0].Type) + "<a style=\"color:blue; font-weight: 600; font-family:Sans-serif; font-size:1em; \" activeStyle>" + unique[i].Product_Name + "</a> <p id=price><style type=text/css> #price{position:relative;  bottom: 0; left: 0; }</style>" +unique[i].VehicleParts[0].Cost + "</p> </div> ";
+            }
+            if (unique[i].Product_Name === bestFitCheck.Product_Name) {
+                console.log(bestFitCheck.Product_Name);
             }
         }
     }
@@ -84,9 +90,6 @@ function internalGrid(type){
         return ("<img src=" + SRC + " width=250px />");
 }
  
-   
- 
- 
 function PDPage(){
     let nav = useNavigate();
     const routeChange = () =>{
@@ -107,23 +110,45 @@ function ChangeVehFun(){
         nav(path);
  
     }
- 
     return (
         <button color="primary" className="px-4"onClick={routeChange}
               >
               Change Vehicle
             </button>
     )
-   
 }
+
  
+function bestFit(data){
+    let bestFitArr = [];
+
+    for(let i = 0; i < data.partByYear.length; i++){
+        if(data.partByYear[i].Fitment_Percent >= 70) {
+            bestFitArr.push(data.partByYear[i]);
+        }
+    }
+    let max = bestFitArr[0].Num_Reviews;
+    for(let i = 0; i < bestFitArr.length; i++){
+        if(bestFitArr[i].Num_Reviews > max) {
+            max = bestFitArr[i].Num_Reviews 
+        }
+    }
+    let bestFitObj = {};
+    for(let i = 0; i < bestFitArr.length; i++){
+        if(bestFitArr[i].Num_Reviews == max) {
+            bestFitObj = bestFitArr[i];
+        }
+    }
+    return bestFitObj;
+}
+
 const Results = () => {
     //const [loadData, { data: yearData }] = useLazyQuery(QUERY_YEAR_MAKE_MODEL);
     const{data, error, loading} = useQuery(QUERY_YEAR_MAKE_MODEL, {variables: { year: self.Year,
         make: self.Make,
         model: self.Model,}});
-    console.log("hi");
-    console.log(data);
+    // console.log("hi");
+
     if( !error && !loading){
         console.log(data.partByYear.length);
         var size = data.partByYear.length;
@@ -160,7 +185,7 @@ return (
         </Column1>
         <Column2>
             <ResultHeader>
-                Showing {self.Part}'s for {self.Year} {self.Make} {self.Model}
+                Showing {self.Part}s for {self.Year} {self.Make} {self.Model}
                
        
             </ResultHeader>
