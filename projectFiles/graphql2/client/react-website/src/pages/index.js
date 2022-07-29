@@ -3,7 +3,7 @@ import tire from "./tire.jpg";
 import bumper from "./tempBumper.jpg";
 import levelingKit from "./levelingKit.jpg";
 import { useNavigate } from "react-router-dom";
-import { Form, formOptions, Deals, FeatDeals, Deal1, Button } from "./homeStyle.js";
+import { Form, formOptions, Deals, FeatDeals, Deal1, Button, DealName } from "./homeStyle.js";
 import { useQuery, useLazyQuery, gql } from "@apollo/client";
 import '../App.css'
 
@@ -52,17 +52,6 @@ function ResultsPage() {
    return (
       <div>
          <Button onClick={() => {
-            //    loadData(
-            //       {
-            //          variables: {
-            //             year: self.Year,
-            //             make: self.Make,
-            //             model: self.Model,
-            //          },
-            //       });
-            // console.log("year searched: " + self.Year);
-            // console.log("data: ");
-            // console.log(yearData); 
             routeChange();
          }}>
             See Results
@@ -81,9 +70,9 @@ function DetailsPage(src, name) {
    return (
       <Deal1 title={name} onClick={routeChange}>
          <img id="deal1img" src={src} title={name} ></img>
-         <a title={name}>{name}</a>
+         <DealName  title={name}>{name}</DealName>
       </Deal1>
-   )
+   );
 }
 
 
@@ -91,7 +80,9 @@ function quizResult(yearSearched, makeSearched, modelSearched, part) {
    self.Year = yearSearched;
    self.Make = makeSearched;
    self.Model = modelSearched;
-   self.Part = part;
+   if(part != ""){
+      self.Part = part;
+   }
 }
 
 
@@ -210,6 +201,6 @@ export const self =
    Year: "hello",
    Make: "hi",
    Model: "hey",
-   Part: Home.part,
+   Part: "All Part",
    Name: Home.name,
 };

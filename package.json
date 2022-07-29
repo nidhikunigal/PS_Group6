@@ -2,7 +2,6 @@
   "dependencies": {
     "apollo-client": "^2.6.10",
     "apollo-server": "^3.10.0",
-    "graphql": "^15.8.0",
-    "react-select": "^5.4.0"
+    "graphql": "^15.8.0"
   }
 }

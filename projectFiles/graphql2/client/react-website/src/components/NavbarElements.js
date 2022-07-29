@@ -10,14 +10,16 @@ z-index: 12;
 align-items: center;
 font-size: 1em;
 font-family: Sans-serif;
+
 `;
 export const Logo = styled.nav`
 align-items: flex-start;
 `
 
 export const NavLink = styled(Link)`
-color: #808080;
+color: black;
 display: flex;
+text-weight: 500;
 align-items: center;
 text-decoration: none;
 padding: 0 1.5rem;
