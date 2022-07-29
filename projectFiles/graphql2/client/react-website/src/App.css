@@ -97,6 +97,15 @@ select { width: 130px; text-align-last:center; height:30px; border-radius: 7px;
   font-size: 20px;
 }
 
+.close-icon2 {
+  content: 'x';
+  cursor: pointer;
+  position: fixed;
+  left: calc(15% - 20px);
+  bottom: calc(100vh - 85vh - 20px);
+  text-align: center;
+  font-size: 10px;
+}
 
 .starspic{
   height: 50px;
@@ -225,6 +234,6 @@ select { width: 130px; text-align-last:center; height:30px; border-radius: 7px;
 }
 
 .logos{
-  height: 460px;
+  height: 400px;
   width:340px;
 }

@@ -15,12 +15,12 @@ const Details = () => {
 
     return (
         <>
-        <div>{self.Name}</div>
-
 
         <div class="flex-container">
         <nav class="nav left"></nav>
-            <div> <img src={MyImage} className="img" alt=" "/></div>
+            <div> 
+                <div><h2>{self.Name}</h2></div>
+                <img src={MyImage} className="img" alt=" "/></div>
             <div> 
             <div>
                     <img src={MyImage2} className="starspic" alt=" "/>
@@ -61,7 +61,7 @@ const Details = () => {
                     <input type="button" class="button_css" value="ADD TO CART"/>
                 </div>
             </div>
-
+                <div><h4>__ % of users think this product is a good fit</h4></div>
 
                 <hr
                     style={{

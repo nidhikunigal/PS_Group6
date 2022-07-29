@@ -33,6 +33,7 @@ const Popup = props => {
       }
 
     return (
+        <>
         <div className="popup-box">
             <div className="box">
                 <div className="textyes">
@@ -223,19 +224,21 @@ const Popup = props => {
 
             <div class="textyes"><h5> You may receive emails regarding this submission. Any emails will include the ability to opt-out of future communications.  </h5> </div>
             
-			<div class="textyes">
+			<span className="close-icon2" onClick={props.handleClose}>
     		<input
       			type="button"
 				class="slay"
       			value="POST REVIEW"
     		/>
-            </div>
+            </span>
 
             <span className="close-icon" onClick={props.handleClose}>x</span>
                 {props.content}
                 </div>
             </div>
-  
+
+
+            </>
     );
 };
 
