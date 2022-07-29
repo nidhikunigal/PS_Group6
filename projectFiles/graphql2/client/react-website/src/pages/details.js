@@ -1,11 +1,18 @@
-import React from "react";
+import React , {useState, } from 'react';
 import {self} from "./index";
 import MyImage from './levelingKit.jpg';
 import MyImage2 from './clearstars.png';
 import MyImage3 from './0stars.png';
 import MyImage4 from './logos.png'
+import Popup from './popup';
 
 const Details = () => {
+    const [isOpen, setIsOpen] = useState(false);
+ 
+	const togglePopup = () => {
+	  setIsOpen(!isOpen);
+	}
+
     return (
         <>
         <div>{self.Name}</div>
@@ -104,10 +111,10 @@ const Details = () => {
      
     <div>
         <input type="button" class="buttonz" value="SPECIFICATIONS"></input>
-        <input type="button" class="buttonz" value="TECHNICAL DETAILS"></input>
-        <input type="button" class="buttonz" value="OVERVIEW"></input>
-        <input type="button" class="buttonz" value="REVIEWS"></input> 
+        <input type="button" class="buttonz" value="REVIEWS"></input>
         <input type="button" class="buttonz" value="Q&A"></input>
+        <input type="button" class="buttonz" value="PEOPLE ALSO BOUGHT"></input> 
+        <input type="button" class="buttonz" value="MANUFACTURER"></input>
     </div>
 
     <hr
@@ -134,6 +141,21 @@ const Details = () => {
            <img src={MyImage3} className="starspic2" alt=" "/>
             </div> 
     </div>
-        </>     
+
+    <div>
+    		<input
+      			type="button"
+				class="button_css"
+      			value="Write a Review"
+      			onClick={togglePopup}
+    		/>
+    		{isOpen && <Popup
+      			content={<>
+      			</>}
+      		handleClose={togglePopup}
+    		/>}
+  			</div>
+        </>    
+
     );}
 export default Details; 

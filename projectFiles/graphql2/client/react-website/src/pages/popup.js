@@ -2,6 +2,36 @@ import React from "react";
 import MyImage from "./stars.png";
 
 const Popup = props => {
+
+    const [favorite, setFavorite] = React.useState('');
+
+    const handleNoChange = () => {
+      setFavorite('No');
+    };
+  
+    const handleYesChange = () => {
+      setFavorite('Yes');
+    };
+
+    const RadioButton = ({ label, value, onChange }) => {
+        return (
+          <label>
+            <input type="radio" checked={value} onChange={onChange} />
+            {label}
+          </label>
+        );
+      };
+
+      const [favorite1, setFavorite1] = React.useState('');
+
+      const handleNoChange1 = () => {
+        setFavorite1('No');
+      };
+    
+      const handleYesChange1 = () => {
+        setFavorite1('Yes');
+      }
+
     return (
         <div className="popup-box">
             <div className="box">
@@ -56,31 +86,77 @@ const Popup = props => {
                 <div class="flex-container">
                 <div class="textyes"> 
                     <select>
-                        <option value="Year">Year </option>
+                    <option value="0">Year</option>
+                     <option value="2022">2022</option>
+                     <option value="2021">2021</option>
+                     <option value="2020">2020</option>
+                     <option value="2019">2019</option>
+                     <option value="2018">2018</option>
+                     <option value="2017">2017</option>
+                     <option value="2016">2016</option>
+                     <option value="2015">2015</option>
                     </select>
                 </div>
                 <div class="textyes">
                     <select> 
-                        <option value="Make">Make</option>
+                    <option value="0">Make</option>
+                     <option value="Ford">Ford</option>
+                     <option value="Jeep">Jeep</option>
+                     <option value="Toyota">Toyota</option>
+                     <option value="Lexus">Lexus</option>
+                     <option value="Chevrolet">Chevrolet</option>
+                     <option value="GMC">GMC</option>
+                     <option value="Ram">Ram</option>
                     </select>
                 </div>
                 <div class="textyes">
                     <select>
-                        <option value="Model">Model</option>
+                    <option value="0">Model</option>
+                     <option value="F-150">F-150</option>
+                     <option value="Gladiator">Gladiator</option>
+                     <option value="Wrangler">Wrangler</option>
+                     <option value="Tacoma">Tacoma</option>
+                     <option value="Bronco">Bronco</option>
+                     <option value="Suburban">Suburban</option>
+                     <option value="1500">1500</option>
+                     <option value="4Runner">4Runner</option>
+                     <option value="GX460">GX460</option>
+                     <option value="Silverado">Silverado</option>
+                     <option value="Sierra">Sierra</option>
                     </select>
                 </div>
                 </div>
 
             <div class="flex-container">
                 <div class="textyes"> <h5> Was this part a good fit for your vehicle? *</h5></div>
-                <div class="textyes"> <button> Yes </button> </div>
-                <div class="textyes"> <button> No </button> </div>
+                <div>
+                <RadioButton
+        label="Yes"
+        value={favorite === 'Yes'}
+        onChange={handleYesChange}
+      />
+      <RadioButton
+        label="No"
+        value={favorite === 'No'}
+        onChange={handleNoChange}
+      />
+    </div>
             </div>
 
             <div class="flex-container">
                 <div class="textyes"> <h5> Would you recommend this product to a friend? </h5></div>
-                <div class="textyes"> <button> Yes </button> </div>
-                <div class="textyes"> <button> No </button> </div>
+                <div>
+                <RadioButton
+        label="Yes"
+        value={favorite1 === 'Yes'}
+        onChange={handleYesChange1}
+      />
+      <RadioButton
+        label="No"
+        value={favorite1 === 'No'}
+        onChange={handleNoChange1}
+      />
+    </div>
             </div>
 
             <hr
@@ -92,20 +168,20 @@ const Popup = props => {
 
                 <form> 
                     <div class="textyes"> <h5> Nickname * </h5>
-                    <textarea rows = "1" cols = "30" name = "description" >
+                    <textarea rows = "1" cols = "60" name = "description" >
                             Example: bob27(Maximum of 25 characters.)
                     </textarea>
                     </div>
 
                 <div class="textyes"> <h5> Location </h5>
-                    <textarea rows = "1" cols = "20" name = "description" >
+                    <textarea rows = "1" cols = "60" name = "description" >
                             Example: New York, NY
                     </textarea>
                     </div>
                 </form> 
        
             <div class="textyes"> <h5> Email* </h5></div>
-            <textarea rows = "1" cols = "40" name = "description" >
+            <textarea rows = "1" cols = "60" name = "description" >
                             Example: youremail@example.com
                     </textarea> 
 
@@ -138,10 +214,11 @@ const Popup = props => {
                     }}
                 />
 
-                <div class="flex-container">
-                    <div><textarea rows = "1" cols = "1" name = "description" >
-                    </textarea></div>
-                    <div class="textyes"> <h5> I agree to the terms and conditions. </h5></div>
+            <div class="flex-container">
+                    <div> 
+                    <input type="checkbox" value=""></input>
+                    </div>
+                    <div class="textyes"> <h6> I agree to the terms and conditions. </h6></div>
                 </div>
 
             <div class="textyes"><h5> You may receive emails regarding this submission. Any emails will include the ability to opt-out of future communications.  </h5> </div>
@@ -158,6 +235,7 @@ const Popup = props => {
                 {props.content}
                 </div>
             </div>
+  
     );
 };
 
