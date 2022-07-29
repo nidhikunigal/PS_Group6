@@ -1,4 +1,4 @@
-import React from 'react';
+import React , {useState, } from 'react';
 import './App.css';
 import Navbar from './components';
 import { BrowserRouter as Router, Routes, Route }
@@ -10,11 +10,17 @@ import Cart from './pages/cart';
 import Account from './pages/Account';
 import Results from './pages/results';
 import Details from './pages/details';
+import Popup from './pages/popup';
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 
 
 function App() {
 	const client = new ApolloClient({ cache: new InMemoryCache(), uri: "http://localhost:4000/graphql" });
+	const [isOpen, setIsOpen] = useState(false);
+ 
+	const togglePopup = () => {
+	  setIsOpen(!isOpen);
+	}
 
 	return (
 		<ApolloProvider client={client}>
@@ -32,6 +38,21 @@ function App() {
 
 				</Routes>
 			</Router>
+
+			<div>
+    		<input
+      			type="button"
+				class="button_css"
+      			value="Write a Review"
+      			onClick={togglePopup}
+    		/>
+    		{isOpen && <Popup
+      			content={<>
+      			</>}
+      		handleClose={togglePopup}
+    		/>}
+  			</div>
+			
 		</ApolloProvider>
 	);
 }
