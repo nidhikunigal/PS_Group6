@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { NoResults, RefineHead, RefineResults, ChangeVeh, Silly, ResultHeader, ResultsPage, Column1, Column2, ResultGrid, NumRes } from "./resultStyle";
-import { useNavigate, Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import littleCar from "./currveh.jfif";
 import {self} from "./index";
 import Home from "./index";
@@ -88,11 +88,9 @@ function InternalGrid(type, name){
             case 'Fenders':
                 SRC = fender;
         }
-        return ("<img src=" + SRC + " width=250px /> <div id=det style=\"color:blue; font-weight: 600; font-family:Sans-serif; font-size:1em; text-decoration-line: underline;\">" + name + "</div>"
-        );
+        return ("<img src=" + SRC + " width=250px /> <div id=det style=\"color:blue; font-weight: 600; font-family:Sans-serif; font-size:1em; text-decoration-line: underline;\">" + name + "</div>");
 }
- 
-   
+
  
  
 function PDPage(){
@@ -103,11 +101,20 @@ function PDPage(){
         nav(path);
     }
 
-    const links = document.querySelectorAll("div#det");
-    for(let link of links){
-        link.addEventListener("click", routeChange, false);
-        console.log(link);
-    }
+    // const links = document.querySelectorAll(ResultGrid);
+    // for(let link of links){
+    //     link.addEventListener("click", routeChange, false);
+    //     console.log(link.children);
+    // }
+    //const links = document.querySelector(ResultGrid).addEventListener("click", routeChange, false);
+    // const links = document.querySelector(ResultGrid);
+    // console.log(links);
+    //console.log(links.children);
+    
+    // for(let link of links.children){
+    //     //link.addEvenListener("click", routeChange, false);
+    //    // console.log(link);
+    // }
     return (
         <div></div>
     );
@@ -135,6 +142,12 @@ const Results = () => {
     const{data, error, loading} = useQuery(QUERY_YEAR_MAKE_MODEL, {variables: { year: self.Year,
         make: self.Make,
         model: self.Model,}});
+
+    let nav = useNavigate();
+    const routeChange = () =>{
+        let path = '/details';
+        nav(path);
+    }
     console.log(data);
     if( !error && !loading){
         var size = data.partByYear.length;
@@ -174,8 +187,6 @@ const Results = () => {
                     </center>
                 </Column2>
             </ResultsPage>
-
-             
             );
         }
     }

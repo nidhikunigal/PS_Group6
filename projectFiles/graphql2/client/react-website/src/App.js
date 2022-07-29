@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components';
-import { BrowserRouter as Router, Routes, Route }
+import {useNavigate, BrowserRouter as Router, Routes, Route }
 	from 'react-router-dom';
 import Home from './pages';
 import Support from './pages/support';
@@ -11,10 +11,14 @@ import Account from './pages/Account';
 import Results from './pages/results';
 import Details from './pages/details';
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
+import {PDPage} from './pages/results'
+
+
 
 
 function App() {
 	const client = new ApolloClient({ cache: new InMemoryCache(), uri: "http://localhost:4000/graphql" });
+
 
 	return (
 		<ApolloProvider client={client}>
