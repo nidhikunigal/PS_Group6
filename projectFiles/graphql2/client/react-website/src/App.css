@@ -40,6 +40,7 @@ select { width: 130px; text-align-last:center; height:30px; border-radius: 7px;
   margin: 5px 5px;
   cursor: pointer;
   font-family: Sans-serif;
+  -webkit-text-stroke:  0.7px black;
 }
 
 
