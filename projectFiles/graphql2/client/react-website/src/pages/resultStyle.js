@@ -71,7 +71,7 @@ display: grid;
 grid-gap: 2px;
 box-sizing: border-box;
 grid-template-columns: [col1-start] 22em  [col2-start] 22em  [col3-start] 22em ;
-grid-auto-rows: 400px;
+grid-auto-rows: 430px;
 `
 export const NumRes = styled.form`
 font-size: 1em;
