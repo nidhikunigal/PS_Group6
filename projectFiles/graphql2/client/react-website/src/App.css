@@ -263,14 +263,27 @@ select { width: 130px; text-align-last:center; height:30px; border-radius: 7px;
 }
 
 .radio-toolbar label:hover {
-  background-color: rgb(216, 180, 170);
+  background-color: rgb(189, 196, 237);
 }
 
 .radio-toolbar input[type="radio"]:focus + label {
-    border: 2px solid #444;
+    border: 2px solid rgb(24, 23, 23);
 }
 
 .radio-toolbar input[type="radio"]:checked + label {
-    background-color: rgb(223, 164, 164);
-    border-color: rgb(214, 69, 21);
+    background-color: rgb(152, 171, 224);
+    border-color: rgb(14, 14, 224);
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.on {
+  color: rgb(248, 224, 10);
+}
+.off {
+  color: #ccc;
 }

@@ -64,7 +64,7 @@ const Details = () => {
                     </select></div>
                     <div class="col bottom">
                     <input type="button" style = {{textColor: isActive ? 'gray' : '',
-                    color: isActive ? 'yellow' : '',
+                    color: isActive ? 'gold' : '',
                     }} class="button_css" value="ADD TO CART" onClick={handleClick}/>
                 </div>
             </div>
