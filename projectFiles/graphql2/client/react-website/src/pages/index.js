@@ -94,27 +94,44 @@ const Home = () => {
 
    const [isDisabled1, setIsDisabled1] = useState(true);
 
+   const changeDisable = () => {
+      setIsDisabled(setYearSearched  => {
+            if(setYearSearched != '0'){
+               return !isDisabled;
+            }
+            return isDisabled;
+      });
+   }
+
+   const changeDisable1 = () => {
+      setIsDisabled1(setMakeSearched  => {
+            if(setMakeSearched != '0'){
+               return !isDisabled1;
+            }
+            return isDisabled1;
+      });
+   }
 
    const [cursor, setCursor] = useState('not-allowed');
    const changeCursor = () => {
-      setCursor(prevState => {
-         if(prevState == 'not-allowed'){
+      setCursor(setYearSearched => {
+         if(setYearSearched != '0'){
             return 'auto';
          }
-         return 'auto';
+         return 'not-allowed';
       });
    }
+
 
    const [cursor1, setCursor1] = useState('not-allowed');
    const changeCursor1 = () => {
-      setCursor1(prevState1 => {
-         if(prevState1 == 'not-allowed'){
+      setCursor1(setMakeSearched => {
+         if(setMakeSearched != '0'){
             return 'auto';
          }
-         return 'auto';
+         return 'not-allowed';
       });
    }
-
    //let nav = useNavigate();
 
    return ( 
@@ -123,7 +140,7 @@ const Home = () => {
             <form id="form1">
                <h2>Find Parts For Your Vehicle</h2>
                <formOptions>
-                  <select id="year" value={yearSearched} onChange={(e) => {setYearSearched(e.target.value); setIsDisabled(!isDisabled); changeCursor()}}>
+                  <select id="year" value={yearSearched} onChange={(e) => {setYearSearched(e.target.value); changeDisable(); changeCursor()}}>
                      <option value="0">Year</option>
                      <option value="2022">2022</option>
                      <option value="2021">2021</option>
@@ -136,7 +153,7 @@ const Home = () => {
                   </select>
       
                   <div class='space' style={{cursor: cursor}}></div>
-                  <select name="make" id="make" value={makeSearched} disabled={isDisabled} onChange={(x) => {setMakeSearched(x.target.value); setIsDisabled1(!isDisabled1); changeCursor1()}} style={{cursor:cursor}}>
+                  <select name="make" id="make" value={makeSearched} disabled={isDisabled} onChange={(x) => {setMakeSearched(x.target.value); changeDisable1(); changeCursor1()}} style={{cursor:cursor}}>
                      <option value="0">Make</option>
                      <option value="Ford">Ford</option>
                      <option value="Jeep">Jeep</option>
@@ -148,7 +165,7 @@ const Home = () => {
                   </select>
                   <div class='space'> </div>
 
-                  <select name="model" id="model" value={modelSearched} disabled={isDisabled1} onChange={(y) => setModelSearched(y.target.value)} style={{cursor:cursor1}}>
+                  <select name="model" id="model" value={modelSearched} disabled={isDisabled1} onChange={(y) => {setModelSearched(y.target.value); changeDisable1(); changeCursor1()}} style={{cursor:cursor1}}>
                      <option value="0">Model</option>
                      <option value="F-150">F-150</option>
                      <option value="Gladiator">Gladiator</option>
