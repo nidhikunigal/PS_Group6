@@ -23,7 +23,7 @@ const resolvers = {
             }
             else if (Type == null && Company == null && General_Vehicle != null) {
                 //only general vehicle is null
-                return PartList.filter((a) => a.General_Vehicle == General_Vehicle);
+                return PartList.filter((a) => a.General_Vehicle == General_Vehicle || a.General_Vehicle == "Universal");
             }
             else if (Type != null && Company != null && General_Vehicle == null) {
                 //type and company are given
@@ -31,15 +31,15 @@ const resolvers = {
             }
             else if (Type != null && Company == null && General_Vehicle != null) {
                 //Type and General Vehicle are given
-                return PartList.filter((a) => a.Type == Type && a.General_Vehicle == General_Vehicle);
+                return PartList.filter((a) => a.Type == Type && (a.General_Vehicle == General_Vehicle || a.General_Vehicle == "Universal"));
             }
             else if (Type == null && Company != null && General_Vehicle != null) {
                 //Company and general vehicle are given
-                return PartList.filter((a) => a.Company == Company && a.General_Vehicle == General_Vehicle);
+                return PartList.filter((a) => a.Company == Company && (a.General_Vehicle == General_Vehicle || a.General_Vehicle == "Universal"));
             }
             else {
                 //all params are given
-                return PartList.filter((a) => a.Type == Type && a.Company == Company && a.General_Vehicle == General_Vehicle);
+                return PartList.filter((a) => a.Type == Type && a.Company == Company && (a.General_Vehicle == General_Vehicle || a.General_Vehicle == "Universal"));
             }
         },
         vehicles() {
@@ -60,37 +60,54 @@ const resolvers = {
                 //when only year is given
                 console.log("year");
                 //console.log(Make);
-                return Compatible_Vehicles.filter((a) => a.Year == Year);
+                return Compatible_Vehicles.filter((a) => a.Year == Year || a.Year == "Universal");
             }
             else if (Year == null && Make != null && Model == null) {
                 //when only Make is given
                 console.log("make");
-                return Compatible_Vehicles.filter((a) => a.Make == Make);
+                return Compatible_Vehicles.filter((a) => a.Make == Make || a.Make == "Universal");
             }
             else if (Year == null && Make == null && Model != null) {
                 //when only Model is given
                 console.log("model");
-                return Compatible_Vehicles.filter((a) => a.Model == Model);
+                return Compatible_Vehicles.filter((a) => a.Model == Model || a.Model == "Universal");
             }
             else if (Year != null && Make != null && Model == null) {
                 //when year and make are given
                 console.log("year and make");
-                return Compatible_Vehicles.filter((a) => a.Year == Year && a.Make == Make);
+                return Compatible_Vehicles.filter((a) => (a.Year == Year || a.Year == "Universal") && (a.Make == Make || a.Make == "Universal") );
             }
             else if (Year != null && Make == null && Model != null) {
                 //when year and Model are given
                 console.log("year and model");
-                return Compatible_Vehicles.filter((a) => a.Year == Year && a.Model == Model);
+                return Compatible_Vehicles.filter((a) => (a.Year == Year || a.Year == "Universal") && (a.Model == Model || a.Model == "Universal"));
             }
             else if (Year == null && Make != null && Model != null) {
                 //when Model and make are given
                 console.log("model and make");
-                return Compatible_Vehicles.filter((a) => a.Make == Make && a.Model == Model);
+                let filterWithoutUniversal = Compatible_Vehicles.filter((a) =>a.Make == Make && a.Model == Model);
+
+                if (filterWithoutUniversal.length > 0) {
+                    //so we cant search for a Jeep F-150, because that car does not exist
+                    return Compatible_Vehicles.filter((a) =>( a.Make == Make || a.Make == "Universal") && (a.Model == Model || a.Model == "Universal"));
+                }
+                else {
+                    return filterWithoutUniversal;
+                }
             }
             else {
                 //all are given
                 console.log("ELSE");
-                return Compatible_Vehicles.filter((a) => a.Year == Year && a.Make == Make && a.Model == Model);
+                let filterWithoutUniversal = Compatible_Vehicles.filter((a) =>a.Make == Make && a.Model == Model);
+                if (filterWithoutUniversal.length > 0) {
+                    //so we cant search for a Jeep F-150, because that car does not exist
+                    return Compatible_Vehicles.filter((a) =>(a.Year == Year || a.Year == "Universal") &&  (a.Make == Make || a.Make == "Universal") && (a.Model == Model || a.Model == "Universal"));
+                }
+                else {
+                    return filterWithoutUniversal;
+                }
+
+               // return Compatible_Vehicles.filter((a) => (a.Year == Year || a.Year == "Universal") && (a.Make == Make || a.Make == "Universal") && (a.Model == Model || a.Model == "Universal"));
             }
         },
         // partByMake(parent, args) {
