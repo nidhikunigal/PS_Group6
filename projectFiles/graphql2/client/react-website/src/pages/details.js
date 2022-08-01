@@ -3,7 +3,7 @@ import {self} from "./index";
 import MyImage from './levelingKit.jpg';
 import MyImage2 from './clearstars.png';
 import MyImage3 from './0stars.png';
-import MyImage4 from './logos.png'
+import MyImage4 from './cart.png'
 import Popup from './popup';
 import { Deals, FeatDeals, Deal1 } from "./homeStyle.js";
 import { useQuery, useLazyQuery, gql } from "@apollo/client";
@@ -38,7 +38,7 @@ query PartByName($productName: String!) {
   }
 }
 `;
-
+------------------
 const Details = () => {
     const [isOpen, setIsOpen] = useState(false);
  
@@ -46,6 +46,13 @@ const Details = () => {
 	  setIsOpen(!isOpen);
 	}
 
+    const [isActive, setIsActive] = useState(false); 
+    const handleClick = () => {
+        setIsActive(current => !current);
+    }
+
+    return (
+        <>
     const{data: partData, error, loading} = useQuery(QUERY_BY_NAME, {variables: {productName: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T"}});
     console.log(partData);
     if( !error && !loading){
@@ -71,14 +78,36 @@ const Details = () => {
                 <section class="nav right">
 
                 <div class="flex-container">
-                    <div class="col top">                
+                <div class="col top">   
+                </div>
+               <h2> $000.00 </h2>
+                    <select>
+                        <option value="1">1 </option>
+                        <option value="2">2 </option>
+                        <option value="3">3</option>
+                        <option value="4">4 </option>
+                        <option value="5">5 </option>
+                        <option value="6">6 </option>
+                        <option value="7">7 </option>
+                        <option value="8">8 </option>
+                        <option value="9">9 </option>
+                        <option value="10">10 </option>
+                        <option value="11">11 </option>
+                        <option value="12">12 </option>
+                        <option value="13">13 </option>
+                        <option value="14">14 </option>
+                        <option value="15">15 </option>
+                    </select>
+            </div>
                         <select>
                             <option value="4">4 </option>
                         </select></div>
-                        <div class="col bottom">
-                        <input type="button" class="button_css" value="ADD TO CART"/>
-                    </div>
+                                         <div class="col bottom">
+                    <input type="button" style = {{textColor: isActive ? 'gray' : '',
+                    color: isActive ? 'gold' : '',
+                    }} class="button_css" value="ADD TO CART" onClick={handleClick}/>
                 </div>
+            </div>
 
                     <div class="col middle">
                         <div class="textyes">

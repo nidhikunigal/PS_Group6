@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useState, } from 'react';
 import MyImage from "./stars.png";
 
 const Popup = props => {
@@ -32,7 +32,13 @@ const Popup = props => {
         setFavorite1('Yes');
       }
 
+      const [rating, setRating] = useState(0);
+      const [hover, setHover] = useState(0);
+    
+
+
     return (
+        <>
         <div className="popup-box">
             <div className="box">
                 <div className="textyes">
@@ -48,7 +54,24 @@ const Popup = props => {
 
                 <div class="flex-container">
                     <div class="textyes"><h5>Overall Rating * </h5></div>
-                    <div> <img src={MyImage} className="starspic" alt=" "/></div>
+                    <div className="star-rating">
+                        {[...Array(5)].map((star, index) => {
+                        index += 1;
+                        return (
+                        <button
+                        type="button"
+                        key={index}
+                        className={index <= (hover || rating) ? "on" : "off"}
+                        onClick={() => setRating(index)}
+                        onMouseEnter={() => setHover(index)}
+                        onMouseLeave={() => setHover(rating)}
+                        >
+              <span className="star">&#9733;</span>
+            </button>
+          );
+        })}
+      </div>
+        
                 </div>
 
                 <hr
@@ -192,21 +215,48 @@ const Popup = props => {
                     }}
                 />
 
-            <div class="textyes"><h5> Would you recommend 4WheelParts to a friend? </h5></div>
+            <div class="textyes"><h5> How likely are you to recommend 4WheelParts to a friend? </h5></div>
             <div class="flex-container">
-                    <div><button> 0 </button></div>
-                    <div><button> 1 </button></div>
-                    <div><button> 2 </button></div>
-                    <div><button> 3 </button></div>
-                    <div><button> 4 </button></div>
-                    <div><button> 5 </button></div>
-                    <div><button> 6 </button></div>
-                    <div><button> 7 </button></div>
-                    <div><button> 8 </button></div>
-                    <div><button> 9 </button></div>
-                    <div><button> 10 </button></div>
-                </div>
+            <div class="radio-toolbar">
+                <input type="radio" id="radioApple" name="radioFruit"/>
+                <label for="radioApple">0</label>
 
+                <input type="radio" id="radioBanana" name="radioFruit"/>
+                <label for="radioBanana">1</label>
+
+                <input type="radio" id="radioOrange" name="radioFruit"/>
+                <label for="radioOrange">2</label> 
+
+                <input type="radio" id="radio3" name="radioFruit"/>
+                <label for="radio3">3</label> 
+
+                <input type="radio" id="radio4" name="radioFruit"/>
+                <label for="radio4">4</label> 
+
+                <input type="radio" id="radio5" name="radioFruit"/>
+                <label for="radio5">5</label> 
+
+                <input type="radio" id="radio6" name="radioFruit"/>
+                <label for="radio6">6</label>
+
+                <input type="radio" id="radio7" name="radioFruit"/>
+                <label for="radio7">7</label> 
+
+                <input type="radio" id="radio8" name="radioFruit"/>
+                <label for="radio8">8</label> 
+
+                <input type="radio" id="radio9" name="radioFruit"/>
+                <label for="radio9">9</label> 
+
+                <input type="radio" id="radio10" name="radioFruit"/>
+                <label for="radio10">10</label> 
+
+
+
+</div>
+
+            </div>
+                
                 <hr
                     style={{
                         color:'light gray',
@@ -223,19 +273,21 @@ const Popup = props => {
 
             <div class="textyes"><h5> You may receive emails regarding this submission. Any emails will include the ability to opt-out of future communications.  </h5> </div>
             
-			<div class="textyes">
+			<span className="close-icon2" onClick={props.handleClose}>
     		<input
       			type="button"
 				class="slay"
       			value="POST REVIEW"
     		/>
-            </div>
+            </span>
 
             <span className="close-icon" onClick={props.handleClose}>x</span>
                 {props.content}
                 </div>
             </div>
-  
+
+
+            </>
     );
 };
 
