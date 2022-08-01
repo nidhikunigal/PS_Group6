@@ -13,6 +13,11 @@ const Details = () => {
 	  setIsOpen(!isOpen);
 	}
 
+    const [isActive, setIsActive] = useState(false); 
+    const handleClick = () => {
+        setIsActive(current => !current);
+    }
+
     return (
         <>
 
@@ -58,7 +63,9 @@ const Details = () => {
                         <option value="15">15 </option>
                     </select></div>
                     <div class="col bottom">
-                    <input type="button" class="button_css" value="ADD TO CART"/>
+                    <input type="button" style = {{textColor: isActive ? 'gray' : '',
+                    color: isActive ? 'yellow' : '',
+                    }} class="button_css" value="ADD TO CART" onClick={handleClick}/>
                 </div>
             </div>
                 <div><h4>__ % of users think this product is a good fit</h4></div>

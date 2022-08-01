@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useState, } from 'react';
 import MyImage from "./stars.png";
 
 const Popup = props => {
@@ -31,6 +31,7 @@ const Popup = props => {
       const handleYesChange1 = () => {
         setFavorite1('Yes');
       }
+    
 
     return (
         <>
@@ -193,21 +194,48 @@ const Popup = props => {
                     }}
                 />
 
-            <div class="textyes"><h5> Would you recommend 4WheelParts to a friend? </h5></div>
+            <div class="textyes"><h5> How likely are you to recommend 4WheelParts to a friend? </h5></div>
             <div class="flex-container">
-                    <div><button> 0 </button></div>
-                    <div><button> 1 </button></div>
-                    <div><button> 2 </button></div>
-                    <div><button> 3 </button></div>
-                    <div><button> 4 </button></div>
-                    <div><button> 5 </button></div>
-                    <div><button> 6 </button></div>
-                    <div><button> 7 </button></div>
-                    <div><button> 8 </button></div>
-                    <div><button> 9 </button></div>
-                    <div><button> 10 </button></div>
-                </div>
+            <div class="radio-toolbar">
+                <input type="radio" id="radioApple" name="radioFruit"/>
+                <label for="radioApple">0</label>
 
+                <input type="radio" id="radioBanana" name="radioFruit"/>
+                <label for="radioBanana">1</label>
+
+                <input type="radio" id="radioOrange" name="radioFruit"/>
+                <label for="radioOrange">2</label> 
+
+                <input type="radio" id="radio3" name="radioFruit"/>
+                <label for="radio3">3</label> 
+
+                <input type="radio" id="radio4" name="radioFruit"/>
+                <label for="radio4">4</label> 
+
+                <input type="radio" id="radio5" name="radioFruit"/>
+                <label for="radio5">5</label> 
+
+                <input type="radio" id="radio6" name="radioFruit"/>
+                <label for="radio6">6</label>
+
+                <input type="radio" id="radio7" name="radioFruit"/>
+                <label for="radio7">7</label> 
+
+                <input type="radio" id="radio8" name="radioFruit"/>
+                <label for="radio8">8</label> 
+
+                <input type="radio" id="radio9" name="radioFruit"/>
+                <label for="radio9">9</label> 
+
+                <input type="radio" id="radio10" name="radioFruit"/>
+                <label for="radio10">10</label> 
+
+
+
+</div>
+
+            </div>
+                
                 <hr
                     style={{
                         color:'light gray',
