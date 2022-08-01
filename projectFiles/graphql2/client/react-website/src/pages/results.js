@@ -71,7 +71,7 @@ function ResultGridFun(data, error, loading){
                 j+="<div class=grid-item><style type=text/css> .grid-item{display: flex; flex-direction:column; align-items: center; text-align: center; border: 1px solid grey;}</style>" 
                 + aaa 
                 + internalGrid(unique[i].VehicleParts[0].Type) 
-                + "<a style=\"color:blue; font-weight: 600; font-family:Sans-serif; font-size:1em; text-decoration-line: underline;  \">" 
+                + "<a id = prodName style=\"color:blue; font-weight: 600; font-family:Sans-serif; font-size:1em; text-decoration-line: underline;  \">" 
                 +"<div></div>"
                 + unique[i].Product_Name 
                 + "</a> <p id=price><style type=text/css> #price{justify-self: flex-end; align-self: flex-start; font-family:Sans-serif; font-weight:600; margin-left: 30px; height: 8px; }</style> $" 
