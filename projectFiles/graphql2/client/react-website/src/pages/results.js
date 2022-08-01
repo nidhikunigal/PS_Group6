@@ -43,15 +43,24 @@ function ResultGridFun(data, error, loading){
     let j = "";
     if(!error && !loading){
         unique = [... new Map(data.partByYear.map(item => [item.Product_Name, item])).values()];
-       let bestFitCheck = bestFit(data);
+        let bestFitCheck = null;
+
         if(self.Part != "All Part" && self.Part != ""){
+            //if the input has a select part
+            let refinedDataForBestFit = refineForBestFit(data);
+            bestFitCheck = bestFit(refinedDataForBestFit);
             refineUnique(unique);
+        }
+        else {
+            //if the input is for all parts
+            bestFitCheck = bestFitTwo(data);
         }
         let aaa = "";
         for(let i = 0; i < unique.length; i++){
             if(unique[i] != null){
                 
                 if (unique[i].Product_Name === bestFitCheck.Product_Name) {
+                    //add best fit sticker to proper item
                     console.log("best fit" + "fit percent: " + unique[i].Fitment_Percent + "num reviews: " + unique[i].Num_Reviews);
                     aaa = "<img src=" + bestfit + " width=125 />";
                 }
@@ -85,6 +94,21 @@ function refineUnique(data){
             delete data[i];
         }
     }
+}
+
+function refineForBestFit(data){
+    //refines the data for the best fit function
+    console.log(data);
+    console.log(self.Type);
+    
+    let newData = [];
+    for(let i = 0; i < data.partByYear.length; i++){
+        if(data.partByYear[i].VehicleParts[0].Type == self.Part){
+            newData.push(data.partByYear[i]);
+        }
+    }
+    console.log(newData);
+    return newData;
 }
  
 function internalGrid(type){
@@ -140,11 +164,37 @@ function ChangeVehFun(){
 
  
 function bestFit(data){
+    //finds the best fit item in the given data set
     let bestFitArr = [];
-    console.log("old data");
     console.log(data);
-    console.log("new data");
+
     
+    //find the reviews with over 70% best fit
+    for(let i = 0; i < data.length; i++){
+        if(data[i].Fitment_Percent >= 70) {
+            bestFitArr.push(data[i]);
+        }
+    }
+
+     console.log(bestFitArr);
+    //finds the part with the most number of reviews from our bestFitArr (parts with only 70+ fitment)
+    let max = bestFitArr[0];
+    for(let i = 0; i < bestFitArr.length; i++){
+        if(bestFitArr[i].Num_Reviews > max.Num_Reviews) {
+            console.log(i);
+            max = bestFitArr[i];
+        }
+    }
+    console.log("bestfit");
+    console.log(max);
+
+    return max;
+}
+
+function bestFitTwo(data){
+    //finds the best fit item in the given data set if the array is the original data set (for all parts)
+    let bestFitArr = [];
+
     //find the reviews with over 70% best fit
     for(let i = 0; i < data.partByYear.length; i++){
         if(data.partByYear[i].Fitment_Percent >= 70) {
@@ -265,4 +315,3 @@ return (
 };
  
 export default Results;
-
