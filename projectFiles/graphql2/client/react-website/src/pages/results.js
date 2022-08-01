@@ -10,6 +10,7 @@ import bumper from "./bumper.jpg";
 import levelingKit from "./levelingKit.jpg";
 import suspension from "./suspension.jpg";
 import fender from "./fender.jpg";
+import bestfit from "./best_fit.png";
  
 const QUERY_YEAR_MAKE_MODEL = gql`
 query yearMakeModel($year: String, $make: String, $model: String) {
@@ -36,25 +37,39 @@ query yearMakeModel($year: String, $make: String, $model: String) {
  
 var unique = [];
 var eeep = 0; 
-function ResultGridFun(data, error, loading){
+function ResultGridFun(data, error, loading){ 
+
     eeep = 0; 
     let j = "";
     if(!error && !loading){
         unique = [... new Map(data.partByYear.map(item => [item.Product_Name, item])).values()];
-        console.log(data);
        let bestFitCheck = bestFit(data);
-        console.log(unique);
-        console.log(self.Part);
         if(self.Part != "All Part" && self.Part != ""){
             refineUnique(unique);
         }
+        let aaa = "";
         for(let i = 0; i < unique.length; i++){
             if(unique[i] != null){
-                j+="<div class=grid-item><style type=text/css> .grid-item{display: flex; flex-direction:column; align-items: center; text-align: center; border: 1px solid grey;}</style>" + internalGrid(unique[i].VehicleParts[0].Type) + "<a style=\"color:blue; font-weight: 600; font-family:Sans-serif; font-size:1em; text-decoration-line: underline;  \">" + unique[i].Product_Name + "</a> <p id=price><style type=text/css> #price{justify-self: flex-end; align-self: flex-start; font-family:Sans-serif; font-weight:600; margin-left: 30px; height: 8px; }</style> $" +unique[i].VehicleParts[0].Cost + "</p> <div id=bottom><style type=text/css> #bottom{display: flex; flex-direction: row; align-self: center;} #quan{width: 5em;} #buy{background-color: red; width:15em; display: block; border: none; color: white; font-family: Sans-serif; font-weight: 600;}</style><select id=quan value=quan><option value=1>1</option> <option value=2>2</option> <option value=3>3</option></select><button id=buy>Add To Cart </button></div> </div> ";
+                
+                if (unique[i].Product_Name === bestFitCheck.Product_Name) {
+                    console.log("best fit" + "fit percent: " + unique[i].Fitment_Percent + "num reviews: " + unique[i].Num_Reviews);
+                    aaa = "<img src=" + bestfit + " width=125 />";
+                }
+                else {
+                    aaa="";
+                }
+                
+                j+="<div class=grid-item><style type=text/css> .grid-item{display: flex; flex-direction:column; align-items: center; text-align: center; border: 1px solid grey;}</style>" 
+                + aaa 
+                + internalGrid(unique[i].VehicleParts[0].Type) 
+                + "<a style=\"color:blue; font-weight: 600; font-family:Sans-serif; font-size:1em; text-decoration-line: underline;  \">" 
+                +"<div></div>"
+                + unique[i].Product_Name 
+                + "</a> <p id=price><style type=text/css> #price{justify-self: flex-end; align-self: flex-start; font-family:Sans-serif; font-weight:600; margin-left: 30px; height: 8px; }</style> $" 
+                + unique[i].VehicleParts[0].Cost 
+                + "</p> <div id=bottom><style type=text/css> #bottom{display: flex; flex-direction: row; align-self: center;} #quan{width: 5em;} #buy{background-color: red; width:15em; display: block; border: none; color: white; font-family: Sans-serif; font-weight: 600;}</style><select id=quan value=quan><option value=1>1</option> <option value=2>2</option> <option value=3>3</option></select><button id=buy>Add To Cart </button></div> </div> ";
+                console.log("fit percent: " + unique[i].Fitment_Percent + "num reviews: " + unique[i].Num_Reviews);
                 eeep++;
-            }
-            if (unique[i].Product_Name === bestFitCheck.Product_Name) {
-                console.log(bestFitCheck.Product_Name);
             }
         }
     }
@@ -86,7 +101,7 @@ function internalGrid(type){
             case 'Leveling':
                 SRC = levelingKit;
                 break;
-            case 'Wheel':
+            case 'Wheels':
                 SRC = tire;
                 break;
             case 'Fenders':
@@ -126,33 +141,36 @@ function ChangeVehFun(){
  
 function bestFit(data){
     let bestFitArr = [];
-
+    console.log("old data");
+    console.log(data);
+    console.log("new data");
+    
+    //find the reviews with over 70% best fit
     for(let i = 0; i < data.partByYear.length; i++){
         if(data.partByYear[i].Fitment_Percent >= 70) {
             bestFitArr.push(data.partByYear[i]);
         }
     }
-    let max = bestFitArr[0].Num_Reviews;
+
+     console.log(bestFitArr);
+    //finds the part with the most number of reviews from our bestFitArr (parts with only 70+ fitment)
+    let max = bestFitArr[0];
     for(let i = 0; i < bestFitArr.length; i++){
-        if(bestFitArr[i].Num_Reviews > max) {
-            max = bestFitArr[i].Num_Reviews 
+        if(bestFitArr[i].Num_Reviews > max.Num_Reviews) {
+            console.log(i);
+            max = bestFitArr[i];
         }
     }
-    let bestFitObj = {};
-    for(let i = 0; i < bestFitArr.length; i++){
-        if(bestFitArr[i].Num_Reviews == max) {
-            bestFitObj = bestFitArr[i];
-        }
-    }
-    return bestFitObj;
+    console.log("bestfit");
+    console.log(max);
+
+    return max;
 }
 
 const Results = () => {
-    //const [loadData, { data: yearData }] = useLazyQuery(QUERY_YEAR_MAKE_MODEL);
     const{data, error, loading} = useQuery(QUERY_YEAR_MAKE_MODEL, {variables: { year: self.Year,
         make: self.Make,
         model: self.Model,}});
-    // console.log("hi");
 
     if( !error && !loading){
         var size = data.partByYear.length;

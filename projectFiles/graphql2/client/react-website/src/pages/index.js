@@ -183,9 +183,9 @@ const Home = () => {
                   <select name="part" id="part" value={part} disabled={isDisabled1} onChange={(e) => setPart(e.target.value)} style={{cursor:cursor1}}>
                      <option value="All Part">Part</option>
                      <option value="Suspension">Suspension</option>
-                     <option value="Wheel">Wheel</option>
-                     <option value="Leveling Kit">Leveling Kit</option>
-                     <option value="Fender">Fender</option>
+                     <option value="Wheels">Wheel</option>
+                     <option value="Leveling">Leveling Kit</option>
+                     <option value="Fenders">Fender</option>
                      <option value="Bumper">Bumper</option>
                      <option value="All Part">All Part</option>
                   </select>
@@ -199,7 +199,7 @@ const Home = () => {
             <a>Shop Deals For Your Vehicle</a>
          </Deals>
          <FeatDeals onClick={(e) => self.Name = e.target.title}>
-            <a class="Back">&#10094;</a>
+            <a class="Back">&#10094; </a>
             <Deal1>
                {DetailsPage(tire, "Mickey Thompson Baja Legend EXP Tires")}
             </Deal1>
