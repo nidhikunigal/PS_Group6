@@ -135,7 +135,6 @@ select { width: 130px; text-align-last:center; height:30px; border-radius: 7px;
   align-items: center;
   float: top;
   flex-direction: row;
-
 }
 
 .flex-container > div{
@@ -161,6 +160,7 @@ select { width: 130px; text-align-last:center; height:30px; border-radius: 7px;
   background-color: rgb(255, 255, 255);
   align-items: stretch;
   justify-content: left;
+
 }
 
 .flex-vibes > div {

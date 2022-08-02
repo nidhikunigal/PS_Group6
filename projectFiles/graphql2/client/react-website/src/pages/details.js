@@ -57,6 +57,7 @@ const Details = () => {
         let generalVehicle = partData.partByName[0].generalVehicle;
         let productCost = partData.partByName[0].Cost;
 
+   
     return (
         <>
 
@@ -76,7 +77,6 @@ const Details = () => {
 
             </div>
         </div> 
-        <div> </div>
 
         <div class="nav right">
             <section class="borderbox">

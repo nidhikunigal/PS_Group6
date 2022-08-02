@@ -29,7 +29,8 @@ function ResultsPage() {
          alert("Please fill out the year, make, and model field before submitting");
       } 
       if (self.Part == ""){
-         alert("Please fill out the part field before submitting. If you want to view all parts, choose 'View All Parts'");
+         alert("Please select an option in the Part dropdown before submitting. If you want to view all parts for a vehicle, select 'View All Parts'");
+      
       }
       else {
          let path = '/results';
@@ -79,6 +80,7 @@ function quizResult(yearSearched, makeSearched, modelSearched, part) {
    self.Make = makeSearched;
    self.Model = modelSearched;
    self.Part = part; 
+
    //if(part != ""){
      // self.Part = part;
    //}
