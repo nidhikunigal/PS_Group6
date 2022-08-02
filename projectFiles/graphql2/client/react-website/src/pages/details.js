@@ -5,7 +5,6 @@ import MyImage2 from './clearstars.png';
 import MyImage3 from './0stars.png';
 import MyImage4 from './cart.png'
 import Popup from './popup';
-import { Deals, FeatDeals, Deal1 } from "./homeStyle.js";
 import { useQuery, useLazyQuery, gql } from "@apollo/client";
 import tire from "./wheels.jpg";
 import bumper from "./bumper.jpg";
@@ -13,6 +12,7 @@ import levelingKit from "./levelingKit.jpg";
 import suspension from "./suspension.jpg";
 import fender from "./fender.jpg";
 import bestfit from "./best_fit.png";
+import './pdpstyle.css'
 
 const QUERY_BY_NAME = gql`
 query PartByName($productName: String!) {
@@ -56,6 +56,7 @@ const Details = () => {
         let productFitPercent = partData.partByName[0].Compatible_Vehicles[0].Fitment_Percent;
         let generalVehicle = partData.partByName[0].generalVehicle;
         let productCost = partData.partByName[0].Cost;
+        let productSpec = partData.partByName[0].Specifications;
 
     return (
         <>
@@ -70,7 +71,7 @@ const Details = () => {
                     <img src={MyImage2} className="starspic" alt=" "/>
             </div>
 
-                <h2>{productFitPercent}% of {generalVehicle} Drivers Found This a Good Fit.</h2>
+                <div className ='fitStat'>{productFitPercent}% of {generalVehicle} Drivers Found This a Good Fit.</div>
 
             </div>
             <div class="borderbox">
@@ -137,7 +138,7 @@ const Details = () => {
         />
 
     <div> <h3> Specifications </h3></div>
-    <div><h5> blah blah blah blah </h5></div>
+    <div><h5> {productSpec} </h5></div>
 
     <hr
         style={{
