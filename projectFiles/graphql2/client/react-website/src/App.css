@@ -102,8 +102,8 @@ select { width: 130px; text-align-last:center; height:30px; border-radius: 7px;
   content: 'x';
   cursor: pointer;
   position: fixed;
-  left: calc(15% - 20px);
-  bottom: calc(100vh - 85vh - 20px);
+  right: calc(15% - 20px);
+  bottom: calc(100vh - 85vh - 23px);
   text-align: center;
   font-size: 10px;
 }
@@ -147,6 +147,8 @@ select { width: 130px; text-align-last:center; height:30px; border-radius: 7px;
 
 .slay {
   background-color: rgb(37, 37, 118);
+  height: 30px; 
+  width: 125px;
   color: white; 
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
