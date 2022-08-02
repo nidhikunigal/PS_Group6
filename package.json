@@ -3,5 +3,6 @@
     "apollo-client": "^2.6.10",
     "apollo-server": "^3.10.0",
     "graphql": "^15.8.0"
+    
   }
 }
