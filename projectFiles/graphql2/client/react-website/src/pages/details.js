@@ -61,20 +61,25 @@ const Details = () => {
         <>
 
         <div class="flex-container">
+        
+        <div class ="flex-vibes">
         <nav class="nav left"></nav>
             <div> 
-                <div><h2>{productNameTitle}</h2></div>
-                <img src={MyImage} className="img" alt=" "/></div>
-            <div> 
-            <div>
-                    <img src={MyImage2} className="starspic" alt=" "/>
+                <div><h1>{productNameTitle}</h1></div>
+                <img src={MyImage} className="img" alt=" "/>
             </div>
+   
 
-                <h2>{productFitPercent}% of {generalVehicle} Drivers Found This a Good Fit.</h2>
+            <div class="nav middle"> 
+                <div> <img src={MyImage2} className="starspic" alt=" "/> </div> 
+                <div class="greeny"> <h2>{productFitPercent}% of {generalVehicle} Drivers Found This a Good Fit.</h2> </div> 
 
             </div>
-            <div class="borderbox">
-            <section class="nav right">
+        </div> 
+        <div> </div>
+
+        <div class="nav right">
+            <section class="borderbox">
 
             <div>
                <h2> ${productCost} </h2>
@@ -119,6 +124,7 @@ const Details = () => {
         <nav class="main"></nav>
         </div>
         </div>
+   
      
     <div>
         <input type="button" class="buttonz" value="SPECIFICATIONS"></input>
