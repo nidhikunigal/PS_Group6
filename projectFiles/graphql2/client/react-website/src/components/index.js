@@ -4,7 +4,6 @@ import { Nav, NavLink, NavMenu, Logo }
 import companyLogo from "./logo.png";
 import { Button1 } from "../pages/homeStyle.js";
 
-
 const Navbar = () => {
 return (
 	<Nav>

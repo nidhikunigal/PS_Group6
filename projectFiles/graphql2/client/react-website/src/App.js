@@ -11,18 +11,14 @@ import Account from './pages/Account';
 import Results from './pages/results';
 import Details from './pages/details';
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
-import {PDPage} from './pages/results'
-
+//import {PDPage} from './pages/results'
 
 
 
 function App() {
 	const client = new ApolloClient({ cache: new InMemoryCache(), uri: "http://localhost:4000/graphql" });
-
-
 	return (
 		<ApolloProvider client={client}>
-
 			<Router>
 				<Navbar />
 				<Routes>
@@ -31,7 +27,7 @@ function App() {
 					<Route path='/Account' element={<Account />} />
 					<Route path='/storesNear' element={<Stores />} />
 					<Route path='/cart' element={<Cart />} />
-					<Route path='/results' element={<Results />} />
+					<Route path='/results' element={<Results />}/>
 					<Route path='/details' element={<Details />} />
 
 				</Routes>
