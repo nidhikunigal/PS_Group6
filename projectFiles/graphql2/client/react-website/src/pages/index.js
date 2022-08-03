@@ -211,9 +211,9 @@ const Home = () => {
                   <select name="part" id="part" value={part} disabled={isDisabled2} onChange={(e) => setPart(e.target.value)} style={{cursor:cursor2}}>
                      <option value="0">Part</option>
                      <option value="Suspension">Suspension</option>
-                     <option value="Wheels">Wheel</option>
+                     <option value="Wheel">Wheel</option>
                      <option value="Leveling">Leveling Kit</option>
-                     <option value="Fenders">Fender</option>
+                     <option value="Fender">Fender</option>
                      <option value="Bumper">Bumper</option>
                      <option value="All Part">View All Parts</option>
                   </select>

@@ -129,7 +129,7 @@ function InternalGrid(num){
             case 'Leveling':
                 SRC = levelingKit;
                 break;
-            case 'Wheels':
+            case 'Wheel':
                 SRC = tire;
                 break;
             case 'Fenders':
