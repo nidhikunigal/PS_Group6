@@ -12,7 +12,9 @@ import levelingKit from "./levelingKit.jpg";
 import suspension from "./suspension.jpg";
 import fender from "./fender.jpg";
 import bestfit from "./best_fit.png";
-import './pdpstyle.css'
+import check from "./checkmark.png";
+import './pdpstyle.css';
+import {prody} from "./results";
 
 const QUERY_BY_NAME = gql`
 query PartByName($productName: String!) {
@@ -38,6 +40,7 @@ query PartByName($productName: String!) {
 `;
 
 const Details = () => {
+    console.log("name: " + prody.name);
     const [isOpen, setIsOpen] = useState(false);
  
 	const togglePopup = () => {
@@ -49,14 +52,42 @@ const Details = () => {
         setIsActive(current => !current);
     }
 
-    const{data: partData, error, loading} = useQuery(QUERY_BY_NAME, {variables: {productName: "Pro Comp 6' Stage 1 with Pro-X Shocks - K4189T"}});
+    const{data: partData, error, loading} = useQuery(QUERY_BY_NAME, {variables: {productName: prody.name}});
     console.log(partData);
     if( !error && !loading){
         let productNameTitle = partData.partByName[0].Product_Name;
         let productFitPercent = partData.partByName[0].Compatible_Vehicles[0].Fitment_Percent;
+        let productNumRev = partData.partByName[0].Compatible_Vehicles[0].Num_Reviews;
         let generalVehicle = partData.partByName[0].generalVehicle;
         let productCost = partData.partByName[0].Cost;
         let productSpec = partData.partByName[0].Specifications;
+        let formattedProductSpec = productSpec.split(",");
+        let prodTechDeails = partData.partByName[0].Technical_Details;
+        let formattedTechDetails = prodTechDeails.split(",");
+        let prodType = partData.partByName[0].Type;
+
+        let imageToUse;
+
+        switch(prodType) {
+            case "Wheels":
+            imageToUse = tire;
+            break;
+            case "Leveling":
+                imageToUse = levelingKit;
+                break;
+            case "Suspension":
+                imageToUse = suspension;
+                break;
+            case "Fenders":
+                imageToUse = fender;
+                break;
+            case "Bumper":
+                imageToUse = bumper;
+                break;
+            default:
+                imageToUse = tire;
+
+        }
 
     return (
         <>
@@ -64,15 +95,22 @@ const Details = () => {
         <div class="flex-container">
         <nav class="nav left"></nav>
             <div> 
-                <div><h2>{productNameTitle}</h2></div>
-                <img src={MyImage} className="img" alt=" "/></div>
+                <div class = "PDPstyle"><h2>{prody.name}</h2></div>
+                <div><img src={imageToUse} alt=" " width = "300px"/></div>
+                
+                </div>
             <div> 
             <div>
                     <img src={MyImage2} className="starspic" alt=" "/>
             </div>
-
-                <div className ='fitStat'>{productFitPercent}% of {generalVehicle} Drivers Found This a Good Fit.</div>
-
+                <div className ='fitStat'> <img src={check} width='17px'></img> {productFitPercent}% of {generalVehicle} drivers found this product to be a good fit</div>
+                <div className ='fitStat'> <img src={check} width='17px'></img> Lowest Price Guarentee</div>
+                <div className ='fitStat'> <img src={check} width='17px'></img> Qualifies for Free Shipping</div>
+                <ul className = 'PDPstyle'>
+                    {formattedTechDetails.map((elem)=>{
+                        return <li>{elem}</li>
+                    })}
+                </ul>
             </div>
             <div class="borderbox">
             <section class="nav right">
@@ -106,8 +144,6 @@ const Details = () => {
                     }} class="button_css" value="ADD TO CART" onClick={handleClick}/>
                 </div>
             </div>
-                <div><h4>__ % of users think this product is a good fit</h4></div>
-
                 <hr
                     style={{
                         color:'light gray',
@@ -137,8 +173,14 @@ const Details = () => {
             }}
         />
 
-    <div> <h3> Specifications </h3></div>
-    <div><h5> {productSpec} </h5></div>
+    <div class="PDPstyle"> <h3> Specifications </h3></div>
+    <div> 
+        <ul className = 'PDPstyle'>    
+        {formattedProductSpec.map((elem)=>{
+            return <li>{elem}</li>
+        })}
+        </ul>
+    </div>
 
     <hr
         style={{

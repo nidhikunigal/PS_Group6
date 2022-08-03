@@ -37,60 +37,50 @@ query yearMakeModel($year: String, $make: String, $model: String) {
  
 var unique = [];
 var eeep = 0; 
+var data2 = [];
 function ResultGridFun(data, error, loading){ 
-
     eeep = 0; 
     let j = "";
     if(!error && !loading){
         unique = [... new Map(data.partByYear.map(item => [item.Product_Name, item])).values()];
         let bestFitCheck = null;
 
-        if(self.Part != "All Part" && self.Part != ""){
-            //if the input has a select part
-            let refinedDataForBestFit = refineForBestFit(data);
-            bestFitCheck = bestFit(refinedDataForBestFit);
-            refineUnique(unique);
-        }
-        else {
-            //if the input is for all parts
-            bestFitCheck = bestFitTwo(data);
-        }
-        let aaa = "";
+       
         for(let i = 0; i < unique.length; i++){
             if(unique[i] != null){
-                
-                if (unique[i].Product_Name === bestFitCheck.Product_Name) {
-                    //add best fit sticker to proper item
-                    console.log("best fit" + "fit percent: " + unique[i].Fitment_Percent + "num reviews: " + unique[i].Num_Reviews);
-                    aaa = "<img src=" + bestfit + " width=125 />";
-                }
-                else {
-                    aaa="";
-                }
-                
-                j+="<div class=grid-item><style type=text/css> .grid-item{display: flex; flex-direction:column; align-items: center; text-align: center; border: 1px solid grey;}</style>" 
-                + aaa 
-                + internalGrid(unique[i].VehicleParts[0].Type) 
-                + "<a id = prodName style=\"color:blue; font-weight: 600; font-family:Sans-serif; font-size:1em; text-decoration-line: underline;  \">" 
-                +"<div></div>"
-                + unique[i].Product_Name 
-                + "</a> <p id=price><style type=text/css> #price{justify-self: flex-end; align-self: flex-start; font-family:Sans-serif; font-weight:600; margin-left: 30px; height: 8px; }</style> $" 
-                + unique[i].VehicleParts[0].Cost 
-                + "</p> <div id=bottom><style type=text/css> #bottom{display: flex; flex-direction: row; align-self: center;} #quan{width: 5em;} #buy{background-color: red; width:15em; display: block; border: none; color: white; font-family: Sans-serif; font-weight: 600;}</style><select id=quan value=quan><option value=1>1</option> <option value=2>2</option> <option value=3>3</option></select><button id=buy>Add To Cart </button></div> </div> ";
-                console.log("fit percent: " + unique[i].Fitment_Percent + "num reviews: " + unique[i].Num_Reviews);
                 eeep++;
             }
         }
     }
+    unique = unique; 
     return(
-        <ResultGrid dangerouslySetInnerHTML={{__html: j}}>
-        </ResultGrid>
+       unique
     )
 }
+
+function AddClickEv(elem){
+	//console.log("function is at least being called");
+    let nav = useNavigate();
+    const routeChange = () =>{
+        let path = '/details';
+        nav(path);
  
+    }
+    //console.log(elem.props.children.props.children);
+    let kidList = elem.props.children.props.children;
+
+    //console.log(kidList[0].props.children[1].props.src = {tire})
+    for(let i=0; i < unique.length; i++){
+        //kidList[i].innerHTML = "<a>Hello</a>";
+
+    }
+  // console.log(kidList);
+  return(elem);
+}
+
 function refineUnique(data){
     for(let i = 0; i < data.length; i++){
-        if(data[i].VehicleParts[0].Type != self.Part){
+        if(data[i] != null && data[i].VehicleParts[0].Type != self.Part){
             delete data[i];
         }
     }
@@ -98,24 +88,33 @@ function refineUnique(data){
 
 function refineForBestFit(data){
     //refines the data for the best fit function
-    console.log(data);
-    console.log(self.Type);
-    
+
+
+
     let newData = [];
     for(let i = 0; i < data.partByYear.length; i++){
         if(data.partByYear[i].VehicleParts[0].Type == self.Part){
             newData.push(data.partByYear[i]);
         }
     }
-    console.log(newData);
     return newData;
 }
  
-function internalGrid(type){
+function InternalGrid(num){
+    let nav = useNavigate();
+    if(num >= unique.length || unique[num] == null){
+        return(<></>); 
+    }
+    const routeChange = () =>{
+        prody.name = unique[num].Product_Name;
+        let path = '/details';
+        nav(path);
+    }
+    //console.log("Internal Grid unique");
+   // console.log(unique);
     var SRC = null;
-    //var img = document.createElement("img");
- 
-        switch(type){
+    let uniqueType;
+        switch(unique[num].VehicleParts[0].Type){
             case 'Bumper':
                 SRC = bumper;
                 break;
@@ -131,22 +130,67 @@ function internalGrid(type){
             case 'Fenders':
                 SRC = fender;
         }
-        return ("<img src=" + SRC + " width=250px />");
+    let bestFitCheck = null;
+
+    if(self.Part != "All Part" && self.Part != ""){
+        //if the input has a select part
+        let refinedDataForBestFit = refineForBestFit(data2);
+        bestFitCheck = bestFit(refinedDataForBestFit);
+       // console.log("refined data for best fit");
+       // console.log(data2);
+        refineUnique(unique);
+    }
+    else {
+        //if the input is for all parts
+        bestFitCheck = bestFitTwo(data2);
+        }
+
+    if (unique[num] != null && (unique[num].Product_Name !== bestFitCheck.Product_Name)) {
+        return (
+            <img src={SRC} width="250px" onClick={routeChange} />
+            );
+    }
+        return (<>
+        <img src={bestfit} width="125px"/>
+        <img src={SRC} width="250px" onClick={routeChange} />
+        </>);
 }
  
-function PDPage(){
+function PDPage(num){
     let nav = useNavigate();
+    if(num >= unique.length || unique[num] == null){
+        return; 
+    }
     const routeChange = () =>{
+        prody.name = unique[num].Product_Name;
         let path = '/details';
         nav(path);
  
     }
- 
-    return (
-        <div></div>
+    return(
+        <a id="namey" onClick={routeChange}>{unique[num].Product_Name}</a>
     )
 }
- 
+
+function priceDyn(num){
+    if(num >= unique.length || unique[num] == null){
+        return; 
+    }
+    return(<div>
+            <p id="price">
+                ${unique[num].VehicleParts[0].Cost}
+            </p>
+            <div id="bottom">
+            <select id="quan" value="quan">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            <button id="buy">Add To Cart </button>
+            </div>
+            </div> )
+}
+
 function ChangeVehFun(){
     let nav = useNavigate();
     const routeChange = () =>{
@@ -166,7 +210,7 @@ function ChangeVehFun(){
 function bestFit(data){
     //finds the best fit item in the given data set
     let bestFitArr = [];
-    console.log(data);
+   // console.log(data);
 
     
     //find the reviews with over 70% best fit
@@ -176,17 +220,18 @@ function bestFit(data){
         }
     }
 
-     console.log(bestFitArr);
+   // console.log("besfit array");
+    // console.log(data);
     //finds the part with the most number of reviews from our bestFitArr (parts with only 70+ fitment)
     let max = bestFitArr[0];
     for(let i = 0; i < bestFitArr.length; i++){
         if(bestFitArr[i].Num_Reviews > max.Num_Reviews) {
-            console.log(i);
+           // console.log(i);
             max = bestFitArr[i];
         }
     }
-    console.log("bestfit");
-    console.log(max);
+   // console.log("bestfit");
+   // console.log(max);
 
     return max;
 }
@@ -202,7 +247,7 @@ function bestFitTwo(data){
         }
     }
 
-     console.log(bestFitArr);
+   //  console.log(bestFitArr);
     //finds the part with the most number of reviews from our bestFitArr (parts with only 70+ fitment)
     let max = bestFitArr[0];
     for(let i = 0; i < bestFitArr.length; i++){
@@ -211,8 +256,8 @@ function bestFitTwo(data){
             max = bestFitArr[i];
         }
     }
-    console.log("bestfit");
-    console.log(max);
+   // console.log("bestfit");
+   // console.log(max);
 
     return max;
 }
@@ -221,6 +266,9 @@ const Results = () => {
     const{data, error, loading} = useQuery(QUERY_YEAR_MAKE_MODEL, {variables: { year: self.Year,
         make: self.Make,
         model: self.Model,}});
+
+    unique = ResultGridFun(data, error, loading);
+    data2 = data; 
 
     if( !error && !loading){
         var size = data.partByYear.length;
@@ -302,9 +350,138 @@ return (
             <NumRes> 
                 {eeep} Results
             </NumRes>
+            
             <div id="grid-container" class="grid">
+                <style> 
+                    {`
+                        #grid-element{
+                            display: flex; 
+                            flex-direction:column; 
+                            align-items: center; 
+                            text-align: center; 
+                        }
+                        #buy{
+                            background-color: red;
+                            width:15em;
+                            display: block;
+                            border: none;
+                            color: white;
+                            font-family: Sans-serif;
+                            font-weight: 600;
+                        }
+                        #bottom{display: flex; flex-direction: row; align-self: center;}
+                        #quan{width: 5em;} 
+                        #price{justify-self: flex-end; align-self: flex-start; font-family:Sans-serif; font-weight:600; margin-left: 30px; height: 8px; }
+                        #namey{
+                            color: blue; 
+                            font-family: Sans-serif; 
+                            font-size: 1em;
+                            text-decoration-line: underline; 
+                        }
+                    `}
+                </style>
                 <ResultGrid>
-                    {ResultGridFun(data, error, loading) }
+                <div id="grid-element">
+                    {InternalGrid(0)}
+                    {PDPage(0)}
+                    {priceDyn(0)}
+                </div>
+                <div id="grid-element">
+                    {InternalGrid(1)}
+                    {PDPage(1)}
+                    {priceDyn(1)}
+                </div>
+                <div id="grid-element">
+                    {InternalGrid(2)}
+                    {PDPage(2)}
+                    {priceDyn(2)}
+                </div>
+                <div id="grid-element">
+                    {InternalGrid(3)}
+                    {PDPage(3)}
+                    {priceDyn(3)}
+                </div>
+                <div id="grid-element">
+                    {InternalGrid(4)}
+                    {PDPage(4)}
+                    {priceDyn(4)}
+                </div>
+                <div id="grid-element">
+                    {InternalGrid(5)}
+                    {PDPage(5)}
+                    {priceDyn(5)}
+                </div>
+                <div id="grid-element">
+                    {InternalGrid(6)}
+                    {PDPage(6)}
+                    {priceDyn(6)}
+                </div>
+                <div id="grid-element">
+                    {InternalGrid(7)}
+                    {PDPage(7)}
+                    {priceDyn(7)}
+                </div>
+                <div id="grid-element">
+                    {InternalGrid(8)}
+                    {PDPage(8)}
+                    {priceDyn(8)}
+                </div>
+                <div id="grid-element">
+                    {InternalGrid(9)}
+                    {PDPage(9)}
+                    {priceDyn(9)}
+                </div>
+                <div id="grid-element">
+                    {InternalGrid(10)}
+                    {PDPage(10)}
+                    {priceDyn(10)} 
+                </div>
+                <div id="grid-element">
+                    {InternalGrid(11)}
+                    {PDPage(11)}
+                    {priceDyn(11)}
+                </div>
+                <div id="grid-element">
+                    {InternalGrid(12)}
+                    {PDPage(12)}
+                    {priceDyn(12)}
+                </div>
+                <div id="grid-element">
+                    {InternalGrid(13)}
+                    {PDPage(13)}
+                    {priceDyn(13)}
+                </div>
+                <div id="grid-element">
+                    {InternalGrid(14)}
+                    {PDPage(14)}
+                    {priceDyn(14)}
+                </div>
+                <div id="grid-element">
+                    {InternalGrid(15)}
+                    {PDPage(15)}
+                    {priceDyn(15)}
+                </div>
+                <div id="grid-element">
+                    {InternalGrid(16)}
+                    {PDPage(16)}
+                    {priceDyn(16)}
+                </div>
+                <div id="grid-element">
+                    {InternalGrid(17)}
+                    {PDPage(17)}
+                    {priceDyn(17)}
+                </div>
+                <div id="grid-element">
+                    {InternalGrid(18)}
+                    {PDPage(18)}
+                    {priceDyn(18)}
+                </div>
+                <div id="grid-element">
+                    {InternalGrid(19)}
+                    {PDPage(19)}
+                    {priceDyn(19)}
+                </div>
+
                 </ResultGrid>
             </div>
             <div id="grid-container" class="grid">
@@ -315,3 +492,8 @@ return (
 };
  
 export default Results;
+
+
+export const prody = {
+    name: "T-Rex Grilles Side Vent - 54001",
+}

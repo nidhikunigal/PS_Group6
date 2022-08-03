@@ -27,7 +27,6 @@ font-family: Sans-serif;
 width:150;
 height:30px;
 -webkit-text-stroke:  0.7px black;
-
 display: flex;
 align-items: center;
 font-family: Sans-serif;

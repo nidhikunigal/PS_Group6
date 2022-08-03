@@ -27,7 +27,11 @@ function ResultsPage() {
    const routeChange = () => {
       if (self.Year == "" || self.Make == "" || self.Model == "") {
          alert("Please fill out the year, make, and model field before submitting");
-      } else {
+      } 
+      if(self.Part == ""){
+         alert("Please select an option in the Part dropdown before submitting. If you want to view all parts for a vehicle, select 'View All Parts' ");
+      }
+      else {
          let path = '/results';
          nav(path);
       }
@@ -74,9 +78,10 @@ function quizResult(yearSearched, makeSearched, modelSearched, part) {
    self.Year = yearSearched;
    self.Make = makeSearched;
    self.Model = modelSearched;
-   if(part != ""){
-      self.Part = part;
-   }
+   self.Part = part;
+   //if(part != ""){
+   //   self.Part = part;
+   //}
 }
 
 
@@ -181,13 +186,13 @@ const Home = () => {
                   </select>
                   <div class='space'> </div>
                   <select name="part" id="part" value={part} disabled={isDisabled1} onChange={(e) => setPart(e.target.value)} style={{cursor:cursor1}}>
-                     <option value="All Part">Part</option>
+                     <option value="0">Part</option>
                      <option value="Suspension">Suspension</option>
                      <option value="Wheels">Wheel</option>
                      <option value="Leveling">Leveling Kit</option>
                      <option value="Fenders">Fender</option>
                      <option value="Bumper">Bumper</option>
-                     <option value="All Part">All Part</option>
+                     <option value="All Part">View All Parts</option>
                   </select>
                </formOptions>
 
