@@ -43,9 +43,6 @@ function ResultGridFun(data, error, loading){
     let j = "";
     if(!error && !loading){
         unique = [... new Map(data.partByYear.map(item => [item.Product_Name, item])).values()];
-        let bestFitCheck = null;
-
-       
         for(let i = 0; i < unique.length; i++){
             if(unique[i] != null){
                 eeep++;
@@ -116,7 +113,6 @@ function InternalGrid(num){
         nav(path);
     }
     //console.log("Internal Grid unique");
-   // console.log(unique);
     var SRC = null;
     let uniqueType;
         switch(unique[num].VehicleParts[0].Type){
@@ -132,7 +128,7 @@ function InternalGrid(num){
             case 'Wheel':
                 SRC = tire;
                 break;
-            case 'Fenders':
+            case 'Fender':
                 SRC = fender;
         }
     let bestFitCheck = null;
@@ -275,6 +271,7 @@ const Results = () => {
         make: self.Make,
         model: self.Model,}});
 
+        console.log(data);
     unique = ResultGridFun(data, error, loading);
     unique= refineUnique(unique);
     data2 = data; 

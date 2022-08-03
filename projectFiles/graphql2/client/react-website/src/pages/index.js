@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import tire from "./tire.jpg";
+import tire from "./wheels.jpg";
 import bumper from "./bumper.jpg";
 import levelingKit from "./levelingKit.jpg";
 import { useNavigate } from "react-router-dom";
