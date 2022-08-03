@@ -1,4 +1,9 @@
 .fitStat{
     font-size: 16px;
-    font-family: 'Barlow Semi Condensed';
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    color: #008D1E;
+}
+.PDPstyle{
+    font-size: 16px;
+    font-family: 'Helvetica', 'Arial', sans-serif;
 }

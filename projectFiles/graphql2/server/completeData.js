@@ -100,7 +100,7 @@ const PartList = [
         General_Vehicle: "Toyota 4Runner",
     },
     {
-        Type: "Wheels",
+        Type: "Wheel",
         Product_Name: "4 Wheel Parts Factory S-Series Wheel, 20x9 with 8 on 180 Bolt Pattern - Black Milled - 8018-298950",
         Company: "4 Wheel Parts",
         Cost: 358.99,
@@ -110,7 +110,7 @@ const PartList = [
 
     },
     {
-        Type: "Wheels",
+        Type: "Wheel",
         Product_Name: "4 Wheel Parts T-Series Split Spoke Design Bronze with Black Lip Wheels",
         Company: "4 Wheel Parts",
         Cost: 249.99,
@@ -119,7 +119,7 @@ const PartList = [
         General_Vehicle: "Universal",
     },
     {
-        Type: "Wheels",
+        Type: "Wheel",
         Product_Name: "Method Race Wheels 305 NV, 17x8.5 with 6 on 135 Bolt Pattern - Titanium / Black - ZMR30578516800",
         Company: "Method Race Wheels",
         Cost: 319.36,
@@ -129,7 +129,7 @@ const PartList = [
 
     },
     {
-        Type: "Wheels",
+        Type: "Wheel",
         Product_Name: "Method Race Wheels 305 NV, 17x8.5 with 5 on 150 Bolt Pattern - Titanium / Black - ZMR30578558800",
         Company: "Method Race Wheels",
         Cost: 319.36,
@@ -138,7 +138,7 @@ const PartList = [
         General_Vehicle: "Universal",
     },
     {
-        Type: "Wheels",
+        Type: "Wheel",
         Product_Name: "Pro Comp 72 Series Axis, 17x9 Wheel with 6x5.5 Bolt Pattern - Satin Black Milled - 5172-7939",
         Company: "Pro Comp",
         Cost: 230.99,
@@ -148,7 +148,7 @@ const PartList = [
 
     },
     {
-        Type: "Wheels",
+        Type: "Wheel",
         Product_Name: "LRG Rims Burst 117 Matte Black w/ Machined Accents Alloy Wheels",
         Company: "LRG",
         Cost: 299.99,
@@ -158,7 +158,7 @@ const PartList = [
 
     },
     {
-        Type: "Wheels",
+        Type: "Wheel",
         Product_Name: "LRG Rims Blades Series 115 Satin Black Milled Alloy Wheels",
         Company: "LRG",
         Cost: 251.99,
@@ -168,7 +168,7 @@ const PartList = [
 
     },
     {
-        Type: "Wheels",
+        Type: "Wheel",
         Product_Name: "FUEL Off-Road Maverick D538 Black & Milled Wheels",
         Company: "FUEL Off",
         Cost: 182,
@@ -260,7 +260,7 @@ const PartList = [
         General_Vehicle: "Toyota Tacoma",
     },
     {
-        Type: "Fenders",
+        Type: "Fender",
         Product_Name: "4 Wheel Parts Factory Bronco Fender Delete Kit (2-Door) - 61769W",
         Company: "Bronco",
         Cost: 363.99,
@@ -269,7 +269,7 @@ const PartList = [
         General_Vehicle: "Ford Bronco",
     },
     {
-        Type: "Fenders",
+        Type: "Fender",
         Product_Name: "4 Wheel Parts Factory Bronco Fender Delete Kit (4-Door) - 61768W",
         Company: "Bronco",
         Cost: 373.99,
@@ -278,7 +278,7 @@ const PartList = [
         General_Vehicle: "Ford Bronco",
     },
     {
-        Type: "Fenders",
+        Type: "Fender",
         Product_Name: "Bushwacker Pocket Style Front and rear Fender",
         Company: "Bushwacker",
         Cost: 499,
@@ -287,7 +287,7 @@ const PartList = [
         General_Vehicle: "Ford F-150",
     },
     {
-        Type: "Fenders",
+        Type: "Fender",
         Product_Name: "Smittybilt M1 Color-Matched Fender Flares (Shadow Black) - 17397-G1",
         Company: "Smittybilt",
         Cost: 713.99,
@@ -296,7 +296,7 @@ const PartList = [
         General_Vehicle: "Ford F-150",
     },
     {
-        Type: "Fenders",
+        Type: "Fender",
         Product_Name: "Bushwacker Max Pocket Style Fender Flares - 20946-02",
         Company: "Bushwacker",
         Cost: 439.2,
@@ -306,7 +306,7 @@ const PartList = [
 
     },
     {
-        Type: "Fenders",
+        Type: "Fender",
         Product_Name: "Bushwacker OE Style Fender Flare Set (Black) - 20962-02",
         Company: "Bushwacker",
         Cost: 483,
@@ -316,7 +316,7 @@ const PartList = [
 
     },
     {
-        Type: "Fenders",
+        Type: "Fender",
         Product_Name: "Jeep Fender Flare Kit (Paintable) - 82215740",
         Company: "Jeep",
         Cost: 875.99,
@@ -326,7 +326,7 @@ const PartList = [
 
     },
     {
-        Type: "Fenders",
+        Type: "Fender",
         Product_Name: "Bushwacker Toyota Tacoma Pocket Style Fender Flare Set (Paintable) - 31920-02",
         Company: "Bushwacker",
         Cost: 399.2,
@@ -336,7 +336,7 @@ const PartList = [
 
     },
     {
-        Type: "Fenders",
+        Type: "Fender",
         Product_Name: "Bushwacker Pocket Style Fender Flares - 30048-02",
         Company: "Bushwacker",
         Cost: 252.79,
@@ -345,7 +345,7 @@ const PartList = [
         General_Vehicle: "Toyota Tacoma",
     },
     {
-        Type: "Fenders",
+        Type: "Fender",
         Product_Name: "T-Rex Upper Class Series Mesh Main Grille (Black) - 51951",
         Company: "T-Rex",
         Cost: 644.65,
@@ -354,7 +354,7 @@ const PartList = [
         General_Vehicle: "Toyota Tacoma",
     },
     {
-        Type: "Fenders",
+        Type: "Fender",
         Product_Name: "T-Rex Grilles Side Vent - 54001",
         Company: "T-Rex",
         Cost: 414.67,

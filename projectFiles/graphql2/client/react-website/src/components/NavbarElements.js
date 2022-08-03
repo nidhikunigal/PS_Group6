@@ -21,6 +21,7 @@ color: white;
 display: flex;
 text-weight: 500;
 align-items: center;
+justify-content: center;
 text-decoration: none;
 padding: 0 1.5rem;
 height: 100%;

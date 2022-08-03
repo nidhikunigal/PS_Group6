@@ -129,17 +129,39 @@ select { width: 130px; text-align-last:center; height:30px; border-radius: 7px;
   display: inline-block;
   font-size: 16px;
 }
-.flex-container {
+.flex-container1 {
   display: flex;
-  background-color: rgb(255, 255, 255);
   align-items: center;
   float: top;
 
 }
 
+.flex-container1 > div {
+  padding: 1%;
+  margin-left: .25%;
+}
+#firstFlex{
+  flex-basis: 30%;
+}
+
+#techdet{
+  font-size: 1.1em;
+}
+
+#secondFlex{
+  flex-basis: 40%;
+}
+
+
+#pricing{
+  display: flex; 
+  grid-template-columns: auto;
+}
+
 .flex-container > div {
   float: top;
-  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
   margin: 0px;
   padding: 3px;
   font-size: 15px;
@@ -154,7 +176,7 @@ select { width: 130px; text-align-last:center; height:30px; border-radius: 7px;
 .flex-vibes{
   float: top;
   display: flex;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   align-items: stretch;
   justify-content: left;
 }
@@ -169,11 +191,20 @@ select { width: 130px; text-align-last:center; height:30px; border-radius: 7px;
   align-items: stretch;
 }
 
+#imageUsed{
+  border: 2px
+   solid #969696;
+}
+
 .borderbox {
+  /* display: flex; 
+  padding: 0%;
+  align-items: center; */
+  font-family: sans-serif;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  width: 350px;
+  width: 30em;
   height: 600px;
   border: 2px
    solid #969696;

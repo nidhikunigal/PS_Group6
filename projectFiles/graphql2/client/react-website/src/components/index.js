@@ -11,7 +11,7 @@ return (
 		<NavMenu>
 			<NavLink to="/" activeStyle>
 				<Logo>
-					<img src ={companyLogo} width="300px"></img>
+					<img src ={companyLogo} width="300vw"></img>
 				</Logo>
 			</NavLink>
 		</NavMenu>

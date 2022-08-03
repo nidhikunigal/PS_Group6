@@ -26,8 +26,7 @@ cursor: pointer;
 font-family: Sans-serif;
 width:150;
 height:30px;
--webkit-text-stroke:  0.7px black;
-
+-webkit-text-stroke:0.7px black;
 display: flex;
 align-items: center;
 font-family: Sans-serif;
@@ -104,6 +103,6 @@ font-family: Sans-serif;
 font-weight: 600;
 width: 400px;
 height: 50px;
-font-size: 1em;
+font-size: 1.1em;
 text-align: center;
 `

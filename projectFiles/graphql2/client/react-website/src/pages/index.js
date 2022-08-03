@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import tire from "./tire.jpg";
-import bumper from "./tempBumper.jpg";
+import tire from "./wheels.jpg";
+import bumper from "./bumper.jpg";
 import levelingKit from "./levelingKit.jpg";
 import { useNavigate } from "react-router-dom";
 import { Form, formOptions, Deals, FeatDeals, Deal1, Button, DealName } from "./homeStyle.js";
 import { useQuery, useLazyQuery, gql } from "@apollo/client";
-import '../App.css'
+import '../App.css';
+import {prody} from "./results.js";
 
 let yearGlobal;
 
@@ -27,7 +28,11 @@ function ResultsPage() {
    const routeChange = () => {
       if (self.Year == "" || self.Make == "" || self.Model == "") {
          alert("Please fill out the year, make, and model field before submitting");
-      } else {
+      } 
+      if(self.Part == ""){
+         alert("Please select an option in the Part dropdown before submitting. If you want to view all parts for a vehicle, select 'View All Parts' ");
+      }
+      else {
          let path = '/results';
          nav(path);
       }
@@ -58,6 +63,7 @@ function ResultsPage() {
 function DetailsPage(src, name) {
    let nav = useNavigate();
    const routeChange = () => {
+      prody.name = name;
       let path = '/details';
       nav(path);
    }
@@ -74,9 +80,10 @@ function quizResult(yearSearched, makeSearched, modelSearched, part) {
    self.Year = yearSearched;
    self.Make = makeSearched;
    self.Model = modelSearched;
-   if(part != ""){
-      self.Part = part;
-   }
+   self.Part = part;
+   //if(part != ""){
+   //   self.Part = part;
+   //}
 }
 
 
@@ -93,6 +100,8 @@ const Home = () => {
    const [isDisabled, setIsDisabled] = useState(true);
 
    const [isDisabled1, setIsDisabled1] = useState(true);
+
+   const [isDisabled2, setIsDisabled2] = useState(true);
 
    const changeDisable = () => {
       setIsDisabled(setYearSearched  => {
@@ -112,6 +121,15 @@ const Home = () => {
       });
    }
 
+   const changeDisable2 = () => {
+      setIsDisabled2(setModelSearched  => {
+            if(setModelSearched != '0'){
+               return !isDisabled2;
+            }
+            return isDisabled2;
+      });
+   }
+
    const [cursor, setCursor] = useState('not-allowed');
    const changeCursor = () => {
       setCursor(setYearSearched => {
@@ -127,6 +145,16 @@ const Home = () => {
    const changeCursor1 = () => {
       setCursor1(setMakeSearched => {
          if(setMakeSearched != '0'){
+            return 'auto';
+         }
+         return 'not-allowed';
+      });
+   }
+
+   const [cursor2, setCursor2] = useState('not-allowed');
+   const changeCursor2 = () => {
+      setCursor2(setModelSearched => {
+         if(setModelSearched != '0'){
             return 'auto';
          }
          return 'not-allowed';
@@ -165,7 +193,7 @@ const Home = () => {
                   </select>
                   <div class='space'> </div>
 
-                  <select name="model" id="model" value={modelSearched} disabled={isDisabled1} onChange={(y) => {setModelSearched(y.target.value); changeDisable1(); changeCursor1()}} style={{cursor:cursor1}}>
+                  <select name="model" id="model" value={modelSearched} disabled={isDisabled1} onChange={(y) => {setModelSearched(y.target.value); changeDisable2(); changeCursor2()}} style={{cursor:cursor1}}>
                      <option value="0">Model</option>
                      <option value="F-150">F-150</option>
                      <option value="Gladiator">Gladiator</option>
@@ -180,14 +208,14 @@ const Home = () => {
                      <option value="Sierra">Sierra</option>
                   </select>
                   <div class='space'> </div>
-                  <select name="part" id="part" value={part} disabled={isDisabled1} onChange={(e) => setPart(e.target.value)} style={{cursor:cursor1}}>
-                     <option value="All Part">Part</option>
+                  <select name="part" id="part" value={part} disabled={isDisabled2} onChange={(e) => setPart(e.target.value)} style={{cursor:cursor2}}>
+                     <option value="0">Part</option>
                      <option value="Suspension">Suspension</option>
-                     <option value="Wheels">Wheel</option>
+                     <option value="Wheel">Wheel</option>
                      <option value="Leveling">Leveling Kit</option>
-                     <option value="Fenders">Fender</option>
+                     <option value="Fender">Fender</option>
                      <option value="Bumper">Bumper</option>
-                     <option value="All Part">All Part</option>
+                     <option value="All Part">View All Parts</option>
                   </select>
                </formOptions>
 
@@ -201,13 +229,13 @@ const Home = () => {
          <FeatDeals onClick={(e) => self.Name = e.target.title}>
             <a class="Back">&#10094; </a>
             <Deal1>
-               {DetailsPage(tire, "Mickey Thompson Baja Legend EXP Tires")}
+               {DetailsPage(tire, "4 Wheel Parts T-Series Split Spoke Design Bronze with Black Lip Wheels")}
             </Deal1>
             <Deal1>
-               {DetailsPage(bumper, "Fab Fours Matrix Series Front Bumper with Pre-Runner Guard (black)")}
+               {DetailsPage(bumper, "Bronco Front Bumper")}
             </Deal1>
             <Deal1>
-               {DetailsPage(levelingKit, "Pro Comp 2.5 Inch Leveling Lift Kit")}
+               {DetailsPage(levelingKit, "Pro Comp 2.5 Inch Leveling Lift Kit - 62206")}
             </Deal1>
             <a class="forward">&#10095;</a>
          </FeatDeals>
