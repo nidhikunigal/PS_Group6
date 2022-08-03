@@ -99,6 +99,8 @@ const Home = () => {
 
    const [isDisabled1, setIsDisabled1] = useState(true);
 
+   const [isDisabled2, setIsDisabled2] = useState(true);
+
    const changeDisable = () => {
       setIsDisabled(setYearSearched  => {
             if(setYearSearched != '0'){
@@ -117,6 +119,15 @@ const Home = () => {
       });
    }
 
+   const changeDisable2 = () => {
+      setIsDisabled2(setModelSearched  => {
+            if(setModelSearched != '0'){
+               return !isDisabled2;
+            }
+            return isDisabled2;
+      });
+   }
+
    const [cursor, setCursor] = useState('not-allowed');
    const changeCursor = () => {
       setCursor(setYearSearched => {
@@ -132,6 +143,16 @@ const Home = () => {
    const changeCursor1 = () => {
       setCursor1(setMakeSearched => {
          if(setMakeSearched != '0'){
+            return 'auto';
+         }
+         return 'not-allowed';
+      });
+   }
+
+   const [cursor2, setCursor2] = useState('not-allowed');
+   const changeCursor2 = () => {
+      setCursor2(setModelSearched => {
+         if(setModelSearched != '0'){
             return 'auto';
          }
          return 'not-allowed';
@@ -170,7 +191,7 @@ const Home = () => {
                   </select>
                   <div class='space'> </div>
 
-                  <select name="model" id="model" value={modelSearched} disabled={isDisabled1} onChange={(y) => {setModelSearched(y.target.value); changeDisable1(); changeCursor1()}} style={{cursor:cursor1}}>
+                  <select name="model" id="model" value={modelSearched} disabled={isDisabled1} onChange={(y) => {setModelSearched(y.target.value); changeDisable2(); changeCursor2()}} style={{cursor:cursor1}}>
                      <option value="0">Model</option>
                      <option value="F-150">F-150</option>
                      <option value="Gladiator">Gladiator</option>
@@ -185,7 +206,7 @@ const Home = () => {
                      <option value="Sierra">Sierra</option>
                   </select>
                   <div class='space'> </div>
-                  <select name="part" id="part" value={part} disabled={isDisabled1} onChange={(e) => setPart(e.target.value)} style={{cursor:cursor1}}>
+                  <select name="part" id="part" value={part} disabled={isDisabled2} onChange={(e) => setPart(e.target.value)} style={{cursor:cursor2}}>
                      <option value="0">Part</option>
                      <option value="Suspension">Suspension</option>
                      <option value="Wheels">Wheel</option>

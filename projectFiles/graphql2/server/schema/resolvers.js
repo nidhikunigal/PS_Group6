@@ -51,40 +51,40 @@ const resolvers = {
         },
         partByYear(parent, args) {
             const { Year, Make, Model } = args;
-            console.log(Year + " " + Make + " " + Model);
+           // console.log(Year + " " + Make + " " + Model);
             if (Year == null && Make == null && Model == null) {
-                console.log("nothing");
+               // console.log("nothing");
                 return Compatible_Vehicles;
             }
             else if (Year != null && Make == null && Model == null) {
                 //when only year is given
-                console.log("year");
+                //console.log("year");
                 //console.log(Make);
                 return Compatible_Vehicles.filter((a) => a.Year == Year || a.Year == "Universal");
             }
             else if (Year == null && Make != null && Model == null) {
                 //when only Make is given
-                console.log("make");
+               // console.log("make");
                 return Compatible_Vehicles.filter((a) => a.Make == Make || a.Make == "Universal");
             }
             else if (Year == null && Make == null && Model != null) {
                 //when only Model is given
-                console.log("model");
+               // console.log("model");
                 return Compatible_Vehicles.filter((a) => a.Model == Model || a.Model == "Universal");
             }
             else if (Year != null && Make != null && Model == null) {
                 //when year and make are given
-                console.log("year and make");
+               // console.log("year and make");
                 return Compatible_Vehicles.filter((a) => (a.Year == Year || a.Year == "Universal") && (a.Make == Make || a.Make == "Universal") );
             }
             else if (Year != null && Make == null && Model != null) {
                 //when year and Model are given
-                console.log("year and model");
+               // console.log("year and model");
                 return Compatible_Vehicles.filter((a) => (a.Year == Year || a.Year == "Universal") && (a.Model == Model || a.Model == "Universal"));
             }
             else if (Year == null && Make != null && Model != null) {
                 //when Model and make are given
-                console.log("model and make");
+                //console.log("model and make");
                 let filterWithoutUniversal = Compatible_Vehicles.filter((a) =>a.Make == Make && a.Model == Model);
 
                 if (filterWithoutUniversal.length > 0) {
@@ -97,7 +97,7 @@ const resolvers = {
             }
             else {
                 //all are given
-                console.log("ELSE");
+                //console.log("ELSE");
                 let filterWithoutUniversal = Compatible_Vehicles.filter((a) =>a.Make == Make && a.Model == Model);
                 if (filterWithoutUniversal.length > 0) {
                     //so we cant search for a Jeep F-150, because that car does not exist

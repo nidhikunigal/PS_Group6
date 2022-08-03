@@ -147,7 +147,13 @@ function InternalGrid(num){
 
     if (unique[num] != null && (unique[num].Product_Name !== bestFitCheck.Product_Name)) {
         return (
+            <>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
             <img src={SRC} width="250px" onClick={routeChange} />
+            </>
             );
     }
         return (<>
@@ -357,8 +363,10 @@ return (
                         #grid-element{
                             display: flex; 
                             flex-direction:column; 
-                            align-items: center; 
-                            text-align: center; 
+                            align-items: center;
+                            justify-content: space-between;  
+                            text-align: center;  
+                            height: 400px;
                         }
                         #buy{
                             background-color: red;
@@ -369,7 +377,12 @@ return (
                             font-family: Sans-serif;
                             font-weight: 600;
                         }
-                        #bottom{display: flex; flex-direction: row; align-self: center;}
+                        #bottom{
+                            display: flex; 
+                            flex-direction: row;
+                            align-self: center;
+                            
+                        }
                         #quan{width: 5em;} 
                         #price{justify-self: flex-end; align-self: flex-start; font-family:Sans-serif; font-weight:600; margin-left: 30px; height: 8px; }
                         #namey{
