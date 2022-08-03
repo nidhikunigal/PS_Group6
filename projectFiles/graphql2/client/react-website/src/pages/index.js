@@ -101,6 +101,8 @@ const Home = () => {
 
    const [isDisabled1, setIsDisabled1] = useState(true);
 
+   const [isDisabled2, setIsDisabled2] = useState(true);
+
    const changeDisable = () => {
       setIsDisabled(setYearSearched  => {
             if(setYearSearched != '0'){
@@ -116,6 +118,15 @@ const Home = () => {
                return !isDisabled1;
             }
             return isDisabled1;
+      });
+   }
+
+   const changeDisable2 = () => {
+      setIsDisabled2(setModelSearched  => {
+            if(setModelSearched != '0'){
+               return !isDisabled2;
+            }
+            return isDisabled2;
       });
    }
 
@@ -139,6 +150,18 @@ const Home = () => {
          return 'not-allowed';
       });
    }
+
+
+   const [cursor2, setCursor2] = useState('not-allowed');
+   const changeCursor2 = () => {
+      setCursor2(setModelSearched => {
+         if(setModelSearched != '0'){
+            return 'auto';
+         }
+         return 'not-allowed';
+      });
+   }
+
    //let nav = useNavigate();
 
    return ( 
@@ -187,7 +210,7 @@ const Home = () => {
                      <option value="Sierra">Sierra</option>
                   </select>
                   <div class='space'> </div>
-                  <select name="part" id="part" value={part} disabled={isDisabled1} onChange={(e) => setPart(e.target.value)} style={{cursor:cursor1}}>
+                  <select name="part" id="part" value={part} disabled={isDisabled2} onChange={(e) => {setPart(e.target.value); changeDisable2(); changeCursor2()}} style={{cursor:cursor1}}>
                      <option value="0">Part</option>
                      <option value="Suspension">Suspension</option>
                      <option value="Wheels">Wheel</option>
