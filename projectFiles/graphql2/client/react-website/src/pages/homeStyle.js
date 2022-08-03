@@ -24,7 +24,7 @@ padding: 3px 15px;
 border-radius: 7px;
 cursor: pointer;
 font-family: Sans-serif;
-width:10vw;
+width:150;
 height:30px;
 -webkit-text-stroke:  0.7px black;
 display: flex;
@@ -103,6 +103,6 @@ font-family: Sans-serif;
 font-weight: 600;
 width: 400px;
 height: 50px;
-font-size: 1em;
+font-size: 1.1em;
 text-align: center;
 `

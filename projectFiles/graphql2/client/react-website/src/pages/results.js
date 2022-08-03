@@ -79,11 +79,16 @@ function AddClickEv(elem){
 }
 
 function refineUnique(data){
+    if(self.Part != "All Part"){
+    let temp = [];
     for(let i = 0; i < data.length; i++){
-        if(data[i] != null && data[i].VehicleParts[0].Type != self.Part){
-            delete data[i];
+        if(data[i] != null && data[i].VehicleParts[0].Type == self.Part){
+            temp.push(data[i]);
         }
     }
+    return temp;
+    }
+    return data;
 }
 
 function refineForBestFit(data){
@@ -133,12 +138,9 @@ function InternalGrid(num){
     let bestFitCheck = null;
 
     if(self.Part != "All Part" && self.Part != ""){
-        //if the input has a select part
         let refinedDataForBestFit = refineForBestFit(data2);
         bestFitCheck = bestFit(refinedDataForBestFit);
-       // console.log("refined data for best fit");
-       // console.log(data2);
-        refineUnique(unique);
+        //refineUnique(unique);
     }
     else {
         //if the input is for all parts
@@ -268,6 +270,7 @@ const Results = () => {
         model: self.Model,}});
 
     unique = ResultGridFun(data, error, loading);
+    unique= refineUnique(unique);
     data2 = data; 
 
     if( !error && !loading){

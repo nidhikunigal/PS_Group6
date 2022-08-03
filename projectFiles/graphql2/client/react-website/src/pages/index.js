@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import tire from "./tire.jpg";
-import bumper from "./tempBumper.jpg";
+import bumper from "./bumper.jpg";
 import levelingKit from "./levelingKit.jpg";
 import { useNavigate } from "react-router-dom";
 import { Form, formOptions, Deals, FeatDeals, Deal1, Button, DealName } from "./homeStyle.js";
 import { useQuery, useLazyQuery, gql } from "@apollo/client";
-import '../App.css'
+import '../App.css';
+import {prody} from "./results.js";
 
 let yearGlobal;
 
@@ -62,6 +63,7 @@ function ResultsPage() {
 function DetailsPage(src, name) {
    let nav = useNavigate();
    const routeChange = () => {
+      prody.name = name;
       let path = '/details';
       nav(path);
    }
@@ -206,13 +208,13 @@ const Home = () => {
          <FeatDeals onClick={(e) => self.Name = e.target.title}>
             <a class="Back">&#10094; </a>
             <Deal1>
-               {DetailsPage(tire, "Mickey Thompson Baja Legend EXP Tires")}
+               {DetailsPage(tire, "4 Wheel Parts T-Series Split Spoke Design Bronze with Black Lip Wheels")}
             </Deal1>
             <Deal1>
-               {DetailsPage(bumper, "Fab Fours Matrix Series Front Bumper with Pre-Runner Guard (black)")}
+               {DetailsPage(bumper, "Bronco Front Bumper")}
             </Deal1>
             <Deal1>
-               {DetailsPage(levelingKit, "Pro Comp 2.5 Inch Leveling Lift Kit")}
+               {DetailsPage(levelingKit, "Pro Comp 2.5 Inch Leveling Lift Kit - 62206")}
             </Deal1>
             <a class="forward">&#10095;</a>
          </FeatDeals>
