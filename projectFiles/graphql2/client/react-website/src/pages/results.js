@@ -43,11 +43,11 @@ function ResultGridFun(data, error, loading){
     let j = "";
     if(!error && !loading){
         unique = [... new Map(data.partByYear.map(item => [item.Product_Name, item])).values()];
-        for(let i = 0; i < unique.length; i++){
-            if(unique[i] != null){
-                eeep++;
-            }
-        }
+        // for(let i = 0; i < unique.length; i++){
+        //     if(unique[i] != null){
+        //         eeep++;
+        //     }
+        // }
     }
     unique = unique; 
     return(
@@ -256,7 +256,6 @@ function bestFitTwo(data){
     let max = bestFitArr[0];
     for(let i = 0; i < bestFitArr.length; i++){
         if(bestFitArr[i].Num_Reviews > max.Num_Reviews) {
-            console.log(i);
             max = bestFitArr[i];
         }
     }
@@ -271,14 +270,15 @@ const Results = () => {
         make: self.Make,
         model: self.Model,}});
 
-        console.log(data);
     unique = ResultGridFun(data, error, loading);
     unique= refineUnique(unique);
+    eeep = unique.length; 
     data2 = data; 
+    console.log(data2);
+    console.log(unique);
 
     if( !error && !loading){
-        var size = data.partByYear.length;
-        if(size == 0){
+        if(eeep == 0){
             return(
             <ResultsPage >
                 <Column1>
@@ -310,12 +310,110 @@ const Results = () => {
                     <NoResults>
                         We're Sorry, We Couldn't Find Any Parts Matching Your Search For {self.Year} {self.Make} {self.Model}
                     </NoResults>
-                        Change your vehicle or search for another part for more results. 
+                        Change your vehicle or search for another part for more results.
+                <div id="grid-element">
+                    {InternalGrid(0)}
+                    {PDPage(0)}
+                    {priceDyn(0)}
+                </div>
+                <div id="grid-element">
+                    {InternalGrid(1)}
+                    {PDPage(1)}
+                    {priceDyn(1)}
+                </div>
+                <div id="grid-element">
+                    {InternalGrid(2)}
+                    {PDPage(2)}
+                    {priceDyn(2)}
+                </div>
+                <div id="grid-element">
+                    {InternalGrid(3)}
+                    {PDPage(3)}
+                    {priceDyn(3)}
+                </div>
+                <div id="grid-element">
+                    {InternalGrid(4)}
+                    {PDPage(4)}
+                    {priceDyn(4)}
+                </div>
+                <div id="grid-element">
+                    {InternalGrid(5)}
+                    {PDPage(5)}
+                    {priceDyn(5)}
+                </div>
+                <div id="grid-element">
+                    {InternalGrid(6)}
+                    {PDPage(6)}
+                    {priceDyn(6)}
+                </div>
+                <div id="grid-element">
+                    {InternalGrid(7)}
+                    {PDPage(7)}
+                    {priceDyn(7)}
+                </div>
+                <div id="grid-element">
+                    {InternalGrid(8)}
+                    {PDPage(8)}
+                    {priceDyn(8)}
+                </div>
+                <div id="grid-element">
+                    {InternalGrid(9)}
+                    {PDPage(9)}
+                    {priceDyn(9)}
+                </div>
+                <div id="grid-element">
+                    {InternalGrid(10)}
+                    {PDPage(10)}
+                    {priceDyn(10)} 
+                </div>
+                <div id="grid-element">
+                    {InternalGrid(11)}
+                    {PDPage(11)}
+                    {priceDyn(11)}
+                </div>
+                <div id="grid-element">
+                    {InternalGrid(12)}
+                    {PDPage(12)}
+                    {priceDyn(12)}
+                </div>
+                <div id="grid-element">
+                    {InternalGrid(13)}
+                    {PDPage(13)}
+                    {priceDyn(13)}
+                </div>
+                <div id="grid-element">
+                    {InternalGrid(14)}
+                    {PDPage(14)}
+                    {priceDyn(14)}
+                </div>
+                <div id="grid-element">
+                    {InternalGrid(15)}
+                    {PDPage(15)}
+                    {priceDyn(15)}
+                </div>
+                <div id="grid-element">
+                    {InternalGrid(16)}
+                    {PDPage(16)}
+                    {priceDyn(16)}
+                </div>
+                <div id="grid-element">
+                    {InternalGrid(17)}
+                    {PDPage(17)}
+                    {priceDyn(17)}
+                </div>
+                <div id="grid-element">
+                    {InternalGrid(18)}
+                    {PDPage(18)}
+                    {priceDyn(18)}
+                </div>
+                <div id="grid-element">
+                    {InternalGrid(19)}
+                    {PDPage(19)}
+                    {priceDyn(19)}
+                </div> 
                     </center>
                 </Column2>
             </ResultsPage>
-
-             
             );
         }
     }
@@ -344,8 +442,6 @@ return (
                 <button id="refine" onClick="refine()">Refine</button>
  
             </RefineResults>
-             
- 
         </Column1>
         <Column2>
             <ResultHeader>
