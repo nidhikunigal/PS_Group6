@@ -92,14 +92,14 @@ const Details = () => {
     return (
         <>
 
-        <div class="flex-container">
+        <div class="flex-container1">
         <nav class="nav left"></nav>
-            <div> 
+            <div id="firstFlex"> 
                 <div class = "PDPstyle"><h2>{prody.name}</h2></div>
-                <div><img src={imageToUse} alt=" " width = "300px"/></div>
+                <div><img id="imageUsed" src={imageToUse} alt=" " width = "95%"/></div>
                 
-                </div>
-            <div> 
+            </div>
+            <div id="secondFlex"> 
             <div>
                     <img src={MyImage2} className="starspic" alt=" "/>
             </div>
@@ -108,18 +108,18 @@ const Details = () => {
                 <div className ='fitStat'> <img src={check} width='17px'></img> Qualifies for Free Shipping</div>
                 <ul className = 'PDPstyle'>
                     {formattedTechDetails.map((elem)=>{
-                        return <li>{elem}</li>
+                        return <li id="techdet">{elem}</li>
                     })}
                 </ul>
             </div>
-            <div class="borderbox">
-            <section class="nav right">
+            <div class="borderbox" id="borderbox">
+            <section class="nav right" id ="right"> 
 
             <div>
                <h2> ${productCost} </h2>
             </div>
 
-            <div class="flex-container">
+            <div class="flex-container" id="pricing">
                 <div class="col top">                
                     <select>
                         <option value="1">1 </option>

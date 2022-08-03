@@ -24,7 +24,7 @@ padding: 3px 15px;
 border-radius: 7px;
 cursor: pointer;
 font-family: Sans-serif;
-width:150;
+width:10vw;
 height:30px;
 -webkit-text-stroke:  0.7px black;
 display: flex;
