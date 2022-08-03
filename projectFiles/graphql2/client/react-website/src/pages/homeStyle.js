@@ -103,6 +103,6 @@ font-family: Sans-serif;
 font-weight: 600;
 width: 400px;
 height: 50px;
-font-size: 1em;
+font-size: 1.1em;
 text-align: center;
 `
