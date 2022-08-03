@@ -103,7 +103,7 @@ const Details = () => {
             <div>
                     <img src={MyImage2} className="starspic" alt=" "/>
             </div>
-                <div className ='fitStat'> <img src={check} width='17px'></img> {productFitPercent}% of {generalVehicle} drivers found this product to be a good fit</div>
+                <div className ='fitStat'> <img src={check} width='17px'></img> {productFitPercent}% of drivers of your vehicle found this product to be a good fit</div>
                 <div className ='fitStat'> <img src={check} width='17px'></img> Lowest Price Guarentee</div>
                 <div className ='fitStat'> <img src={check} width='17px'></img> Qualifies for Free Shipping</div>
                 <ul className = 'PDPstyle'>
