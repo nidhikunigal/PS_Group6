@@ -4,7 +4,9 @@ import { Nav, NavLink, NavMenu, Logo }
 import companyLogo from "./logo.png";
 import { Button1 } from "../pages/homeStyle.js";
 
-
+//function returns the navbar which is always apparent at the top of the website
+//it includes the functional buttons (including the logo website to reroute back to the landing page)
+//although the buttons are functional, we don't have the pages set up. The search bar is not functional. 
 const Navbar = () => {
 return (
 	<Nav>

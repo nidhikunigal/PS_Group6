@@ -12,6 +12,7 @@ import suspension from "./suspension.jpg";
 import fender from "./fender.jpg";
 import bestfit from "./best_fit.png";
  
+//Query of the Year Make and Model with parameters
 const QUERY_YEAR_MAKE_MODEL = gql`
 query yearMakeModel($year: String, $make: String, $model: String) {
   partByYear(Year: $year, Make: $make, Model: $model) {
@@ -35,19 +36,18 @@ query yearMakeModel($year: String, $make: String, $model: String) {
 }
 `;
  
+//reformatted data that will be displayed
 var unique = [];
+//number of results that are displayed
 var eeep = 0; 
+//reformatted data used for finding the best fit
 var data2 = [];
+// This function cleans up the data as it is received from the query by 
+// eliminating duplicates of products by name due to different trims 
 function ResultGridFun(data, error, loading){ 
     eeep = 0; 
-    let j = "";
     if(!error && !loading){
         unique = [... new Map(data.partByYear.map(item => [item.Product_Name, item])).values()];
-        // for(let i = 0; i < unique.length; i++){
-        //     if(unique[i] != null){
-        //         eeep++;
-        //     }
-        // }
     }
     unique = unique; 
     return(
@@ -55,26 +55,10 @@ function ResultGridFun(data, error, loading){
     )
 }
 
-function AddClickEv(elem){
-	//console.log("function is at least being called");
-    let nav = useNavigate();
-    const routeChange = () =>{
-        let path = '/details';
-        nav(path);
- 
-    }
-    //console.log(elem.props.children.props.children);
-    let kidList = elem.props.children.props.children;
-
-    //console.log(kidList[0].props.children[1].props.src = {tire})
-    for(let i=0; i < unique.length; i++){
-        //kidList[i].innerHTML = "<a>Hello</a>";
-
-    }
-  // console.log(kidList);
-  return(elem);
-}
-
+//This function is applied when the user is using the part finder 
+//to query for a specific type of part. This allows us to iterate 
+//through all of the compatible parts and select only the ones
+//that are relevant to the query
 function refineUnique(data){
     if(self.Part != "All Part"){
     let temp = [];
@@ -88,11 +72,8 @@ function refineUnique(data){
     return data;
 }
 
+//refines the data for the best fit function
 function refineForBestFit(data){
-    //refines the data for the best fit function
-
-
-
     let newData = [];
     for(let i = 0; i < data.partByYear.length; i++){
         if(data.partByYear[i].VehicleParts[0].Type == self.Part){
@@ -101,7 +82,12 @@ function refineForBestFit(data){
     }
     return newData;
 }
- 
+
+
+//This function returns the first section of each of the grid elements
+//The best fit sticker and image are returned dynamically for each grid element
+//based on the returned data. This function also adds the onclick event to allow
+//the image and product name to be clicked to move to the next page 
 function InternalGrid(num){
     let nav = useNavigate();
     if(num >= unique.length || unique[num] == null){
@@ -112,9 +98,9 @@ function InternalGrid(num){
         let path = '/details';
         nav(path);
     }
-    //console.log("Internal Grid unique");
     var SRC = null;
     let uniqueType;
+    //checks non duplicate parts array types to display corresponding picture
         switch(unique[num].VehicleParts[0].Type){
             case 'Bumper':
                 SRC = bumper;
@@ -131,9 +117,11 @@ function InternalGrid(num){
             case 'Fender':
                 SRC = fender;
         }
+    //ensures if the specific product is in fact best fit
     let bestFitCheck = null;
-
+    
     if(self.Part != "All Part" && self.Part != ""){
+        //if input is for specific part
         let refinedDataForBestFit = refineForBestFit(data2);
         bestFitCheck = bestFit(refinedDataForBestFit);
         //refineUnique(unique);
@@ -159,12 +147,15 @@ function InternalGrid(num){
         <img src={SRC} width="250px" onClick={routeChange} />
         </>);
 }
- 
+
+//This function returns the name of the product in each grid element
+//with an onclick that passes the user to the details page
 function PDPage(num){
     let nav = useNavigate();
     if(num >= unique.length || unique[num] == null){
         return; 
     }
+    //navigates to repsective product's PDP
     const routeChange = () =>{
         prody.name = unique[num].Product_Name;
         let path = '/details';
@@ -176,10 +167,13 @@ function PDPage(num){
     )
 }
 
+//This is the final function to be called in each of the grid elements 
+//this function returns the price, quantity, and add to cart button 
 function priceDyn(num){
     if(num >= unique.length || unique[num] == null){
         return; 
     }
+    //price bar
     return(<div>
             <p id="price">
                 ${unique[num].VehicleParts[0].Cost}
@@ -195,12 +189,13 @@ function priceDyn(num){
             </div> )
 }
 
+//this is the onclick function for the change vehicle button on the left
+//hand side of the page
 function ChangeVehFun(){
     let nav = useNavigate();
     const routeChange = () =>{
         let path = '/';
         nav(path);
- 
     }
     return (
         <button color="primary" className="px-4"onClick={routeChange}
@@ -214,8 +209,6 @@ function ChangeVehFun(){
 function bestFit(data){
     //finds the best fit item in the given data set
     let bestFitArr = [];
-   // console.log(data);
-
     
     //find the reviews with over 70% best fit
     for(let i = 0; i < data.length; i++){
@@ -224,18 +217,14 @@ function bestFit(data){
         }
     }
 
-   // console.log("besfit array");
-    // console.log(data);
     //finds the part with the most number of reviews from our bestFitArr (parts with only 70+ fitment)
     let max = bestFitArr[0];
     for(let i = 0; i < bestFitArr.length; i++){
         if(bestFitArr[i].Num_Reviews > max.Num_Reviews) {
-           // console.log(i);
             max = bestFitArr[i];
         }
     }
-   // console.log("bestfit");
-   // console.log(max);
+
 
     return max;
 }
@@ -265,19 +254,23 @@ function bestFitTwo(data){
     return max;
 }
 
+
+//this is the function that is called to produce the results page 
 const Results = () => {
+    //queries the data using the user input 
     const{data, error, loading} = useQuery(QUERY_YEAR_MAKE_MODEL, {variables: { year: self.Year,
         make: self.Make,
         model: self.Model,}});
 
+    //cleans the data (unique is the individual names and data2 is all of the data that is returned)
     unique = ResultGridFun(data, error, loading);
     unique= refineUnique(unique);
     eeep = unique.length; 
     data2 = data; 
-    console.log(data2);
-    console.log(unique);
+
 
     if( !error && !loading){
+        //this function checks if there are no results and returns a different page 
         if(eeep == 0){
             return(
             <ResultsPage >
@@ -311,6 +304,7 @@ const Results = () => {
                         We're Sorry, We Couldn't Find Any Parts Matching Your Search For {self.Year} {self.Make} {self.Model}
                     </NoResults>
                         Change your vehicle or search for another part for more results.
+                {/* returns all the result boxes(brute force) */}
                 <div id="grid-element">
                     {InternalGrid(0)}
                     {PDPage(0)}
@@ -417,6 +411,7 @@ const Results = () => {
             );
         }
     }
+    //this is the standard results page that is returned whenever there are results
 return (
     <ResultsPage >
         <Column1>

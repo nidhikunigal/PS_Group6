@@ -10,6 +10,7 @@ import {prody} from "./results.js";
 
 let yearGlobal;
 
+//query for the product finder when given year make and model
 const QUERY_YEAR_MAKE_MODEL = gql`
 query yearMakeModel($year: String, $make: String, $model: String) {
   partByYear(Year: $year, Make: $make, Model: $model) {
@@ -22,10 +23,13 @@ query yearMakeModel($year: String, $make: String, $model: String) {
 }
  `;
 
+//This function ensures that the user fills out all of the portions of the 
+//part finder and then reroutes the user to the results page upon submission 
 function ResultsPage() {
    let nav = useNavigate();
    //const [loadData, { data: yearData }] = useLazyQuery(QUERY_YEAR_MAKE_MODEL);
    const routeChange = () => {
+      //checks if all fields were given an input
       if (self.Year == "" || self.Make == "" || self.Model == "") {
          alert("Please fill out the year, make, and model field before submitting");
       } 
@@ -40,17 +44,6 @@ function ResultsPage() {
    return (
       <div>
          <Button onClick={() => {
-            //    loadData(
-            //       {
-            //          variables: {
-            //             year: self.Year,
-            //             make: self.Make,
-            //             model: self.Model,
-            //          },
-            //       });
-            // console.log("year searched: " + self.Year);
-            // console.log("data: ");
-            // console.log(yearData); 
             routeChange();
          }}>
             See Results
@@ -60,6 +53,9 @@ function ResultsPage() {
 
 }
 
+//This function returns the deals portion of the landing page with the 
+//attached on click event to transfer the user to the product detail page
+//if an element is selected
 function DetailsPage(src, name) {
    let nav = useNavigate();
    const routeChange = () => {
@@ -75,22 +71,19 @@ function DetailsPage(src, name) {
    );
 }
 
-
+//this function sets the self attributes
 function quizResult(yearSearched, makeSearched, modelSearched, part) {
    self.Year = yearSearched;
    self.Make = makeSearched;
    self.Model = modelSearched;
    self.Part = part;
-   //if(part != ""){
-   //   self.Part = part;
-   //}
 }
 
-
+//Main function called to return the home page
 const Home = () => {
+   //these are useStates that are set up to listen for the user input
    const [yearSearched, setYearSearched] = useState(" ");
    const [loadData, { data: yearData }] = useLazyQuery(QUERY_YEAR_MAKE_MODEL);
-
    const [makeSearched, setMakeSearched] = useState("");
 
    const [modelSearched, setModelSearched] = useState("");
@@ -103,6 +96,8 @@ const Home = () => {
 
    const [isDisabled2, setIsDisabled2] = useState(true);
 
+
+   //states for prohibition -> disables the inputs until user chooses an option 
    const changeDisable = () => {
       setIsDisabled(setYearSearched  => {
             if(setYearSearched != '0'){
@@ -130,6 +125,7 @@ const Home = () => {
       });
    }
 
+   //changes cursors for prohibition
    const [cursor, setCursor] = useState('not-allowed');
    const changeCursor = () => {
       setCursor(setYearSearched => {
@@ -160,7 +156,6 @@ const Home = () => {
          return 'not-allowed';
       });
    }
-   //let nav = useNavigate();
 
    return ( 
       <div>
@@ -261,6 +256,7 @@ const Home = () => {
 };
 
 export default Home;
+//this is how we transfer the users input from one file to another
 export const self =
 {
    Year: "hello",
