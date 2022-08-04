@@ -233,6 +233,7 @@ function bestFitTwo(data){
     //finds the best fit item in the given data set if the array is the original data set (for all parts)
     let bestFitArr = [];
 
+
     //find the reviews with over 70% best fit
     for(let i = 0; i < data.partByYear.length; i++){
         if(data.partByYear[i].Fitment_Percent >= 70) {
@@ -263,10 +264,12 @@ const Results = () => {
         model: self.Model,}});
 
     //cleans the data (unique is the individual names and data2 is all of the data that is returned)
-    unique = ResultGridFun(data, error, loading);
-    unique= refineUnique(unique);
-    eeep = unique.length; 
-    data2 = data; 
+    if(data != null){
+        unique = ResultGridFun(data, error, loading);
+        unique= refineUnique(unique);
+        eeep = unique.length; 
+        data2 = data; 
+    }
 
 
     if( !error && !loading){
