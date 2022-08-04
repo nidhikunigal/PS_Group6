@@ -80,7 +80,7 @@ const Details = () => {
             case "Suspension":
                 imageToUse = suspension;
                 break;
-            case "Fenders":
+            case "Fender":
                 imageToUse = fender;
                 break;
             case "Bumper":
