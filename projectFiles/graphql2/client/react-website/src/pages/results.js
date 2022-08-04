@@ -132,7 +132,7 @@ function InternalGrid(num){
             case 'Wheel':
                 SRC = tire;
                 break;
-            case 'Fenders':
+            case 'Fender':
                 SRC = fender;
         }
     let bestFitCheck = null;
