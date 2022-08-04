@@ -16,6 +16,7 @@ import check from "./checkmark.png";
 import './pdpstyle.css';
 import {prody} from "./results";
 
+//query for when we have a name input
 const QUERY_BY_NAME = gql`
 query PartByName($productName: String!) {
   partByName(Product_Name: $productName) {
@@ -39,8 +40,8 @@ query PartByName($productName: String!) {
 }
 `;
 
+//this is the function that returns the general details page when prompted
 const Details = () => {
-    console.log("name: " + prody.name);
     const [isOpen, setIsOpen] = useState(false);
  
 	const togglePopup = () => {
@@ -53,8 +54,8 @@ const Details = () => {
     }
 
     const{data: partData, error, loading} = useQuery(QUERY_BY_NAME, {variables: {productName: prody.name}});
-    console.log(partData);
     if( !error && !loading){
+        //all the fields as varibles from the query
         let productNameTitle = partData.partByName[0].Product_Name;
         let productFitPercent = partData.partByName[0].Compatible_Vehicles[0].Fitment_Percent;
         let productNumRev = partData.partByName[0].Compatible_Vehicles[0].Num_Reviews;
@@ -68,6 +69,7 @@ const Details = () => {
 
         let imageToUse;
 
+        //selects the proper image for the product
         switch(prodType) {
             case "Wheels":
             imageToUse = tire;

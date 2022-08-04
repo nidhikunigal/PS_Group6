@@ -13,6 +13,7 @@ const Popup = props => {
       setFavorite('Yes');
     };
 
+    //handle radio buttons on Popup
     const RadioButton = ({ label, value, onChange }) => {
         return (
           <label>
@@ -32,11 +33,12 @@ const Popup = props => {
         setFavorite1('Yes');
       }
 
+      //dynamic 5 star ratings
       const [rating, setRating] = useState(0);
       const [hover, setHover] = useState(0);
     
 
-
+ {/* displays and formats the popup for the product description page */}
     return (
         <>
         <div className="popup-box">
@@ -52,6 +54,7 @@ const Popup = props => {
                     }}
                 />
 
+                {/* 5 star ratings */}
                 <div class="flex-container">
                     <div class="textyes"><h5>Overall Rating * </h5></div>
                     <div className="star-rating">
